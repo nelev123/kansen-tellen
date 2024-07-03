@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="machten-logaritmen" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Machten, vierkantswortels en logaritmen</title>
+
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    Ik ken de definitie, notatie en de rekenregels voor machten met gehele exponenten en kan die toepassen in oefeningen. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik ken de definitie, notatie en de rekenregels voor vierkantswortels en kan die toepassen in oefeningen.  
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik kan wortels vereenvoudigen, noemers wortelvrij maken en geneste wortels uitrekenen. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik kan logaritmen berekenen m.b.v. de definitie.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik kan logaritmen berekenen m.b.v. de rekenregels.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik kan de rekenregels voor logaritmen bewijzen.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ik kan de rekenregels voor logaritmen gebruiken om uitdrukkingen te vereenvoudigen en identiteiten te bewijzen. 
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
+
+    <xi:include href="./algebra/vierkantswortels.ptx" />
+
+    <exercises xml:id="exercises-macht-vkw-log">
+        <xi:include href="./algebra/macht-oef.ptx" />
+    </exercises>
+   
+</chapter>
