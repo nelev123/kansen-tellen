@@ -1,0 +1,59 @@
+<section xml:id="sec-inl-tellen">
+<title>Inleidende oefeningen</title>
+  <p>
+    Dit schooljaar krijg je een inleiding op <q>de kunst van het tellen</q>. Onderstaand telprobleem zal je bijvoorbeeld binnenkort kunnen oplossen:
+  </p>
+  <blockquote>
+    <p>
+      Op hoeveel manieren kan je acht kaarten trekken uit een spel van 52 kaarten als er bij deze acht kaarten precies twee azen zitten, maar geen enkele dame?
+    </p>
+  </blockquote>
+
+  <p>
+    Gokspelletjes waren natuurlijk een belangrijke drijfveer voor wiskundigen om zich met dergelijke telproblemen bezig te houden. De tak van de wiskunde die hieraan ontsproten is, noemen we de <term>combinatoriek</term> of combinatieleer.
+  </p>
+
+  <activity>
+    <introduction>
+      <p>
+        Onderstaande telproblemen kunnen met behulp van wat gezond verstand opgelost worden.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Je gaat lunchen en wil soep of een salade bestellen. Op de weeksuggesties staan drie soorten soep vermeld en vijf salades. Hoeveel mogelijkheden zijn er om uit te kiezen?
+      </p>
+    </task>
+    <task>
+      <p>
+        In een posterwinkel hebben ze mooie replica's van vier
+        schilderijen van Van Gogh en kan je kiezen uit drie soorten lijsten om ze in te kaderen. Hoeveel mogelijke keuzes kan Lise maken als ze een schilderij voor haar oma koopt?
+      </p>
+    </task>
+    <task>
+      <p>
+        Op hoeveel verschillende manieren kunnen acht personen in een rij van vijf personen gaan staan? Er blijven dus steeds drie personen over die niet in de rij staan.
+      </p>
+    </task>
+    <task>
+      <p>
+        Je wil een pizza bestellen en kan kiezen uit acht verschillende garnituren: mozarella, ham, salami, ananas, champignons, paprika, olijven en anchovis. Hoeveel verschillende pizza's kan je bestellen met exact drie garnituren?
+      </p>
+    </task>
+    <task>
+      <p>
+        Een sultan heeft veertien verschillende kamelen en wenst die te verdelen onder zijn vier zonen. De oudste krijgt er vijf, de tweede krijgt er vier, de op een na jongste krijgt er drie en de jongste de overige twee. Op hoeveel manieren kan hij zijn kamelen verdelen?
+      </p>
+    </task>
+    <task>
+      <p>
+        Voor een beveiligingscode gebruikt een firma vierkante roosters verdeeld in 25 gelijke vierkantjes. Elk vierkantje kan blanco zijn of een 1 bevatten. Hoeveel mogelijke codes zijn er?
+      </p>
+    </task>
+    <task>
+      <p>
+        Op hoeveel manieren kan je drie gelijke rode balletjes in vijf verschillende bakjes plaatsen?
+      </p>
+    </task>
+  </activity>
+</section>

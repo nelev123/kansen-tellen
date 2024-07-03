@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="binomium" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<title>Het binomium van Newton</title>
+
+<section>
+  <title>Het binomium van Newton</title>
+  <p>
+    We onderzoeken de structuur van <m>(a+b)^3</m> door te kijken hoe de verschillende termen ontstaan uit de vermenigvuldiging <m>(a+b)(a+b)(a+b)</m>. De term in <m>a^2b</m> bijvoorbeeld ontstaat uit <m>a \cdot a \cdot b + a \cdot b \cdot a+ b \cdot a \cdot a</m>. Dit kan je als een telprobleem herformuleren: <q>Op hoeveel manieren kan je een rijtje maken met 2 a's en 1 b?</q> Er zijn drie posities in de rij: <m>p_1, p_2</m> en <m>p_3</m> en daaruit kiezen we er één om een <m>b</m> te plaatsen <mdash/> of twee om een <m>a</m> te plaatsen <mdash/> dus er zijn <m>C^1_3</m> mogelijke manieren en de coëfficiënt van de term in <m>a^2b</m> is gelijk aan 3. Voor de andere termen kunnen we op dezelfde manier redeneren: geen enkele positie kiezen voor <m>b</m>, één positie kiezen voor <m>b</m>, twee posities kiezen voor <m>b</m>, drie posities kiezen voor <m>b</m>
+    <me>
+       (a+b)^3 = C^0_3 a^3+C^1_3 a^2 b + C^2_3 a b^2 + C^3_3 b^3
+    </me>
+    Veralgemenen we bovenstaande formule voor willekeurige exponent dan krijgen we het binomium van Newton:
+   </p>
+   <assemblage>
+     <title>Binomium van Newton</title>
+     <p>
+       <md>
+        <mrow>(a+b)^n = \amp C^0_n a^n + C^1_n a^{n-1}b + C^2_n a^{n-2} b^2 + \ldots + C^{n-1}_n a b^{n-1}+C^n_n b^n </mrow>
+        <mrow>= \amp \sum_{i=0}^n C^i_n a^{n-i} b^i</mrow>
+       </md>
+       met <m>C^i_n=\dfrac{n!}{(n-i)! i!}</m>. Het rechterlid noemt men de binomiaalontwikkeling en de combinaties <m>C^i_n</m> worden ook de binomiaalcoëfficiënten genoemd.
+     </p>
+     <p>
+       Merk op dat <m>C^i_n</m> de coëfficiënt van de term in <m>a^{n-i} b^i</m> is, maar dat dit de <m>i+1</m>-ste term is in de ontwikkeling van <m>(a+b)^n</m>.
+      </p>
+   </assemblage>
+
+   <exercises>
+     <exercise>
+       <statement>
+         <p>
+           Werk <m>(2x-1)^7</m> uit.
+         </p>
+         <sage>
+           <input>
+             expand(((2*x-1)^7)).show()
+           </input>
+         </sage>
+       </statement>
+     </exercise>
+     <exercise>
+       <statement>
+         <p>
+           Bereken de 6de-term van <m>\left (1-\dfrac{1}{b} \right)^9</m> en de 21ste-term van <m>\left (x^2-\dfrac{a}{x} \right)^{24}</m>.
+         </p>
+       </statement>
+       <answer>
+         <p>
+           <m>\dfrac{-126}{b^5}</m> en <m>\dfrac{10626a^{20}}{x^{12}}</m>
+         </p>
+       </answer>
+     </exercise>
+     <exercise>
+       <statement>
+         <p>
+           Bereken de term in <m>x^4</m> in de ontwikkeling van <m>(-2x-1)^8</m> en de term in <m>x^2</m> in de ontwikkeling van <m>\left (x-\dfrac{2}{x}\right)^{10}</m>.
+         </p>
+       </statement>
+       <answer>
+         <p>
+           <m>1120 x^4</m> en <m>3360x^2</m>
+         </p>
+       </answer>
+     </exercise>
+     <exercise>
+       <statement>
+         <p>
+           Bepaal de volgende sommen zonder ze voluit te schrijven
+           <ol>
+             <li>
+               <p>
+                 <m>\displaystyle \sum_{k=0}^{50} C_{50}^k 2^k</m>
+               </p>
+             </li>
+             <li>
+               <p>
+                 <m>\displaystyle \sum_{k=0}^{n} C_{n}^k</m>
+               </p>
+             </li>
+             <li>
+               <p>
+                 <m>\displaystyle \sum_{k=0}^{15} C_{15}^k (0,04)^{15-k} (0,06)^k</m>
+               </p>
+             </li>
+           </ol>
+         </p>
+       </statement>
+       <answer>
+         <p>
+              a) <m>3^{50}</m>, b) <m>2^n</m>, c) <m>10^{-15}</m>
+         </p>
+       </answer>
+     </exercise>
+     <exercise>
+      <statement>
+        <p>
+          (7u) Bewijs met behulp van de binomiaalontwikkeling dat <m>D(x^n)=nx^{n-1}</m>. <!--historisch stukje over Newton toevoegen-->
+        </p>
+      </statement>
+     </exercise>
+   </exercises>
+</section>
+
+<section xml:id="sec-driehoek-pascal">
+  <title>De driehoek van Pascal</title>
+  <p>
+    De driehoek van Pascal is een handig hulpmiddel om snel <m>(a+b)^n</m> te berekenen voor kleine waarden van <m>n</m>. De <m>n</m>-de rij van de driehoek wordt gevormd door de binomiaalcoëfficiënten <m>C^0_n</m>, <m>C^1_n</m>, <m>\ldots</m>, <m>C^n_n</m>. Als we een aantal rijen uitschrijven, merken we snel op dat elke nieuwe rij van de driehoek gemakkelijk kan bepaald worden op basis van de vorige rij via de zogenaamde optelregel van de binomiaalcoëfficiënten:
+    <me>
+      \boxed{C^{p-1}_n + C^{p}_n = C^p_{n+1}} 
+    </me>
+  </p>
+  <sidebyside width="80%" valign="bottom">
+    <image source="pascal.png"/>
+  </sidebyside>
+  <p>
+    We gaan nu even dieper in op de structuur van de driehoek. Elk getal stelt eigenlijk het aantal mogelijke wegen voor die je kan nemen om van de top van de driehoek naar dat betreffende getal te gaan. Stel bijvoorbeeld dat we het aantal wegen willen tellen om naar de tweede 3 op de vierde rij te gaan. De mogelijkheden zijn dan LRR, RLR of RRL (R <m>=</m> rechts, L <m>=</m> links). Als we L gelijkstellen aan <m>a</m> en R gelijkstellen aan <m>b</m>, dan correspondeert elke weg dus met de term <m>ab^2</m> en het aantal mogelijke wegen is bijgevolg <m>C^2_3</m>.
+  </p>
+  <sidebyside width="30%" valign="bottom">
+    <image source="pascal2.png"/>
+  </sidebyside>
+
+  <activity>
+    <statement>
+      <p>
+        Bewijs dat <m>C^{p-1}_n + C^{p}_n = C^p_{n+1} </m>
+      </p>
+    </statement>
+  </activity>
+
+  <p>
+    Identiteiten met binomiaalcoëfficiënten kunnen ook bewezen worden via telproblemen. Het komt er dan op neer om het aantal mogelijkheden op twee verschillende manieren te tellen. Neem bijvoorbeeld de identiteit <m>C^p_n = C^{n-p}_n</m> die zorgt voor de symmetrie in de driehoek van Pascal. Veronderstel dat je <m>n</m> ingrediënten hebt om een pizza mee te beleggen. Je kan dan <m>C^p_n</m> mogelijke pizza's maken met <m>p</m> ingrediënten. Als je <m>p</m> ingrediënten kiest voor je pizza blijven er echter nog <m>n-p</m> ingrediënten over en het aantal mogelijke pizza's is dus ook gelijk aan het aantal mogelijke manieren om <m>n-p</m> ingrediënten te kiezen die niet op pizza terecht zullen komen.
+  </p>
+  <p>
+    De optelregel kan dus ook bewezen worden door het aantal wegen naar een bepaalde plaats in de driehoek op twee manieren te tellen. Rechtstreeks tellen leidt tot <m>C^p_{n+1}</m> mogelijke wegen. Om de <m>p-1</m>-ste positie (we tellen vanaf nul!) op de <m>n+1</m>-ste rij te bereiken zijn er echter maar twee mogelijkheden: 
+    <ul>
+      <li>
+        <p>
+          Je kan die positie bereiken via de <m>p-1</m>-ste positie op de <m>n</m>-de rij. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Je kan die positie bereiken via de <m>p-2</m>-ste positie op de <m>n</m>-de rij. 
+        </p>
+      </li>
+    </ul>
+    Het aantal wegen naar de <m>p-1</m>-ste positie op de <m>n+1</m>-ste rij is dus gelijk aan het aantal wegen naar de <m>p-2</m>-ste positie op de <m>n</m>-de rij plus het aantal wegen naar de <m>p-1</m>-ste positie op de <m>n</m>-de rij, d.w.z <m>C^p_{n+1} = C^{p-1}_n + C^{p}_n</m>.
+  </p>
+
+  <activity>
+    <statement>
+      <p>
+        Veronderstel dat je <m>n</m> verschillende smaken ijs hebt om een ijscoupe mee samen te stellen. Er mag van elke smaak maar hoogstens één bol in je coupe zitten, maar het aantal bollen zelf kan variëren van nul (een lege kom) tot <m>n</m> (van elke smaak 1 bol in de kom). Hoeveel verschillende coupes kan je samenstellen? Tel op twee manieren om een identiteit met binomiaalcoëfficiënten af te leiden. <!-- cfr. bereiken van de n-de rij vanaf de top-->
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>\sum_{i=0}^n C^i_n = 2^n</m>
+      </p>
+    </solution>
+  </activity>
+
+  <activity>
+    <statement>
+      <p>
+        Formuleer zelf nog een ander telprobleem voor de optelregel.
+      </p>
+    </statement>
+  </activity>
+</section>
+
+
+
+</chapter>

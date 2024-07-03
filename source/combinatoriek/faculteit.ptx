@@ -1,0 +1,128 @@
+<section xml:id="sec-faculteit">
+  <title><m>n</m>-faculteit</title>
+  <p>
+    Bij telproblemen komen er vaak producten van opeenvolgende natuurlijke getallen voor. Zo kunnen acht personen <m>8 \cdot 7 \cdot 6 \cdot 5 \cdot 4</m> verschillende rijen van vijf personen vormen. Qua schrijfwerk valt dit nog mee, maar stel dat je wil tellen hoeveel rijen van honderd personen er gevormd kunnen worden als er duizend personen zijn om uit te kiezen<ellipsis/>
+  </p>
+
+  <p>
+    Om lange producten compact te kunnen noteren, voeren we een nieuwe notatie in.
+  </p>
+
+  <definition>
+    <title><m>n</m>-faculteit</title>
+    <statement>
+      <p>
+        <me>
+          \begin{cases} n! = n(n-1)(n-2) \cdot \ldots \cdot 2 \cdot 1 \quad (n \in \mathbb{N}_0) \\ 0! =1 \end{cases}
+        </me>
+      </p>
+    </statement>
+  </definition>
+
+    <example>
+      <p>
+        Het aantal rijen van vijf dat je met acht personen kan vormen, wordt dan als volgt genoteerd:
+        <me>
+          8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 = \frac{8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{3 \cdot 2 \cdot 1}=\frac{8!}{3!}
+        </me>
+        en het aantal rijen van honderd als je kan kiezen uit duizend personen is gelijk aan
+        <me>
+          \frac{1000!}{900!}
+        </me>
+      </p>
+    </example>
+
+    <activity>
+        <statement>
+          <p>
+            Schrijf de uitkomsten van de telproblemen uit de vorige paragraaf m.b.v. faculteiten.
+          </p>
+        </statement>
+    </activity>
+    <p>
+      Met SageMath bereken je faculteiten als volgt
+    </p>
+    <sage>
+      <input>
+        factorial(8)/factorial(3)
+        #factorial(1000)/factorial(900)
+      </input>
+    </sage>
+
+  <exercises>
+    <exercise>
+      <statement>
+        <p>
+          Bereken
+          <ol>
+            <li>
+              <p>
+                <m>\dfrac{22!}{18!}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{5!3!}{8!}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{6!4!}{(2!)^2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Toon aan dat
+          <ol>
+            <li>
+              <p>
+                <m>(n+2)!-2n \cdot n! = 2 \cdot n! + n(n+1)!</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{(n+1)!}{(n-1)!}-\dfrac{n!}{(n-2)!}=2n</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Als <m>C^p_n = \dfrac{n!}{(n-p)!p!}</m> voor <m>p \le n</m>, toon dan aan dat
+          <ol>
+            <li>
+              <p>
+                <m>pC^p_n=nC^{p-1}_{n-1}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>C^{p+1}_{n}=C^{p}_{n} \cdot \frac{n-p}{p+1}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Bepaal <m>n \in \mathbb{N}</m> als
+          <me>
+            3C^{n-1}_{2n}-2C^{n+2}_{2n+1}=0
+          </me>
+        </p>
+      </statement>
+    </exercise>
+  </exercises>
+
+   
+</section>

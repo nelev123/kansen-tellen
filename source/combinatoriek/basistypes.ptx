@@ -1,0 +1,231 @@
+<section xml:id="sec-tellen-basistypes">
+    <title>Leren herkennen van de basistypes</title>
+  <subsection>
+    <title>Inleiding</title>
+    <p>
+      Bij het indelen van telproblemen in basistypes gaat het nog steeds over het maken van keuzes, maar elk type wordt nu herleid tot het kiezen van elementen uit een welbepaalde verzameling.
+    </p>
+
+    <example>
+      <p>
+        Op hoeveel verschillende manieren kunnen acht personen in een rij van vijf personen gaan staan? In plaats van nu te redeneren: er zijn 8 manieren om de kop van de rij te kiezen <alert>en</alert> 7 manieren om de tweede plaats te kiezen, <ellipsis /> beschouwen we nu de verzameling van de acht personen <m>\lbrace P_1,P_2,P_3,P_4,P_5,P_6,P_7,P_8\rbrace</m> en tellen we het aantal manieren waarop we uit die verzameling vijf elementen kunnen kiezen, rekening houdend met de volgorde van de elementen en het feit dat elk element maar één keer kan gekozen worden. Dit is een voorbeeld van basistype 1.
+      </p>
+    </example>
+
+    <assemblage>
+      <title>4 basistypes</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde belangrijk is en een element hoogstens één keer kan gekozen worden (<m>p \le n</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde geen rol speelt en een element hoogstens één keer kan gekozen worden (<m>p \le n</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde belangrijk is en een element herhaaldelijk kan gekozen worden (<m>p</m> kan dus groter zijn dan <m>n</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde geen rol speelt en een element herhaaldelijk kan gekozen worden (<m>p</m> kan dus groter zijn dan <m>n</m>).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </assemblage>
+  </subsection>
+
+  <subsection xml:id="section-variaties">
+    <title>Basistype 1: Variaties</title>
+    <p>
+      Een variatie is het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde belangrijk is en een element hoogstens één keer kan gekozen worden (<m>p \le n</m>).
+    </p>
+
+    <blockquote>
+      <p>
+        Op hoeveel verschillende manieren kunnen acht personen in een rij van vijf personen gaan staan?
+      </p>
+    </blockquote>
+
+    <p>
+      We kiezen vijf elementen uit de verzameling van de 8 personen <m>\lbrace P_1,P_2,P_3,P_4,P_5,P_6,P_7,P_8\rbrace</m> waarbij de volgorde van belang is en er geen herhaling kan voorkomen. Dit kunnen we schematisch als volgt noteren:
+      <md>
+        <mrow>P_6 P_8 P_1 P_4 P_2</mrow>
+        <mrow>P_1 P_8 P_3 P_7 P_5</mrow>
+        <mrow>P_8 P_3 P_2 P_4 P_1</mrow>
+        <mrow>\ldots</mrow>
+      </md>
+      Het tellen van het aantal dergelijke rijen is equivalent met het aantal manieren waarop we de kop kunnen kiezen en de tweede plaats en <ellipsis/>. Er zijn dus
+      <me>
+        8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 =\frac{8!}{3!}=\frac{8!}{(8-5)!}
+      </me>
+      verschillende rijen. Deze redenering kunnen we zonder problemen veralgemenen wat leidt tot de onderstaande definitie.
+    </p>
+
+    <assemblage>
+      <title>Variaties</title>
+      <p>
+        Een variatie is een geordend <m>p</m>-tal van <m>p</m> verschillende elementen, gekozen uit een gegeven verzameling van <m>n</m> elementen. Er zijn <me>V^p_n=\dfrac{n!}{(n-p)!} \quad (p \le n)</me> mogelijke variaties.
+      </p>
+    </assemblage>
+
+    <p>
+      Als we willen tellen op hoeveel manieren acht personen een rij kunnen vormen, dan is het resultaat eenvoudigweg <m>8!</m>
+    </p>
+
+    <assemblage>
+      <title>Permutaties</title>
+      <p>
+        Een permutatie is een geordend <m>n</m>-tal van <m>n</m> verschillende elementen. Voor <m>n</m> elementen zijn er <me>V_n^n=P_n=n!</me>permutaties.
+      </p>
+
+    </assemblage>
+
+  </subsection>
+
+  <subsection xml:id="section-combinaties">
+    <title>Basistype 2: Combinaties</title>
+    <p>
+      Een combinatie is het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde geen rol speelt en een element hoogstens één keer kan gekozen worden (<m>p \le n</m>).
+    </p>
+
+    <blockquote>
+      <p>
+        Je wil een pizza bestellen en kan kiezen uit acht verschillende garnituren: mozarella, ham, salami, ananas, champignons, paprika, olijven en anchovis. Hoeveel verschillende pizza's kan je bestellen met exact drie garnituren?
+      </p>
+    </blockquote>
+
+    <p>
+      Het kiezen van een rijtje van drie garnituren uit een verzameling van acht kan op <m>V^3_8</m> manieren. De volgorde speelt echter geen rol. Een pizza met champignon, ananas en ham is hetzelfde als een pizza met ananas, champignon en ham. We moeten dit aantal dus delen door het aantal permutaties van drie: <m>\dfrac{V^3_8}{P_3}</m>.
+    </p>
+
+    <assemblage>
+      <title>Combinaties</title>
+      <p>
+        Een combinatie is een niet-geordend <m>p</m>-tal van <m>p</m> verschillende elementen, gekozen uit een gegeven verzameling van <m>n</m> elementen. Er zijn <me>C^p_n= \dfrac{V^p_n}{P_p} = \dfrac{n!}{(n-p)!p!} \quad (p \le n)</me> mogelijke combinaties.
+      </p>
+    </assemblage>
+
+    <p>
+    Het aantal combinaties van vijf uit acht is logischerwijs gelijk aan het aantal combinaties van drie uit acht. Voor elke keuze van drie garnituren kunnen we met de overgebleven vijf garnituren immers ook steeds een pizza maken. Er geldt dus dat
+    </p>
+
+    <assemblage>
+      <title>Een eigenschap van combinaties</title>
+      <p>
+        <me>
+          C^p_n= C_n^{n-p}
+        </me>
+      </p>
+    </assemblage>
+
+  </subsection>
+
+  <subsection xml:id="section-herh-variaties">
+    <title>Basistype 3: Herhalingsvariaties</title>
+    <p>
+      Een herhalingsvariatie is het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde belangrijk is en een element herhaaldelijk kan worden gekozen (<m>p</m> kan dus groter zijn dan <m>n</m>).
+    </p>
+
+    <blockquote>
+      <p>
+        Voor een beveiligingscode gebruikt een firma vierkante roosters verdeeld in 25 gelijke vierkantjes. Elk vierkantje kan blanco zijn of een 1 bevatten. Hoeveel mogelijke codes zijn er?
+      </p>
+    </blockquote>
+
+    <p>
+      De verzameling is hier gewoon <m>\lbrace 0,1 \rbrace</m> en we halen 25 keer een element uit deze verzameling. De volgorde is van belang omdat het hier gaat over een beveiligingscode. Het aantal rijen van nullen en enen tellen is opnieuw equivalent met twee mogelijke keuzes voor het eerste vierkantje <alert>en</alert> twee mogelijke keuzes voor het tweede vierkantje en <ellipsis/> Er zijn dus <m>2^{25}</m> mogelijke rijen.
+    </p>
+
+    <assemblage>
+      <title>Herhalingsvariaties</title>
+      <p>
+        Een herhalingsvariatie is een geordend <m>p</m>-tal van <m>p</m> elementen gekozen uit een verzameling van <m>n</m> elementen:
+        <me>\overline{V^p_n}=n^p</me>
+      </p>
+    </assemblage>
+
+  </subsection>
+
+  <subsection xml:id="section-herh-combinaties">
+    <title>Basistype 4: Herhalingscombinaties</title>
+    <p>
+      Een herhalingscombinatie is het kiezen van <m>p</m> elementen uit een verzameling van <m>n</m> elementen, waarbij de volgorde geen rol speelt en een element herhaaldelijk kan worden gekozen (<m>p</m> kan dus groter zijn dan <m>n</m>).
+    </p>
+
+    <blockquote>
+      <p>
+        Op hoeveel manieren kan je drie gelijke rode balletjes in vijf verschillende bakjes plaatsen?
+      </p>
+    </blockquote>
+
+    <p>
+      De verzameling is nu de verzameling van de vijf bakjes <m>\lbrace B_1,B_2,B_3,B_4,B_5 \rbrace</m> en uit deze verzameling trekken we vijf keer een element waarbij herhaling mogelijk is en de volgorde niet uitmaakt. Het aantal rijen tellen is nu echter niet zo eenvoudig als bij de andere types. Stel dat we eerst de elementen in volgorde trekken en dan via delen proberen corrigeren. De factor waardoor moet gedeeld worden is dan niet constant, zodat de berekening volledig moet uitgesplitst worden. Beschouw bijvoorbeeld de zes rijen
+      <me>
+        B_1B_3B_5 \quad B_1B_5B_3 \quad B_3B_1B_5 \quad B_3B_5B_1 \quad B_5B_1B_3 \quad B_5B_3B_1
+      </me>
+      Die moeten herleid worden tot één mogelijkheid (een bal in bakje 1, 3 en 5) en hetzelfde geldt voor de drie rijen
+      <me>
+        B_1B_1B_3 \quad B_3B_1B_1 \quad B_1B_3B_1
+      </me>
+      We moeten dus op zoek naar een andere methode.
+    </p>
+
+    <p>
+      We hercoderen het probleem m.b.v. de volgende schematische voorstelling : de bakjes onderscheiden we van elkaar met een streepje en de ballen stellen we voor met bolletjes.
+    </p>
+
+    <sidebyside widths="80%" margins="auto" valign="middle">
+    <image xml:id="fig-bakjes1">
+        <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \draw[fill=black] (0.6,0) circle (0.05cm);
+              \draw[fill=black] (0.8,0) circle (0.05cm);
+              \draw (1,-0.5) -- (1,0.5);
+              \draw (1.4,-0.5) -- (1.4,0.5);
+              \draw (1.8,-0.5) -- (1.8,0.5);
+              \draw (2.2,-0.5) -- (2.2,0.5);
+              \draw[fill=black] (2.4,0) circle (0.05cm);
+              \draw (5,-0.5) -- (5,0.5);
+              \draw[fill=black] (5.2,0) circle (0.05cm);
+              \draw (5.4,-0.5) -- (5.4,0.5);
+              \draw (5.8,-0.5) -- (5.8,0.5);
+              \draw[fill=black] (6,0) circle (0.05cm);
+              \draw (6.2,-0.5) -- (6.2,0.5);
+              \draw[fill=black] (6.4,0) circle (0.05cm);
+              \end{tikzpicture}]]>
+          </latex-image>
+        </image>
+      </sidebyside>
+
+      <p>
+        De eerste tekening stelt de situatie voor waarbij er twee ballen in bakje 1 zitten en één bal in bakje vijf; de tweede tekening stelt de situatie voor waarbij er telkens één bal zit in bakje 2, 4 en 5. Het telprobleem herleidt zich dus het tellen van het aantal manieren waarop je 3 bolletjes en 4 streepjes over 7 posities kan verdelen. De verzameling waaruit je kiest is in dit geval de verzameling van de 7 posities en daaruit kies je er drie (posities van de bolletjes) waarbij de volgorde niet uitmaakt. Het aantal mogelijkheden is dus
+        <me>
+          C^3_7
+        </me>
+        Je krijgt hetzelfde resultaat als je vier posities kiest voor de streepjes:
+        <me>
+          C^4_7
+        </me>
+        Merk op dat dit telprobleem equivalent is met het tellen van het aantal manieren waarop je een groep van 7 personen kan verdelen in een groep van 3 en een groep van 4. 
+      </p>
+
+      <assemblage>
+        <title>Herhalingscombinaties</title>
+        <p>
+          Een herhalingscombinatie is een niet-geordend <m>p</m>-tal van <m>p</m> verschillende elementen, gekozen uit een gegeven verzameling van <m>n</m> elementen.
+          <me>
+            \overline{C^p_n}=C^p_{n+p-1}
+          </me>
+        </p>
+      </assemblage>
+
+  </subsection>    
+</section>

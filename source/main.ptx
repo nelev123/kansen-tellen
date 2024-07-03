@@ -107,7 +107,11 @@
       </preface>
     </frontmatter>
 
-    <xi:include href="./macht-vkw-log.ptx"/>
+    <xi:include href="./kansrekening.ptx"/>
+    <!-- <xi:include href="./telproblemen.ptx"/> -->
+    <xi:include href="./combinatoriek/binomium.ptx"/>
+    <xi:include href="./kansverdelingen-discreet.ptx"/>
+    <xi:include href="./kansverdelingen-continu.ptx"/>
     
 
     <backmatter xml:id="backmatter">

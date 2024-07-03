@@ -1,0 +1,259 @@
+<section xml:id="sec-tellen-oef-basis">
+    <title>Oefeningen: basistypes</title>    
+    
+    <p>
+      Een basistype herkennen in de formulering van een bepaald telprobleem vormt soms een struikelblok. Onderstaande vragenlijst kan je daarbij helpen. We passen, als voorbeeld, de vragenlijst meteen toe op het onderstaande telprobleem.
+    </p>
+
+    <blockquote>
+      <p>
+          Op hoeveel manieren kan je drie gelijke rode balletjes in vijf verschillende bakjes plaatsen?
+      </p>
+    </blockquote>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Wat tel je? <em>Antwoord: Het aantal manieren om drie rode ballen in vijf verschillende bakjes te plaatsen.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            Over welke elementen gaat het in de telling? Het antwoord op deze vraag bepaalt de verzameling waaruit je elementen gaat kiezen. Deze stap is vaak cruciaal voor het correct oplossen van een telprobleem. Het schematisch tekenen/uitschrijven van een aantal mogelijkheden werkt vaak verhelderend. <em>Antwoord: de bakjes</em>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Hoeveel elementen bevat de verzameling? Stel dit aantal voor door <m>n</m>. <em>Antwoord: <m>n=5</m>.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            Hoeveel keer moet je één van deze elementen kiezen? Stel dit aantal voor door <m>p</m>. <em>Antwoord: <m>p=3</m>.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            Hebben de geselecteerde elementen een bepaalde rol? Geeft een andere volgorde een andere mogelijkheid? <em>Antwoord: Neen, de bakjes hebben geen specifieke rol. Een andere volgorde leidt niet tot een andere mogelijkheid. Het gaat hier dus over een combinatie.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            Kan je een element meerdere keren kiezen? <em>Antwoord: Ja, alle ballen kunnen bijvoorbeeld in één bakje zitten, dus het antwoord is <m>\overline{C^3_5}</m>.</em>
+          </p>
+        </li>
+      </ol>
+    </p>
+    
+      <exercises>
+    <introduction>
+      <p>
+        Antwoord steeds met de juiste notatie voor één van de basistypes (<m>V^p_n,P_n,C^p_n,\overline{V^p_n},\overline{C^p_n}</m>), ook al heb je het probleem misschien anders opgelost.
+      </p>
+    </introduction>
+    <exercise>
+      <statement>
+        <p>
+          Elke elektronische identiteitskaart heeft een pincode van 4 cijfers.<ol>
+          <li>
+            <p>
+              Hoeveel pincodes zijn er mogelijk?
+            </p>
+          </li>
+          <li>
+            <p>
+              Hoeveel pincodes zijn er mogelijk als de vier cijfers verschillend moeten zijn?
+            </p>
+          </li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\overline{V^4_{10}}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>V^4_{10}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Hoeveel anagrammen kan je vormen met de letters van het woord wiskunde?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P_8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Op hoeveel manieren kan oom Roger tien briefjes van 5 euro verdelen onder zijn drie nichtjes?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\overline{C^{10}_3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In een kamer staan zes stoelen rond een tafel. Er komen vier personen de kamer binnen. Elke persoon neemt plaats op een stoel. Op hoeveel manieren kan dit?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V^4_6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Tien vrienden gaan op reis, maar hun vlucht is overboekt. Zes kunnen met de huidige vlucht mee, vier anderen met een vlucht later. Op hoeveel manieren kunnen ze zich splitsen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C^4_{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In een spelprogramma moet een kandidaat zes echtgenotes bij hun respectievelijke echtgenoot zien te plaatsen.
+          <ol>
+            <li>
+              <p>
+                Hoeveel mogelijkheden heeft de kandidaat om de zes vrouwen bij
+              de zes mannen te plaatsen?
+              </p>
+            </li>
+            <li>
+              <p>
+                In hoeveel gevallen heeft hij de tweede, vierde en zesde
+              echtgenote correct geplaatst?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>P_6</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>P_3</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Op een toets moet Ellen 10 meerkeuzevragen beantwoorden. Ze heeft haar les niet geleerd en besluit om zo maar bij elke vraag te gokken. Elke vraag heeft drie mogelijke antwoorden (A, B of C). Op hoeveel mogelijke manieren kan Ellen het antwoordformulier indienen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\overline{V^{10}_3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Kim probeert het paswoord van haar vriendin te kraken. Ze weet dat het een vijfletterwoord is bestaande uit vijf verschillende letters. Hoeveel keer moet Kim proberen vooraleer ze de code kan kraken?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V^{5}_{26}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Tien spurters staan klaar voor de 100 m. Hoeveel mogelijke uitslagen kan deze sprint hebben?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P_{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Een sportzaal telt vier deuren. Op hoeveel manieren kunnen vijf mensen deze sportzaal betreden?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\overline{V^5_4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In de plaatselijke supermarkt heeft men twee jobstudenten nodig. Er zijn zeven kandidaten. Op hoeveel manieren kan de gerant zijn keuze bepalen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C^2_7</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Een broodjeszaak heeft 15 soorten broodjes. Hoeveel verschillende bestellingen van acht broodjes kan je plaatsen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\overline{C_{15}^8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Een vlag moet bestaan uit drie verticale banen met verschillende kleur. Men beschikt over zeven kleuren. Hoeveel vlaggen kan men samenstellen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V^3_7</m>
+        </p>
+      </answer>
+    </exercise>
+  </exercises>
+</section>

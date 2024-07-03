@@ -1,0 +1,46 @@
+<chapter xml:id="ch-telproblemen" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Telproblemen</title>
+
+    <objectives>
+      <ul>
+        <li>
+          <p>
+            Doelstelling 1
+          </p>
+        </li>
+      </ul>
+    </objectives>
+    
+
+    <xi:include href="./inleiding-tellen.ptx"/>
+    <xi:include href="./faculteit.ptx"/>
+    <xi:include href="./keuzes.ptx"/>
+    <xi:include href="./basistypes.ptx"/>
+    <xi:include href="./oefeningen-basistypes.ptx"/>
+    <xi:include href="./oefeningen-samengesteld.ptx"/>
+
+    <!--extra samengestelde telproblemen als taak, dubbel tellen enz als uitbreiding na binomium van Newton, check oefening in cursus 1819-->
+
+    <!--\begin{ex}
+Met de cijfers 0 tot 9 worden getallen bestaande uit vijf
+verschillende cijfers gevormd. Merk op dat een getal niet kan beginnen
+met het cijfer 0.
+\begin{Solutionsublist}
+\begin{enumerate}[label={(\alph*)},leftmargin=1cm]
+\item Hoeveel van die getallen bestaan er? \begin{solitem} $V_{10}^5-V_9^4=27216$\end{solitem}
+\item Hoeveel van deze getallen bevatten het cijfer 6? \begin{solitem} $5 \cdot V_9^4-4 \cdot V^3_8 =13776$\end{solitem}
+\item Hoeveel van deze getallen bevatten de cijfers 0 en 7? \begin{solitem} $5 \cdot 4 \cdot V^3_8 - 4 \cdot V^3_8 = 5376 $ \end{solitem}
+\item Hoeveel van deze getallen zijn deelbaar door 5 en bevatten het
+  cijfer 8? \begin{solitem} $4 \cdot V^3_8 - 3 \cdot V^2_7+4 \cdot V^3_8=2562$ \end{solitem}
+\item Hoeveel van deze getallen zijn even en bevatten het cijfer 5? \begin{solitem} $5 \cdot 4 \cdot V^3_8- 4 \cdot 3 \cdot V^2_7=6216$ \end{solitem}
+\item Hoeveel van deze getallen zijn even en bevatten het cijfer 4? \begin{solitem} $4\cdot 4 V^3_8 - 3 \cdot 3 V^2_7 +V^4_9-V^3_8=7686$ \end{solitem}
+\end{enumerate}
+\end{Solutionsublist}
+\end{ex}-->
+
+<!--http://wm.math4allview.appspot.com/view?comp=lj6-v-a-h15&subcomp=lj6-v-a-h15-01&variant=basis_wm-->
+
+<!--https://www.hhofstede.nl/modules/tellen2.htm-->
+
+<!-- Inclusie/exclusie: tellen met Venn-diagrammen https://www.hhofstede.nl/modules/venndiagram.htm-->
+</chapter>

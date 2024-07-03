@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="kansrekening" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<title>Kansrekening</title>
+
+
+<section>
+  <title>Herhaling: enkele belangrijke notaties</title>
+  <p>
+    <dl>
+      <li>
+        <title><m>\lbrace , (;) \rbrace </m></title>
+        <p>
+          wordt gebruikt om verzamelingen te noteren; de volgorde van opsomming speelt daarbij geen rol. Zo kan je de <term>verzameling</term> van alle natuurlijke getallen kleiner dan vijf schrijven als <m>\lbrace 0, 1, 2, 3, 4 \rbrace</m>, maar ook als <m> \lbrace 3, 0, 2, 4, 1 \rbrace</m>. In plaats van een komma, wordt soms ook <m>;</m> gebruikt om de <term>elementen</term> van elkaar te scheiden.
+         <notation>
+           <usage>
+             <m>\lbrace \rbrace</m>
+           </usage>
+           <description>
+             definitie van een verzameling
+           </description>
+         </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\in</m></title>
+        <p>
+          betekent <sq>is een element van</sq> of <sq>behoort tot </sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan <m>2 \in V</m>.
+          <notation>
+            <usage>
+              <m>\in </m>
+            </usage>
+            <description>
+              is een element van
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\notin</m></title>
+        <p>
+          betekent <sq>is geen element van</sq> of <sq>behoort niet tot </sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan <m>6 \notin V</m>.
+          <notation>
+            <usage>
+              <m>\notin </m>
+            </usage>
+            <description>
+              is geen element van
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\subset</m></title>
+        <p>
+          betekent <sq>is een deelverzameling van</sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W=\lbrace 1, 4 \rbrace </m>, dan <m>W \subset V</m>.
+          <notation>
+            <usage>
+              <m>\subset </m>
+            </usage>
+            <description>
+              is een deelverzameling van
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\not \subset</m></title>
+        <p>
+          betekent <sq>is geen deelverzameling van</sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace -1, 10 \rbrace</m> dan <m>W \not \subset V</m>.
+          <notation>
+            <usage>
+              <m>\not \subset </m>
+            </usage>
+            <description>
+              is geen deelverzameling van
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\cup </m></title>
+        <p>
+          betekent <sq>de unie</sq> of <sq>de vereniging</sq> van twee verzamelingen, d.w.z. de verzameling die bestaat uit de elementen van de eerste en de tweede verzameling samengenomen. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \cup W =\lbrace 0,1,2,3,4,6,8,10 \rbrace</m>.
+          <notation>
+            <usage>
+              <m>\cup </m>
+            </usage>
+            <description>
+               unie van twee verzamelingen
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\cap </m></title>
+        <p>
+          betekent <sq>de doorsnede</sq> van twee verzamelingen, d.w.z. de verzameling bestaande uit de gemeenschappelijke elementen van beide verzamelingen. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \cap W =\lbrace 0, 2,4 \rbrace</m>.
+          <notation>
+            <usage>
+              <m>\cap </m>
+            </usage>
+            <description>
+               doosnede van twee verzamelingen
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\setminus </m></title>
+        <p>
+          betekent <sq>het verschil</sq> van twee verzamelingen, d.w.z. de verzameling bestaande uit de elementen die behoren tot de eerste verzameling, maar niet tot de tweede verzameling. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \setminus W =\lbrace 1, 3 \rbrace</m>.
+          <notation>
+            <usage>
+              <m>\setminus </m>
+            </usage>
+            <description>
+               verschil van twee verzamelingen
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\emptyset </m></title>
+        <p>
+          is het symbool voor de <sq>lege verzameling</sq>: <m>\emptyset=\lbrace \rbrace</m>
+          <notation>
+            <usage>
+              <m>\emptyset </m>
+            </usage>
+            <description>
+               de lege verzameling
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>\#</m></title>
+        <p>
+          is het symbool voor het <sq>aantal elementen</sq> van een verzameling. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan is <m>\#V = 5</m>
+          <notation>
+            <usage>
+              <m>\#</m>
+            </usage>
+            <description>
+               aantal elementen van een verzameling
+            </description>
+          </notation>
+        </p>
+      </li>
+      <li>
+        <title><m>|</m></title>
+        <p>
+          betekent <sq>waarvoor geldt dat</sq> als het gebruikt wordt om een verzameling te beschrijven. De verzameling <m>V = \lbrace 0, 1, 2, 3, 4, \ldots, 98, 99, 100 \rbrace </m> kan bijvoorbeeld ook geschreven worden als <m>V= \lbrace n \in \mathbb{N}| n \le 100 \rbrace </m>.
+         <notation>
+           <usage>
+             <m>| </m>
+           </usage>
+           <description>
+             waarvoor geldt dat (bij definitie van verzameling)
+           </description>
+         </notation>
+        </p>
+      </li>
+    </dl>
+  </p>
+</section>
+
+<section>
+  <title>Kans als relatieve frequentie</title>
+  <p>
+    Als je gooit met een normale, eerlijke dobbelsteen kan je op voorhand niet voorspellen wat de uitkomst zal zijn. Als je echter een groot aantal keer na elkaar gooit en het aantal keer dat je een zes gooide deelt door het totale aantal worpen, dan zal je merken dat deze relatieve frequentie naar <m>\dfrac{1}{6}</m> convergeert. Als we het aantal worpen voorstellen door <m>n</m> en het aantal keer dat een zes wordt gegooid door <m>n_6</m>, dan is de theoretische kans op het gooien van een zes
+    <me>
+      \lim_{n \to \infty}\dfrac{n_6}{n}=\dfrac{1}{6}.
+    </me>
+  </p>
+  <figure>
+    <caption>
+      Evolutie van de relatieve frequentie van het gooien van een zes: <url href="https://www.mathematik.tu-clausthal.de/en/mathematics-interactive/simulation/dice-roll-simulator/"/>
+    </caption>
+    <image width="60%" source="relfreq.png"/>
+  </figure>
+  <p>
+    Bij een <term>kansexperiment</term> worden de <term>uitkomsten</term> door het toeval beheerst. De uitkomst van één experiment valt niet te voorspellen, maar als je het experiment een groot aantal keer herhaalt, krijg je wel steeds dezelfde relatieve frequentieverdeling voor de mogelijke uitkomsten. Dit noemen we de <term>experimentele wet van de grote aantallen</term>.
+  </p>
+  <p>
+    Een kans geef je steeds weer met een getal tussen 0 en 1 of met procenten.
+  </p>
+</section>
+
+<section>
+  <title>Uitkomsten en gebeurtenissen</title>
+  <assemblage>
+    <title>Uitkomsten en gebeurtenissen</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            De verzameling van alle mogelijke uitkomsten <m>u_1</m>, <m>u_2</m>,..., <m>u_n</m> van een kansexperiment noemen we de uitkomstenverzameling <m>U</m>: <m>U=\lbrace u_1,u_2,\ldots u_n \rbrace</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            De deelverzamelingen van <m>U</m> noemen we gebeurtenissen en stellen we voor met hoofdletters. De kans <m>P(A)</m> dat gebeurtenis <m>A</m> zich voordoet is gelijk aan het aantal elementen in de verzameling <m>A</m> gedeeld door het totale aantal uitkomsten:
+            <me>P(A)=\dfrac{\#A}{\#U}</me>
+            Er geldt steeds dat <m>0 \le P(A) \le 1</m> en <m>P(U)=1</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </assemblage>
+
+  <example>
+    <title>Gooien met een dobbelsteen</title>
+    <p>
+      De uitkomstenverzameling voor het gooien van een dobbelsteen is <m>U=\lbrace 1,2,3,4,5,6 \rbrace</m>. Deze verzameling bevat zes elementen, dus <m>\#U=6</m>. We beschouwen de volgende gebeurtenissen
+      <ol>
+        <li>
+          <p>
+             Het gooien van een even aantal ogen: <m>A= \lbrace 2,4,6 \rbrace</m>
+          </p>
+        </li>
+        <li>
+          <p>
+             Het gooien van een oneven aantal ogen: <m>B=\lbrace 1,3,5 \rbrace</m>
+          </p>
+        </li>
+        <li>
+          <p>
+             Het aantal gegooide ogen is een volkomen kwadraat:  <m>C=\lbrace 1, 4 \rbrace</m>
+          </p>
+        </li>
+      </ol>
+      De bijhorende kansen zijn <m>P(A)=P(B)=\dfrac{1}{2}</m>, <m>P(C)=\dfrac{1}{3}</m>
+    </p>
+    <image source="venndiagram-dobbelsteen.png" width="70%"/>
+  </example>
+
+  <assemblage xml:id="assemblage-gebeurtenissen">
+    <title>Bijzondere gebeurtenissen</title>
+
+
+    <p>
+      Enkele bijzondere gebeurtenissen zijn:
+      <dl width="narrow">
+        <li>
+          <title>complement</title>
+          <p>
+            Het complement van de gebeurtenis <m>A</m> bevat alle uitkomsten van <m>U</m> die niet in <m>A</m> zitten.
+            <me>
+              \overline{A} = \lbrace u \in U | u \notin A \rbrace
+            </me>
+          </p>
+          <image source="complement.png" width="80%"/>
+        </li>
+        <li>
+          <title>doorsnede</title>
+          <p>
+            De doorsnede van twee gebeurtenissen <m>A</m> en <m>B</m> bestaat uit alle uitkomsten die zowel in <m>A</m> als in <m>B</m> zitten.
+            <me>
+              A \cap B = \lbrace u \in U | u \in A \text{ en } u \in B \rbrace
+            </me>
+          </p>
+          <image source="doorsnede.png" width="100%"/>
+        </li>
+        <li>
+          <title>unie</title>
+          <p>
+            De unie van twee gebeurtenissen bestaat uit alle uitkomsten die in <m>A</m> of <m>B</m> zitten.
+            <me>
+              A \cup B = \lbrace u \in U | u \in A \text{ of } u \in B \rbrace
+            </me>
+          </p>
+          <image source="unie.png" width="100%"/>
+        </li>
+        <li>
+          <title>disjunct</title>
+          <p>
+            Twee gebeurtenissen zijn disjunct als ze geen enkele uitkomst gemeenschappelijk hebben en dus nooit tegelijkertijd kunnen optreden.
+            <me>
+              A \text{ en } B \text{ zijn disjunct } \Leftrightarrow A \cap B = \emptyset
+            </me>
+          </p>
+          <image source="disjunct.png" width="100%"/>
+        </li>
+      </dl>
+      De uitkomsten zelf zijn natuurlijk ook gebeurtenissen. We noemen deze gebeurtenissen elementair:
+      <me>
+        E_i=\lbrace u_i \rbrace \quad (i=1,2,\ldots, n)
+      </me>
+    </p>
+  </assemblage>
+
+  <example>
+    <title>Gooien met een dobbelsteen (vervolg)</title>
+    <p>
+      We gaan verder met het vorige voorbeeld en bepalen enkele andere gebeurtenissen op basis van <m>A</m>, <m>B</m> en <m>C</m>.
+      <ul>
+        <li>
+          <p>
+            <m>\overline{C}=\lbrace 2,3,5,6 \rbrace</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap B = \emptyset \Leftrightarrow </m> <m>A</m> en <m>B</m> zijn disjuncte gebeurtenissen.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap C = \lbrace 4 \rbrace</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cup B = U</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cup C = \lbrace 1,2,4,6 \rbrace</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </example>
+</section>
+
+<exercises>
+  <exercise>
+    <statement>
+      <p>
+        Je trekt lukraak een kaart uit een spel van 52 kaarten. Wat is de kans dat je een aas trekt?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>\dfrac{4}{52}=\dfrac{1}{13}</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Je gooit met twee zuivere dobbelstenen. Bereken de kans dat de som van het aantal ogen groter dan of gelijk is aan 10.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Er zijn 36 mogelijke uitkomsten en bij 6 ervan is het aantal ogen groter dan of gelijk aan 10:
+        <md>
+          <mrow> \amp (6,6) \amp (6,5) \amp \amp (6,4)</mrow>
+          <mrow> \amp (5,6) \amp (5,5) \amp </mrow>
+          <mrow> \amp (4,6) </mrow>
+        </md>
+        De kans is dus <m>\dfrac{6}{36} = \dfrac{1}{6}</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Geef de uitkomstenverzameling van het experiment <q>opgooien van drie muntstukken</q>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Bepaal vervolgens de volgende gebeurtenissen en bereken ook telkens de kans: (A) ten hoogste tweemaal kop gooien; (B) driemaal hetzelfde resultaat gooien
+            </p>
+          </li>
+          <li>
+            <p>
+              Beschouw de volgende gebeurtenissen: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A}</m>. Bereken telkens de kans.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       Stel <m>K= </m> kop en <m>M= </m> munt: <md>
+        <mrow> U= \lbrace  \amp (K,K,K) ; (K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  </mrow>
+        <mrow> \amp (M,K,M); (M,M,K); (M,M,M) \rbrace</mrow>
+       </md>
+       <md>
+        <mrow>  A = \amp \lbrace K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  (M,K,M); </mrow>
+        <mrow> \amp (M,M,K); (M,M,M) \rbrace </mrow>
+        <mrow> B= \amp \lbrace (K,K,K); (M,M,M) \rbrace </mrow>
+       </md>
+       De gevraagde kansen zijn: <m>P(A)=\dfrac{7}{8}</m>, <m>P(B)=\dfrac{1}{4}</m>, <m>P(A \cup B) =1 </m>, <m>P(A \cap B )=\dfrac{1}{8}</m> en <m>P(\overline{A})=\dfrac{1}{8}</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        We trekken een kaart uit een spel van 52 kaarten. Beschouw de gebeurtenissen: (A) trekken van een hartenkaart; (B) trekken van een aas
+        <ol>
+          <li>
+            <p>
+              Beschrijf de volgende gebeurtenissen in woorden: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A} \cap \overline{B}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Bereken de kans van elke gebeurtenis.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>A \cup B</m>: trekken van een hartenkaart of een aas; <m>A \cap B</m>: trekken van een hartenaas; <m>\overline{A} \cap \overline{B}</m>: trekken van geen hartenkaart en geen aas. De gevraagde kansen zijn <m>P(A \cup B)=\dfrac{16}{52}</m>; <m>P(A \cap B)=\dfrac{1}{52}</m>; <m>P(\overline{A} \cap \overline{B})=\dfrac{36}{52}</m> 
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Een koppel dat vier kinderen wil heeft 37,5% kans om twee jongens en twee meisjes te krijgen. Verklaar!
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Het gaat hier over de uitkomsten:
+        <md>
+          <mrow> \amp (J,J,M,M) \amp  (M,M,J,J) \amp \amp (J,M,J,M)</mrow>
+          <mrow> \amp (M,J,M,J) \amp (J,M,M,J) \amp \amp (M,J,J,M)</mrow>
+        </md>
+        en er zijn 16 uitkomsten in totaal. De kans is bijgevolg <m>\dfrac{6}{16}=0,375</m>.
+      </p>
+    </solution>
+  </exercise>
+</exercises>
+
+<section>
+  <title>Kansen berekenen met kansbomen</title>
+  <p>
+    Tot nog toe hebben we kansen berekend door gewoon telkens expliciet de elementen van de gebeurtenissen op te sommen. Dat is niet echt een efficiënte manier en werkt ook alleen maar voor eenvoudige kansberekeningen. Stel bijvoorbeeld dat je onderstaande vraag wil beantwoorden.
+  </p>
+  <blockquote>
+    <p>
+      Je trekt 6 kaarten uit een kaartspel. Wat is de kans op het trekken van twee azen, twee heren en twee andere kaarten?
+    </p>
+  </blockquote>
+  <p>
+    Dit lukt enkel als je het aantal manieren kan tellen waarop je twee azen, twee heren en twee andere kaarten kan trekken. In het volgende hoofdstuk krijg je dan ook een inleiding op de kunst van het tellen.
+  </p>
+  <p>
+    In het vervolg van dit hoofdstuk focussen we op het leren rekenen met kansen. In principe kan elke oefening met behulp van wat gezond verstand en door het tekenen van <term>kansbomen</term> opgelost worden, maar we zullen ook enkele regels en wetten afleiden ter ondersteuning <mdash/> en om het rekenwerk vaak wat sneller te doen verlopen.
+  </p>
+  <blockquote>
+    <p>
+      <q>La théorie des probabilités n’est, au fond, que le bon sens réduit au calcul.</q>
+    </p>
+    <attribution>
+      Piere Simon Laplace (1749 - 1827)
+    </attribution>
+  </blockquote>
+  <example>
+    <title>Kans op regen</title>
+    <p>
+      Morgen is er 50% kans op regen en overmorgen 60%. Wat is dan de kans op regen de komende twee dagen? Dit kansexperiment heeft vier mogelijke uitkomsten en kan visueel met behulp van een kansboom voorgesteld worden (<m>R</m>> betekent regen en <m>D</m>> betekent droog) en bij elke tak staat de corresponderende kans.
+    </p>
+    <image source="kansboom.png" width="100%"/>
+    <p>
+      Als je de kans wil berekenen dat het morgen <alert>en</alert> overmorgen regent, vermenigvuldig je de kansen van elke tak:
+      <me>
+        P(RR)=0,50 \cdot 0,60 = 0,30
+      </me>
+      De andere drie kansen bereken je op dezelfde manier. De kans dat het de komende twee dagen regent is gelijk aan de kans dat het morgen en overmorgen regent, <alert>of</alert>  morgen regent en overmorgen droog is <alert>of</alert> morgen droog is en overmorgen regent, d.w.z.
+      <me>
+        P(RR)+P(RD)+P(DR) = 0,30 + 0,20 + 0,30 = 0,80 
+      </me>
+      Je kan dit natuurlijk ook sneller berekenen via de complementaire gebeurtenis:
+      <me>
+        1-P(DD) = 1 - 0,20 = 0,80
+      </me>
+      
+    </p>
+  </example>
+
+  <assemblage>
+    <title>Kansbomen</title>
+    <p>
+      Kansbomen zijn een handig hulpmiddel om kansverdelingen op te stellen.
+      <ul>
+        <li>
+          <p>
+            Als je langs een tak verder gaat, vermenigvuldig je de kansen van de deeltakken (productregel). Bij het in woorden formuleren van de kansen, gebruik je dan <sq> en </sq>.
+          </p>
+        </li>
+        <li>
+          <p>
+            De kansen van verschillende takken tel je steeds op (somregel). Bij het in woorden formuleren van de kansen, gebruik je dan <sq> of </sq>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            De som van alle kansen is natuurlijk altijd gelijk aan 1. Dit is een handig controlemiddel.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </assemblage>
+  <exercises>
+    <exercise>
+      <statement>
+        <p>
+          In een vaas zitten 4 gele en 2 rode knikkers. We trekken drie knikkers met terugleggen. Wat is de kans op precies 1 rode knikker?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <!--Kans op het trekken van een gele knikker is <m>\dfrac{2}{3}</m>, de kans op het trekken van een rode is <m>\dfrac{1}{3}</m> en de mogelijkheden zijn GGR, GRG en RGG. De gezochte kans is dus <m>\dfrac{2}{3} \cdot \dfrac{2}{3} \cdot  \dfrac{1}{3} \cdot 3 =\dfrac{4}{9}</m>. Deze kans kan je ook berekenen door de volledige kansboom op te stellen.--> <m>\dfrac{4}{9}</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In een vaas zitten 4 gele en 2 rode knikkers. We trekken drie knikkers zonder terugleggen. Wat is de kans op precies 1 rode knikker?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <!--Via combinaties krijgen we <m>\dfrac{C^1_2 \cdot C^2_4}{C^3_6}=\dfrac{3}{5}</m>. Opstellen van de kansboom leidt tot 3 takken met telkens een kans gelijk aan <m>\dfrac{1}{5}</m>.--><m>\dfrac{3}{5}</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In tennis wordt vaak <q>best of three</q> gespeeld: wie het eerst twee sets wint, heeft gewonnen. Tot nu toe heeft Annelies 60% van de sets die ze tegen Bea heeft gespeeld gewonnen. Bereken de kans dat Bea de partij wint.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <!--Als je de kansboom uitschrijft, zie je dat er drie takken zijn waar Bea wint. De kans is <m>0,6 \cdot (0,4)^2 + (0,4)^2 \cdot 0,6 + (0,4)^2 = 0,352</m>.--><m>0,352</m>.
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Met een verbogen geldstuk is de kans om kop te gooien gelijk aan 0,3. Met een tweede verbogen geldstuk is de kans om munt te gooien gelijk aan 0,25. Bereken de kans om tweemaal hetzelfde resultaat te krijgen als elk geldstuk eenmaal opgegooid wordt.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <!--Stel de kansboom op. De kans op twee keer kop is <m>0,3 \cdot 0,75</m> en de kans op twee keer munt is <m>0,7 \cdot 0,25</m>. De gezochte kans is de som van deze twee takken en gelijk aan <m>0,4</m>.--><m>0,4</m>
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
+  <p>
+    Probeer onderstaande problemen op te lossen.
+  </p>
+  <!-- <exploration>
+    <statement>
+      <p>
+        Met welke dobbelsteen maak je het meeste kans om te winnen?
+      </p>
+    </statement>
+  </exploration> -->
+  <exploration>
+    <statement>
+      <p>
+        Je doet mee met een spelprogramma en maakt kans om een auto te winnen. De auto bevindt zich achter één van drie deuren en achter de andere twee staat een geit. Stel dat je de eerste deur kiest, maar voordat deze wordt geopend, helpt de presentator door een andere deur te openen en de geit erachter te tonen. Blijf je bij je oorspronkelijke keuze of wissel je van deur?
+      </p>
+    </statement>
+  </exploration>
+  <exploration>
+    <statement>
+      <p>
+        Een tijdje geleden stond er in de krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
+          <p>
+            Men moet dan ook consequent zijn: wie positief test, komt er niet in. Maar ook dan ben je niet safe, want de gevoeligheid van die sneltests is 80%. Eén op de vijf bezoekers met een negatief resultaat kan toch positief zijn.
+          </p>
+        </blockquote>
+        Dat klopt natuurlijk niet. Het aantal bezoekers dat mogelijk besmet is, zal veel kleiner zijn dan 20%. Verklaar!
+      </p>
+    </statement>
+  </exploration>
+</section>
+
+<section>
+  <title>Rekenen met kansen</title>
+  <p>
+    Een kans voldoet aan de volgende rekenregels (<m>A</m> en <m>B</m> zijn twee willekeurige gebeurtenissen):
+  </p>
+  <assemblage>
+    <title>Complementregel</title>
+    <p>
+      <me>
+        P(\overline{A}) = 1- P(A)
+      </me>
+    </p>
+  </assemblage>
+  <example>
+    <p>
+      Je gooit met twee zuivere dobbelstenen. Wat is de kans dat de som van het aantal ogen ten minste vier is? De kans op ten minste vier ogen is gelijk aan de kans op vier ogen <m>+</m> de kans op vijf ogen <m>+</m> de kans op zes ogen <m>+ \ldots</m> de kans op twaalf ogen. Via de complementregel kan deze kans sneller berekend worden. Het complement van de gebeurtenis <q>ten minste vier ogen rollen</q> is de gebeurtenis <q>hoogstens drie ogen rollen</q> en deze gebeurtenis is gelijk aan <m>\lbrace (1,1), (1,2), (2,1) \rbrace</m> met kans <m>\dfrac{3}{36}=\dfrac{1}{12}</m>. De kans op tenminste vier ogen is bijgevolg <m>\dfrac{11}{12}</m>.
+    </p>
+<!--    <p>
+      Je neemt vier balletjes uit een bokaal met 4 witte en 8 rode ballen. Wat is de kans om tenminste één wit balletje te trekken? De kans op tenminste één wit balletje is de kans op één wit balletje <m>+</m> de kans op twee witte balletjes <m>+</m> de kans op drie witte balletjes <m>+</m> de kans op vier witte balletjes. Deze kans kan echter veel sneller met de complementregel berekend worden. Het complement van de gebeurtenis <q>tenminste één wit balletje trekken</q> is de gebeurtenis <q>vier rode balletjes trekken</q> en de kans daarop is <m>\dfrac{C^4_8}{C^4_{12}}</m>. De kans op de gebeurtenis zelf is dus <m>1 - \dfrac{C^4_8}{C^4_{12}}</m>.
+    </p> Complementregel met moeilijker voorbeeld-->
+  </example>
+  <assemblage>
+    <title>Somregel</title>
+    <p>
+      <me>
+        P(A \cup B) = P(A) + P(B) - P(A \cap B)
+      </me>
+      Als <m>A</m> en <m>B</m> disjunct zijn, herleid dit zich tot
+      <me>
+         P(A \cup B)=P(A)+P(B)
+      </me>
+    </p>
+  </assemblage>
+  <p>
+    Als je bij een kansboom de kansen van verschillende takken optelt, pas je eigenlijk de somregel toe met disjuncte gebeurtenissen.
+  </p>
+  <example>
+    <p>
+      Kies een willekeurig natuurlijk getal vanaf 1 t.e.m. 100. Wat is de kans dat het getal deelbaar is door 10 of door 25? We hebben hier te maken met twee gebeurtenissen waarvan de doorsnede niet leeg is.
+      <ul>
+        <li>
+          <p>
+            Gebeurtenis <m>A</m>: <q>het getal is deelbaar door 10</q> met kans <m>P(A)=\dfrac{10}{100}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Gebeurtenis <m>B</m>: <q>het getal is deelbaar door 25</q> met kans <m>P(B)=\dfrac{4}{100}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            De kans op de unie is dus gelijk aan <m>P(A \cup B)=\dfrac{10}{100}+\dfrac{4}{100}-\dfrac{2}{100}=\dfrac{12}{100}=\dfrac{3}{25}</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </example>
+  <activity>
+    <statement>
+      <p>
+        Voor drie willekeurige gebeurtenissen <m>A</m>, <m>B</m> en <m>C</m> geldt
+        <md>
+          <mrow>  P(A \cup B \cup C) = \amp \;  P(A) + P(B) + P (C) - P(A \cap B) - P(B \cap C)</mrow>
+          <mrow> \amp - P(A \cap C) + P(A \cap B \cap C)</mrow>
+        </md>
+        Ga voor jezelf na dat je deze formule begrijpt.
+      </p>
+    </statement>
+  </activity>
+  <p>
+    De verschilregel heb je niet zo vaak nodig in berekeningen, maar geven we voor de volledigheid:
+    <me>
+      P(A \setminus B) = P(A) - P(A \cap B)
+    </me>
+  </p>
+  <p>
+    Om de productregel te kunnen afleiden, moeten we eerst het idee van een voorwaardelijke kans introduceren.
+  </p>
+  <example>
+    <p>
+      Beschouw het kansexperiment <q>gooien met een eerlijke dobbelsteen</q> en de twee gebeurtenissen
+      <dl>
+        <li>
+          <title><m>A</m></title>
+          <p>
+             <q>minder dan vier ogen gooien</q>
+          </p>
+        </li>
+        <li>
+          <title><m>B</m></title>
+          <p>
+            <q>een even aantal ogen gooien</q>
+          </p>
+        </li>
+      </dl>
+      Wat is de kans dat er minder dan vier ogen gegooid worden op voorwaarde dat het aantal gegooide ogen even is? Een dergelijke kans noemen we een voorwaardelijke kans en we noteren <m>P(A|B)</m>. Deze kans kan gemakkelijk rechtstreeks berekend worden. Er zijn drie even ogen en enkel twee is kleiner dan vier, dus <m>P(A|B)=\dfrac{1}{3}</m>.
+    </p>
+  </example>
+  <p>
+    In een kansboom staat vanaf de tweede vertakking eigenlijk altijd een voorwaardelijke kans. 
+  </p>
+
+  <p>
+    We gaan nu op zoek naar een algemene formule die het verband uitdrukt tussen <m>P(A|B)</m> en <m>P(A \cap B)</m> voor twee willekeurige gebeurtenissen <m>A</m> en <m>B</m>:
+    <ol>
+      <li>
+        <p>
+          De doorsnede <m>A \cap B</m> bevat de uitkomsten die we nodig hebben.
+        </p>
+      </li>
+      <li>
+        <p>
+          De kans <m>P(A|B)</m> kan berekend worden door het aantal elementen in de doorsnede te delen door het aantal elementen in de verzameling <m>B</m>. Door gebeurtenis <m>B</m> als voorwaarde op te leggen, beperken we immers het totale aantal elementen tot deze verzameling. De voorwaardelijke kans kan dus berekend worden als
+          <me>
+            P(A|B)=\dfrac{\#(A \cap B)}{\#B}=\dfrac{\dfrac{\#(A \cap B)}{\#U}}{\dfrac{\#B}{\#U}}=\dfrac{P(A \cap B)}{P(B)}
+          </me>
+        </p>
+      </li>
+    </ol>
+  </p>
+  <image source="voorwaardelijke-kans.png" width="80%"/>
+  <p>
+    Als de voorwaardelijke kans gegeven is, of gemakkelijk kan bepaald worden, dan levert bovenstaande formule een manier om de kans op <m>A</m> en <m>B</m> te berekenen:
+    <me>
+      \boxed{P(A \cap B) = P(A|B) \cdot P(B)}
+    </me>
+    Dit is de productregel voor het berekenen van kansen. Als gebeurtenis <m>A</m> niet afhangt van gebeurtenis <m>B</m>, dan is <m>P(A|B)=P(A)</m> en herleid de productregel zich tot
+    <me>
+      P(A \cap B) = P(A) \cdot P(B)
+    </me>
+    
+  </p>
+  <assemblage>
+    <title>Afhankelijke en onafhankelijke gebeurtenissen</title>
+    <p>
+      Twee gebeurtenissen zijn onafhankelijk als
+      <md>
+        <mrow>\amp P(A)=P(A|B)</mrow>
+        <mrow>\text{ of }\; \amp P(A \cap B)= P(A) \cdot P(B)</mrow>
+      </md>
+    </p>
+  </assemblage>
+  <example>
+    <p>
+       Stel dat je uit een bak met drie witte, vier zwarte en drie rode knikkers lukraak twee knikkers trekt zonder terugleggen. De kans dat beide knikkers wit zijn is
+      <me>
+        P(W_1 \cap W_2)=P(W_1) P(W_2|W_1)=\dfrac{3}{10} \cdot \dfrac{2}{9}=\dfrac{1}{15}
+      </me>
+      Als we twee knikkers trekken met terugleggen dan is de kans dat beide knikkers wit zijn
+      <me>
+        P(W_1 \cap W_2)=P(W_1)P(W_2)=\dfrac{3}{10} \cdot \dfrac{3}{10}=\dfrac{9}{100}
+      </me>
+      omdat in dit geval de kans dat de tweede knikker wit is onafhankelijk is van het resultaat van de eerste trekking.
+    </p>
+  </example>
+
+   <assemblage>
+     <title>Voorwaardelijke kans en productregel</title>
+     <p>
+       De kans op <m>A</m> op voorwaarde dat <m>B</m> zich heeft voorgedaan is
+       <me>
+           P(A|B)=\dfrac{P(A \cap B)}{P(B)}
+       </me>
+       De kans op <m>A</m> en <m>B</m> bereken je met de productregel
+       <me>
+         P(A \cap B) = \begin{cases} P(A) \cdot P(B) \text{ (onafhankelijke gebeurtenissen)} \\ P(A) \cdot P(B|A) \text{ (afhankelijke gebeurtenissen)} \end{cases}
+       </me>
+     </p>
+   </assemblage>
+</section>
+
+<section>
+  <title>De wet van de totale kans en regel van Bayes</title>
+  <p>
+    Een tijdje geleden stond er in de krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
+      <p>
+        Men moet dan ook consequent zijn: wie positief test, komt er niet in. Maar ook dan ben je niet safe, want de gevoeligheid van die sneltests is 80%. Eén op de vijf bezoekers met een negatief resultaat kan toch positief zijn.
+      </p>
+    </blockquote>
+    Dat klopt natuurlijk niet. Het aantal bezoekers dat mogelijk besmet is, zal veel kleiner zijn dan 20%. De redenering verloopt als volgt
+    <ol>
+      <li>
+        <p>
+          De gebeurtenissen waar het hier over gaat zijn: <m>B</m> <q>een persoon is besmet</q>; <m>G</m> <q>een persoon is gezond</q>; <m>P</m> <q>de sneltest is positief</q> en <m>N</m> <q>de sneltest is negatief</q>
+        </p>
+      </li>
+      <li>
+        <p>
+          De gevoeligheid of sensitiviteit van de test is de kans dat je positief test als je besmet bent. Hier geldt <m>P(P|B)=0,80</m>. Hieruit volgt wel dat <m>P(N|B)=0,20</m>, maar niet dat <m>P(B|N)=0,20</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Passen we de definitie van voorwaardelijke kans twee keer toe, dan geldt dat
+          <me>
+            P(B|N)=\frac{P(B \cap N)}{P(N)}=\frac{P(N|B)P(B)}{P(N)}
+          </me>
+          met <m>P(N|B)=0,20</m> en bijvoorbeeld <m>P(B)=0,003</m>. 
+        </p>
+        <image source="bayes.png" width="80%"/>
+        <p>
+          De kans dat iemand negatief test is
+          <me>
+            P(N)=P(N|B)P(B)+P(N|G)P(G)
+          </me>
+          met <m>P(G)=0,997</m> en bijvoorbeeld <m>P(N|G)=0,95</m>. De kans <m>P(N|G)</m> wordt de specificiteit van de test genoemd.
+        </p>
+      </li>
+      <li>
+        <p>
+          Invullen en uitrekenen
+          <me>
+            P(B|N)=\frac{0,20 \cdot 0,003}{0,20 \cdot 0,003+0,95 \cdot 0,997} = 6,33 \cdot 10^{-4}
+          </me>
+          De kans dat iemand besmet is na afleggen van een negatieve test is dus ongeveer 0,06%
+        </p>
+      </li>
+    </ol>
+    Een kansboom werkt verhelderend om bovenstaande redenering te begrijpen.
+  </p>
+  <image source="kansboom-bayes.png" width="80%"/>
+  <p>
+    In dit voorbeeld hebben we de regel van Bayes en de wet van de totale kans toegepast.
+  </p>
+  <assemblage>
+    <title>Wet van de totale kans</title>
+    <p>
+      Als de uitkomstenverzameling kan verdeeld worden in een aantal disjuncte gebeurtenissen <m>A_1</m>, <m>A_2</m>, ..., <m>A_n</m>, dan kan de kans op een gebeurtenis <m>B</m> berekend worden als
+      <me>
+        P(B)= P(B|A_1)P(A_1) + P(B|A_2) P(A_2) + \ldots P(B|A_n) P(A_n)
+      </me>
+      Dit noemen we de wet van de totale kans. Deze wet geldt als een gebeurtenis <m>B</m> kan optreden op verschillende manieren die elkaar uitsluiten.
+    </p>
+  </assemblage>
+  <assemblage>
+    <title>Regel van Bayes</title>
+    <p>
+      We gaan opnieuw uit van een aantal disjuncte gebeurtenissen <m>A_1</m>, ..., <m>A_n</m> waarvan de unie de uitkomstenverzameling is. De regel van Bayes laat toe om de voorwaardelijke kans <m>P(A_i|B)</m> te berekenen als de kansen <m>P(A_i)</m>, <m>P(B|A_i)</m> en <m>P(B)</m> gekend zijn:
+      <me>
+        P(A_i|B)=\frac{P(B|A_i) P(A_i)}{P(B)}
+      </me>
+    </p>
+  </assemblage>
+  <!-- <activity>
+    <statement>
+      <p>
+        Formuleer het drie-deuren-probleem (Verkennende opdracht 3.5.2) eveneens als een toepassing van de regel van Bayes.
+      </p>
+    </statement>
+  </activity> -->
+</section>
+
+<exercises>
+  <exercise>
+    <statement>
+      <p>
+        Een voorwerp heeft de vorm van een regelmatig achtvlak met zijvlakken <m>a_1</m>, <m>a_2</m>, ..., <m>a_8</m>. Aan de gebeurtenis <m>\lbrace a_1 \rbrace</m>, zijvlak <m>a_1</m> blijft boven liggen bij het gooien, wordt 0,16 als kans toegekend. Alle andere gebeurtenissen <m>\lbrace a_i \rbrace</m> hebben dezelfde kans. Bepaal die kans.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>0,12</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Toon aan dat voor twee willekeurige gebeurtenissen <m>A</m> en <m>B</m> geldt
+        <ol>
+          <li>
+            <p>
+              <m>P(\overline{A} \cup \overline{B})=1-P(A \cap B)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(\overline{A} \cap \overline{B})=1-P(A \cup B)</m>
+            </p>
+          </li>
+        </ol>
+        (Hint: teken de situaties met venndiagrammen.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>A</m> en <m>B</m> zijn twee gebeurtenissen met <m>P(A \cup B)=\dfrac{5}{9}</m>, <m>P(A \cap B)=\dfrac{1}{9}</m> en <m>P(\overline{A})=\dfrac{5}{9}</m>. Bereken <m>P(A)</m>, <m>P(B)</m> en <m>P(\overline{A} \cup \overline{B})</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>P(A)=\dfrac{4}{9}</m>; <m>P(B)=\dfrac{2}{9}</m>; <m>P(\overline{A} \cup \overline{B})=1-P(A \cap B)=\dfrac{8}{9}</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Uit voorgaande jaren is gebleken dat de kans op slagen voor het examen Engels 80% is, de kans op slagen voor geschiedenis 85% en de kans op slagen voor allebei 75%. Bereken de kans dat iemand niet geslaagd is voor Engels en geschiedenis.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        10%
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        We trekken willekeurig twee kaarten uit een spel van 52 kaarten zonder terugleggen. Bereken de kans dat de tweede getrokken kaart een aas is.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>\dfrac{1}{13}</m>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        In een lenzenfabriek zijn er drie productieketens. Deze ketens nemen elk respectievelijk <m>35\%</m>, <m>25\%</m> en <m>40\%</m> van de totale productie op zich. De productie verloopt niet foutloos en de ketens leveren respectievelijk <m>3\%</m>, <m>4\%</m> en <m>2\%</m> defecte lenzen.
+        <ol>
+          <li>
+            <p>
+              We nemen lukraak een geproduceerde lens. Wat is de kans dat de lens defect is?
+            </p>
+          </li>
+          <li>
+            <p>
+              We nemen lukraak een lens en stellen vast dat ze defect is. Wat is de kans dat ze afkomstig is van de tweede productieketen?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>0,0285</m> en <m>0,3509</m>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Je trekt met terugleggen twee keer na elkaar een kaartje uit een doos met 3 witte kaartjes en 1 zwart kaartje. Noem gebeurtenis <m>A</m> <q>beide kaartjes hebben dezelfde kleur</q> en gebeurtenis <m>B</m>: <q>het eerste kaartje is wit</q>.
+        <ol>
+          <li>
+            <p>
+              Bereken <m>P(A)</m> en <m>P(B)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Bereken <m>P(A \cup B)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Bereken <m>P(A \cap B)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Ga na of de gebeurtenissen <m>A</m> en <m>B</m> onafhankelijk zijn.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>P(A)=\dfrac{10}{16}=\dfrac{5}{8}</m>, <m>P(B)=\dfrac{12}{16}=\dfrac{3}{4}</m>, <m>P(A \cup B)=\dfrac{10}{16}+\dfrac{12}{16}-\dfrac{9}{16}=\dfrac{13}{16}</m>, <m>P(A \cap B)=\dfrac{9}{16}</m> en de gebeurtenissen zijn afhankelijk want <m>P(A \cap B) \neq P(A) \cdot P(B)</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Stel dat de bevolking van een bepaald land bestaat uit 40% mannen en 60% vrouwen. Bij de mannen rookt er 35% en bij de vrouwen is dit 30%.
+        <ol>
+          <li>
+            <p>
+              Men trekt lukraak een persoon uit deze bevolking. Wat is de kans dat deze persoon rookt?
+            </p>
+          </li>
+          <li>
+            <p>
+              Als men lukraak een roker uit de verzameling van de rokers kiest, wat is dan de kans dat het een man is?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        a. 0,32 en b. 0,44
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Veronderstel dat bij het vervaardigen van lampen <m>3\%</m> van de productie een fout vertoont. We controleren 3 lampen. Bereken de kans
+        <ol>
+          <li>
+            <p>
+              dat precies één lamp een fout heeft;
+            </p>
+          </li>
+          <li>
+            <p>
+              dat niet alle lampen in orde zijn.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <!--<m>3\cdot0,3\cdot(0,97)^2=0,0845</m> en <m>1-(0,97)^3=0,0873</m>-->
+        a. <m>0,0845</m> en b. <m>0,0873</m>
+      </p>
+    </solution>
+  </exercise>
+
+  <!--<exercise>
+    <statement>
+      <p>
+        Toon aan dat de kans op minstens 1 zes bij 4 worpen met 1 dobbelsteen groter is dan de kans op 1 dubbele zes bij 24 worpen met twee dobbelstenen.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>1-\left(\dfrac{5}{6} \right)^4 \gt 24 \cdot \dfrac{1}{36}\cdot \left(\dfrac{35}{36}\right)^{23}</m>
+      </p>
+    </solution>
+  </exercise>-->
+
+  <exercise>
+    <statement>
+      <p>
+        Een toets bestaat uit drie meerkeuzevragen met elk 5 mogelijke antwoorden waarvan er maar één juist is. Stel dat je op elke vraag gewoon gokt en beschouw de gebeurtenissen <m>A</m> <q>minstens twee vragen juist</q> en <m>B</m> <q>antwoord op de eerste vraag juist</q>.
+        <ol>
+          <li>
+            <p>
+              Bereken <m>P(A)</m> en <m>P(B)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(A|B)</m>
+            </p>
+          </li>
+          <li>
+            <m>P(B|A)</m>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+        <p>
+          <m>P(A)=0,104</m>, <m>P(B)=0,2</m>, <m>P(A|B)=\dfrac{0,072}{0,2}=0,36</m> en <m>P(B|A)=\dfrac{0,072}{0,104}=0,692</m>.
+        </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+         Bij een meerkeuzetoets hebben de leerlingen vier mogelijke antwoorden voor elke vraag ter beschikking. Het antwoord op de eerste vraag is gekend door <m>60\%</m> van de leerlingen, terwijl de overige <m>40\%</m> gokt op één van de vier mogelijjkheden. We kiezen een willekeurig leerling.
+         <ol>
+           <li>
+             <p>
+               Wat is de kans dat de eerste vraag goed beantwoord wordt?
+             </p>
+           </li>
+           <li>
+             <p>
+               Stel dat de leerling de vraag goed beantwoord heeft. Wat is dan de kans dat die leerling het antwoord inderdaad kende?
+             </p>
+           </li>
+         </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>0,70</m> en <m>0,857</m>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Voor het inblikken van erwten gebruikt men in de fabriek machines <m>M_1</m>, <m>M_2</m> en <m>M_3</m> die respectievelijk <m>55\%</m>, <m>35\%</m> en <m>10\%</m> van de productie bewerken. De percentages inblikfouten voor de machines zijn respectievelijk <m>4\%</m>, <m>3\%</m> en <m>8\%</m>.
+        <ol>
+          <li>
+            <p>
+                Bepaal de kans dat een blik erwten, lukraak genomen uit de voorraad, fout bewerkt is.
+            </p>
+          </li>
+          <li>
+            <p>
+                Bereken de kans dat dit niet door machine <m>M_1</m> is veroorzaakt.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>0,0405</m> en <m>0,4568</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        De buren hebben nogal een oud alarmtoestel dat niet altijd even goed werkt. Wanneer er ingebroken wordt, is er <m>95\%</m> kans dat het alarm in werking treedt. Tijdens de laatste 8 weken heeft het echter al zeven keer, telkens zonder aanleiding, alarm geslagen. Uit politierapporten weet je dat de kans op inbraak gelijk is aan <m>0,0005</m>. Als het alarmtoestel morgen in werking treedt, wat is dan de kans dat er werkelijk ingebroken wordt?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>0,004</m>
+      </p>
+    </solution>
+  </exercise>
+</exercises>
+
+</chapter>

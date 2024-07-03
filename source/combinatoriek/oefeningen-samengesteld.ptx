@@ -1,0 +1,479 @@
+<section xml:id="sec-tellen-oef-samengesteld">
+    <title>Samengestelde telproblemen oplossen</title>
+    <subsection>
+        <title>Samengestelde telproblemen analyseren</title>
+
+        <p>
+            Met behulp van de som- en de productregel kan je een samengesteld telprobleem opsplitsen in basistypes. We illustreren dit m.b.v. onderstaand voorbeeld.
+        </p>
+
+        <blockquote>
+        <p>
+            Een examen bestaat uit tien vragen. Elke vraag wordt als juist (1 punt) of als fout (0 punten) beoordeeld. Op hoeveel manieren kan je acht punten halen, wanneer je minstens drie van de eerste vier vragen juist hebt beantwoord?
+        </p>
+        </blockquote>
+
+        <p>
+             We splitsen het probleem op om tot de oplossing te komen:
+            <ol>
+                <li>
+                <p>
+                    We tellen het aantal manieren waarop er 8/10 kan gehaald worden, maar met de restrictie dat er minstens 3 van de 4 eerste vragen juist zijn. Dit betekent dat we beginnen met 3 <alert>of</alert> 4 juiste vragen en dus de somregel moeten toepassen:
+                    <md>
+                    <mrow>\# \text{ mogelijkheden }= \# \text{ mogelijkheden die beginnen met } 3/4 </mrow>
+                    <mrow>  + \quad \# \text{ mogelijkheden die beginnen met } 4/4</mrow>
+                    </md>
+                </p>
+                </li>
+                <li>
+                <p>
+                    We berekenen eerst het aantal mogelijkheden die beginnen met een score van 3/4. Als we alle vragen in één verzameling stoppen en er daar acht uit kiezen, dan tellen we ook mogelijkheden die niet beginnen met 3/4. We hebben dus twee verzamelingen nodig: de verzameling van de eerste vier vragen en de verzameling van de laatste zes vragen. Uit de eerste verzameling kiezen we er drie <alert>en</alert> uit de tweede verzameling kiezen we er vijf (productregel). Als we vragen uit een verzameling kiezen speelt de volgorde geen rol. Vraag 1, 3 en 4 juist beantwoorden is natuurlijk hetzelfde als vraag 3, 1 en 4 juist beantwoorden. Er zijn dus <m>C^3_4</m> mogelijkheden om drie van de vier eerste vragen juist te beantwoorden <alert>en</alert> <m>C^5_6</m> mogelijkheden om vijf van de zes laatste vragen juist te beantwoorden. Het totale aantal mogelijkheden dat begint met 3/4 is dus <m>C^3_4 \cdot C^5_6 = 4 \cdot 6=24</m>.
+                </p>
+                </li>
+                <li>
+                <p>
+                    Het berekenen van het aantal mogelijkheden die beginnen met een score van 4/4 verloopt analoog en is gelijk aan <m>C^4_4 \cdot C^4_6=15</m>.
+                </p>
+                </li>
+                <li>
+                <p>
+                    Het antwoord op het telprobleem is bijgevolg dat er <m>24+15=39</m> manieren zijn om 8/10 te halen als je minstens drie van de vier eerste vragen juist hebt.
+                </p>
+                </li>
+            </ol>
+        </p>
+    </subsection>
+
+  <subsection>
+    <title>Herhalingspermutaties</title>
+    <p>
+      Dit samengestelde telprobleem komt vaak voor en krijgt een eigen naam. We leiden ook een algemene formule ervoor af. Dit type kwamen we al tegen bij het probleem van de kamelen:
+    </p>
+
+    <blockquote>
+        <p>
+        Een sultan heeft veertien verschillende kamelen en wenst die te verdelen onder zijn vier zonen. De oudste krijgt er vijf, de tweede krijgt er vier, de op een na jongste krijgt er drie en de jongste de overige twee. Op hoeveel manieren kan hij zijn kamelen verdelen?
+        </p>
+    </blockquote>
+
+    <p>
+        We kiezen de vijf kamelen voor de oudste zoon <alert>en</alert> vier kamelen voor de tweede <alert>en</alert> <ellipsis/> We vertrekken van de verzameling met alle kamelen en kiezen er daaruit vijf voor de oudste zoon. De volgorde waarop dit gebeurt is niet belangrijk en herhaling is natuurlijk niet mogelijk. We kunnen dus op <m>C^5_{14}</m> manieren de kamelen kiezen voor de oudste zoon. Voor de andere zonen krijgen we respectievelijk <m>C^4_{9}</m>, <m>C^3_5</m> en <m>C_2^2</m>. Om het totale aantal manieren te berekenen, passen we vervolgens de productregel toe:
+        <me>
+        C^5_{14} \cdot C^4_9 \cdot C^3_5
+        </me>
+        Als we dit volledig uitschrijven en vereenvoudigen, krijgen we
+        <me>
+        \frac{14!}{9! 5!} \cdot \frac{9!}{5! 4!} \cdot \frac{5!}{3! 2!}=\frac{14!}{5!4!3!2!}
+        </me>
+        Als we deze redenering veralgemenen, komen we tot de algemene formule voor een herhalingspermutatie.
+    </p>
+
+    <assemblage>
+        <title>Herhalingspermutaties</title>
+        <p>
+        Een herhalingspermutatie is een geordend <m>n</m>-tal met <m>\alpha</m> elementen van de eerste soort, <m>\beta</m> elementen van de tweede soort, <ellipsis/>
+        <me>
+            \overline{P^{\alpha,\beta,\ldots,\delta}_n}=\dfrac{n!}{\alpha!
+        \, \beta! \, \ldots \delta!} \quad (\alpha+\beta+\ldots+\delta=n)
+        </me>
+        </p>
+    </assemblage>
+
+  </subsection>
+
+  <exercises>
+    <exercise>
+        <statement>
+        <p>
+        In een klas zitten 10 meisjes en 15 jongens. Op hoeveel manieren kan men een panel voor een klasdebat samenstellen bestaande uit drie jongens en twee meisjes?
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>C^3_{15} \cdot C^2_{10}</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Aan een restaurant naast de kathedraal in Antwerpen staat het volgende reclamebord: <em>Hier keuze uit meer dan 200 menu's!</em> De menukaart vermeldt:
+                <ul>
+                <li>
+                    <p>
+                    soep of kaaskroketjes
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    steak, zalm of veggieburger
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    friet, rijst of puree
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    sla, seizoensgroentjes of exotische mix
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    ? (dessert)
+                    </p>
+                </li>
+                </ul>
+                Hoeveel verschillende desserts stonden er minstens op de menukaart?
+            </p>
+        </statement>
+        <answer>
+        <p>
+            <m>4</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Hoeveel verschillende anagrammen van RAMANUJAN bestaan er?
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>\overline{P_9^{1,1,1,1,2,3}}</m>
+        </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+        Hoeveel nummerplaten kan men vormen met een groep van drie letters (O en I uitgezonderd) gevolgd door een groep van drie cijfers?
+        </p>
+        </statement>
+        <solution>
+        <p>
+            Kies 3 letters uit een verzameling van 24 (met herhaling en volgorde is belangrijk) en vervolgens 3 cijfers uit de verzameling van 10 cijfers (met herhaling en volgorde is belangrijk). Het aantal mogelijke nummerplaten is dus <m>24^3 \cdot 10^3</m>.
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Van twaalf gelijk uitziende ringen zijn er vijf met 75% goudgehalte, vier met 58% goudgehalte en drie zonder enig spoor van goud. Als iemand twee van de twaalf ringen uitkiest, in hoeveel gevallen heeft hij dan twee ringen van dezelfde soort?
+        </p>
+        </statement>
+        <solution>
+        <p>
+            Er zijn drie verschillende verzamelingen en we kiezen twee ringen uit de eerste verzameling of twee ringen uit de tweede verzameling of twee ringen uit de derde verzameling. De volgorde speelt geen rol, dus het aantal mogelijkheden is <m>C^2_5+C^2_4+C^2_3</m>.
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            De pincode van een bankkaart bestaat uit vier cijfers. Hoeveel codes waarin slechts twee verschillende cijfers voorkomen zijn er mogelijk?
+        </p>
+        </statement>
+        <solution>
+        <p>
+            Kies twee verschillende cijfers uit de verzameling van 10. Dit kan op <m>C^2_{10}</m> manieren (volgorde maakt niet uit). We hebben nu een verzameling van twee cijfers en daaruit vier keer een cijfer om de pincode te maken. Dit kan op <m>2^4</m> manieren, maar we tellen nu twee pincodes teveel (waarbij vier keer hetzelfde cijfer voorkomt). Het totale aantal is bijgevolg  <m>C^2_{10} (2^4-2)</m>.
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Op ruitjespapier met ruitjes van 1 cm<m>^2</m> tekenen we een pad met gebroken lijnen van <m>(0,0)</m> naar <m>(10,10)</m>. Hoeveel verschillende paden kunnen we tekenen als de totale lengte van het pad 20 cm is? (Een mogelijk pad is bijvoorbeeld van <m>(0,0)</m> naar <m>(10,10)</m> via
+            <m>(0,7)</m>, <m>(4,7)</m> en <m>(4,10)</m>.)
+        </p>
+        </statement>
+        <solution>
+        <p>
+            Elk pad kan gecodeerd worden met 20 letters, waarvan er 10 gelijk zijn aan R (stapje naar rechts) en 10 gelijk zijn aan B (stapje naar boven). Het aantal mogelijkheden wordt dus gegeven door de herhalingspermutatie <m>\overline{P_{20}^{10,10}}</m>. Je kan ook de verzameling van de 20 stappen beschouwen en daaruit 10 stappen kiezen die gekoppeld worden aan een beweging naar rechts:  <m>C^{10}_{20}</m>.
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Op hoeveel manieren kan men acht kaarten trekken uit een spel van 52 kaarten als er bij de acht kaarten
+            <ol>
+            <li>
+                <p>
+                precies drie azen moeten zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                minstens drie azen moeten zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                ten hoogste drie azen mogen zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                precies twee azen en twee heren moeten zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                precies twee azen, maar geen dame mag zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                hartenaas en vier klaveren moeten zitten;
+                </p>
+            </li>
+            <li>
+                <p>
+                precies drie azen en vier harten moeten zitten.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </statement>
+        <solution>
+        <p>
+            <ol>
+            <li>
+                <p>
+                Kies 3 azen en 5 andere kaarten uit de rest: <m>C^3_4 \cdot C^5_{48}</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                Kies 3 azen en vijf andere kaarten of 4 azen en 4 andere kaarten: <m>C^3_4 \cdot C^5_{48}+C^4_4 \cdot C^4_{48}=C^3_4 \cdot C^5_{48}+C^4_{48}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Hoogstens 3 azen betekent 0, 1, 2 of 3 azen. Dit kan je het gemakkelijkst berekenen door het totale aantal mogelijkheden te berekenen en daarvan de mogelijkheden af te trekken met 4 azen: <m>C^{8}_{52}-C^{4}_{48}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Kies 2 azen en 2 heren en 4 andere kaarten: <m>C^2_4 \cdot C^2_4 \cdot C^4_{44}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Laat de dames weg. Er zijn dan nog 48 kaarten. Kies 2 azen en 6 andere kaarten uit de resterende 44: <m>C^2_4 \cdot C^6_{44}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Er zijn maar 51 kaarten want de hartenaas zit er sowieso in. Kies 4 klaveren (uit 13) en nog 3 andere kaarten uit de overige 38: <m>C^4_{13} \cdot C^3_{38}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                <ul>
+                    <li>
+                    <p>
+                        1 aas is de hartenaas: kies 2 azen uit 3 en drie harten uit 12 en 2 andere kaarten: <m>C^2_3 \cdot C^3_{12} \cdot C^2_{36}</m>
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        hartenaas wordt niet gekozen, alle andere azen wel: kies 4 harten uit 12 en 1 andere kaart: <m> C^4_{12} \cdot C^1_{36}</m>
+                    </p>
+                    </li>
+                </ul>
+                Het totaal aantal mogelijkheden is de som van beide opties.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Met de cijfers 0 tot 9 worden getallen bestaande uit vijf
+            verschillende cijfers gevormd. Merk op dat een getal niet kan beginnen met het cijfer 0.
+            <ol>
+            <li>
+                <p>
+                Hoeveel van die getallen bestaan er?
+                </p>
+            </li>
+            <li>
+                <p>
+                Hoeveel van deze getallen bevatten het cijfer 6?
+                </p>
+            </li>
+            <li>
+                <p>
+                Hoeveel van deze getallen bevatten de cijfers 0 en 7?
+                </p>
+            </li>
+            </ol>
+        </p>
+        </statement>
+        <solution>
+        <p>
+            <ol>
+            <li>
+                <p>
+                Kies, in volgorde, 5 cijfers uit 10: <m>V^5_{10}</m>. Getallen die beginnen met 0 tel je nu ook mee en moeten er vanaf getrokken worden. Dit zijn er <m>V^4_{9}</m> (eerste cijfers is nul, dus kies 4 overige cijfers uit 9). Er zijn dus <m>V^5_{10}-V^4_{9}</m> dergelijke getallen.
+                </p>
+            </li>
+            <li>
+                <p>
+                Kies de positie van de 6 en 4 andere cijfers in volgorde. Trek het aantal getallen die beginnen met nul ervan af: <m>5 \cdot V^4_9-4 \cdot V^3_8</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Kies positie van de 0 (4 mogelijkheden) en kies positie van de 7 (4 mogelijkheden) en kies de 3 overige cijfers: <m>4 \cdot 4 \cdot V^3_8</m>.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Op een barbecue zijn 15 brochetten beschikbaar voor 6 deelnemers. Op hoeveel manieren kunnen we de verdeling doen als
+        </p>
+        <ol>
+            <li>
+            <p>
+                alle brochetten opgegeten moeten worden?
+            </p>
+            </li>
+            <li>
+            <p>
+                alle brochetten opgegeten moeten worden en iedereen minstens 1 brochette krijgt?
+            </p>
+            </li>
+            <li>
+            <p>
+                niet alle brochetten opgegeten moeten worden?
+            </p>
+            </li>
+        </ol>
+        </statement>
+        <solution>
+        <p>
+            <ol>
+            <li>
+                <p>
+                Beschouw de verzameling van de deelnemers. Kies er daaruit 15 waarbij herhaling mogelijk is: <m>\overline{C_6^{15}}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Geef iedereen 1 brochet en verdeel de overige 9 onder de deelnemers: <m>\overline{C_6^{9}}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Dit is equivalent met de brochetten verdelen onder 7 deelnemers: <m>\overline{C_7^{15}}</m>.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Bij een voetbalwedstrijd is de eindstand 4-3.
+            <ol>
+            <li>
+                <p>
+                Hoeveel scoreverlopen zijn er mogelijk?
+                </p>
+            </li>
+            <li>
+                <p>
+                Hoeveel scoreverlopen zijn er mogelijk als de stand bij de rust 3-1 was?
+                </p>
+            </li>
+            </ol>
+        </p>
+        </statement>
+        <solution>
+        <p>
+            De wedstrijd kan gecodeerd worden als <m>P_1P_1P_2P_1P_2P_2P_1</m> waarbij <m>P_1</m> betekent dat ploeg 1 scoort.
+            <ol>
+            <li>
+                <p>
+                Als de eindstand 4-3 is, dan betekent dit dat je vier plaatsen moet kiezen waar een <m>P_1</m> terechtkomt: <m>C^4_7</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                Kies 1 plaats voor <m>P_2</m> uit de eerste 4 plaatsen en 1 plaats voor <m>P_1</m> uit de laatste 3: <m>C^1_4 \cdot C^1_3.</m>
+                </p>
+            </li>
+            </ol>
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Hoeveel deelverzamelingen heeft een verzameling met <m>n</m> elementen?
+        </p>
+        </statement>
+        <solution>
+        <p>
+            <m>C^0_n+C^1_n+C^2_n+\ldots+C^n_n</m>.
+        </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Een leerkracht moet 3 potloden, 2 geodriehoeken en 7 vulpennen verdelen in een klas van 12 leerlingen. Op hoeveel manieren kan dit gebeuren als:
+            <ol>
+            <li>
+                <p>
+                elke leerling precies 1 voorwerp krijgt?
+                </p>
+            </li>
+            <li>
+                <p>
+                niet elke leerling noodzakelijk een voorwerp krijgt, maar alles uitgedeeld wordt?
+                </p>
+            </li>
+            <li>
+                <p>
+                niet elke leerling noodzakelijk een voorwerp krijgt en niet alle voorwerpen noodzakelijk uitgedeeld worden?
+                </p>
+            </li>
+            </ol>
+        </p>
+        </statement>
+        <solution>
+        <p>
+            <ol>
+            <li>
+                <p>
+                Dit is een herhalingspermutatie: <m>\overline{P_{12}^{2,3,7}}</m>.
+                </p>
+            </li>
+            <li>
+                Kies eerst drie leerlingen die een potlood krijgen (herhaling is mogelijk) en idem voor de geodriehoeken en de pennen: <m>\overline{C^3_{12}} \cdot \overline{C^2_{12}} \cdot \overline{C^7_{12}}</m>.
+            </li>
+            <li>
+                <p>
+                Idem als vorige geval, maar beschouw een verzameling van 13 personen:  <m>\overline{C^3_{13}} \cdot \overline{C^2_{13}} \cdot \overline{C^7_{13}}</m>.
+                </p>
+            </li>
+            </ol>
+        </p>
+        </solution>
+    </exercise>
+    </exercises>
+   
+</section>

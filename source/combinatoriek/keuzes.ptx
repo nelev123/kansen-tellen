@@ -1,0 +1,87 @@
+<section xml:id="sec-tellen-keuzes">
+    <title>Tellen door het maken van keuzes</title>
+  <p>
+    Telproblemen zijn steeds te herleiden tot het maken van keuzes. De eerste twee inleidende oefeningen zijn eigenlijk al redelijk expliciet geformuleerd als keuzes:
+  </p>
+
+  <blockquote>
+    <p>
+      Je gaat lunchen en wil soep of een salade bestellen. Op de weeksuggesties staan drie soorten soep vermeld en vijf salades. Hoeveel mogelijkheden zijn er om uit te kiezen?
+    </p>
+
+    <p>
+      In een posterwinkel hebben ze mooie replica's van vier
+      schilderijen van Van Gogh en kan je kiezen uit drie soorten lijsten om ze in te kaderen. Hoeveel mogelijke keuzes kan Lise maken als ze een schilderij voor haar oma koopt?
+    </p>
+  </blockquote>
+
+  <p>
+    Bij het bestellen van je lunch kan je kiezen uit drie soorten soep <alert>of</alert> vijf salades en het aantal mogelijke keuzes is
+    dan natuurlijk <m>3+5=8</m>. We hebben hier te maken met een keuze die eigenlijk uit twee deelbeslissingen bestaat die elkaar onderling
+    uitsluiten: je kiest soep <alert>of</alert> een salade.
+  </p>
+
+  <assemblage>
+    <title>Somregel</title>
+    <p>
+      Het aantal mogelijkheden voor een keuze die bestaat uit <m>k</m> deelbeslissingen die elkaar uitsluiten is: <m>n_1 + n_2+ \ldots + n_k</m>,  met <m>n_i</m> het aantal mogelijkheden van deelbeslissing <m>i</m> (<m>i=1,2,\ldots,k</m>).
+    </p>
+  </assemblage>
+
+  <remark>
+    <title>Somregel en unie van verzamelingen</title>
+    <p>
+       Telproblemen kunnen ook opgelost worden door ze te beschouwen als het tellen van elementen van eindige verzamelingen. Voor bovenstaand voorbeeld kunnen we de verzameling <m>A_1</m> van de soepen beschouwen: <m>A_1= \lbrace S_1,S_2,S_3 \rbrace</m> en de verzameling <m>A_2</m> van de salades: <m>A_2=\lbrace SA_1,SA_2,SA_3,SA_4,SA_5\rbrace</m>. Het kiezen van een lunchgerecht herleidt zich dan tot het kiezen van één element uit <m>A_1 \cup A_2</m>. Aangezien <m>\#(A_1 \cup A_2)=8</m>, kan dit dus op 8 manieren. Als de verzamelingen niet disjunct zijn, mag je natuurlijk niet vergeten corrigeren voor het dubbel tellen van de doorsnede!
+    </p>
+    <p>
+        Voor <m>k</m> verzamelingen die allemaal onderling disjunct zijn, kunnen we de somregel noteren als
+        <md>
+            <mrow> \amp A_i \cap A_j = \emptyset \text{ voor alle } i,j=1,2,\ldots,k \text{ en } i \neq j</mrow>
+            <mrow> \Rightarrow \amp \#(A_1 \cup A_2 \cup \ldots \cup A_k)=\#A_1+\#A_2+\dots+\#A_k   </mrow>
+        </md>
+    </p>
+  </remark>
+
+  <p>
+    Als Lise een schilderij voor haar oma kiest, bestaat die keuze uit twee opeenvolgende stappen. Ze kiest een lijst <alert>en</alert> het schilderij zelf. De volgorde van beide stappen maakt niet uit: Lise kan ook eerst het schilderij kiezen en vervolgens een lijst. Om het aantal mogelijkheden te berekenen, vermenigvuldig je het aantal mogelijkheden van beide stappen met elkaar: <m>4 \cdot 3=12</m>. Grafisch kan je dit voorstellen met een boomdiagram:
+  </p>
+
+  <sidebyside width="50%">
+    <image source="boomdiagram.png" width="%"/>
+  </sidebyside>
+
+  <!--hofstede.nl: machtsboom, faculteitsboom-->
+
+    <aside>
+        <title>Cartesisch product</title>
+        <p>
+          Het cartesisch product van een verzameling met zichzelf noteren we met behulp van een exponentiële notatie, zoals bijvoorbeeld <m>\mathbb{R} \times \mathbb{R}=\mathbb{R}^2</m>. Een wiskundige functie <m>f: \mathbb{R} \to \mathbb{R}: x \to y=f(x)</m> beschrijft dus eigenlijk een deelverzameling van het cartesisch product <m>\mathbb{R} \times \mathbb{R}</m>.  
+        </p>
+    </aside>
+    <remark>
+    <title>Productregel en de productverzameling</title>
+    <p>
+        We beschouwen nu de verzameling <m>A_1</m> van de schilderijen,
+        <m>A_1=\lbrace S_1,S_2,S_3,S_4 \rbrace</m>, en de verzameling <m>A_2</m> van de lijsten, <m>A_2=\lbrace L_1,L_2,L_3\rbrace</m>. Het kiezen van een schilderij, gevolgd door een lijst kunnen we nu voorstellen door de verzameling van alle koppels waarvan het eerste element uit <m>A_1</m> komt en het tweede element uit <m>A_2</m>. We noemen deze verzameling de productverzameling of het cartesisch product van <m>A_1</m> en <m>A_2</m>:
+        <me>
+            A_1 \times A_2 = \lbrace (S_1,L_1),(S_1,L_2),(S_1,L_3),(S_2,L_1),\ldots,(S_4,L_3)\rbrace
+        </me>
+        Merk op dat <m>A_2 \times A_1 \neq A_1 \times A_2</m>, maar het aantal elementen van beide verzamelingen is natuurlijk wel gelijk, <m>\#(A_1 \times A_2)=\#(A_2 \times A_1)</m>, en in de context van bovenstaand telprobleem zijn we natuurlijk geïnteresseerd in het aantal en niet zozeer in de verzameling zelf. De productregel kunnen we dus ook als volgt noteren:
+        <me>
+           \#(A_1 \times A_2 \times \ldots \times A_k) = \#A_1 \cdot \#A_2 \cdot \ldots \cdot \#A_k 
+        </me>
+    </p>
+  </remark>
+
+  <assemblage>
+    <title>Productregel</title>
+    <p>
+      Het aantal mogelijkheden voor een keuze die bestaat uit het nemen van opeenvolgende stappen in willekeurige volgorde is <m>n_1 \cdot n_2 \cdot \ldots \cdot n_k</m>, met <m>n_i</m> het aantal mogelijkheden van stap <m>i</m> (<m>i=1,2,\ldots,k</m>).
+    </p>
+  </assemblage>
+
+  <p>
+    In de volgende paragraaf gaan we een aantal verschillende types van telproblemen bespreken en ook voor elk type een formule afleiden. Soms is het echter niet altijd eenvoudig om een bepaald type te herkennen (en niet elk telprobleem kan mooi geclassificeerd worden) en dan kan je altijd terugvallen op de som- en de productregel. In <xref ref="sec-tellen-oef-samengesteld"/> bespreken we samengestelde telproblemen en daar heb je de som- en productregel ook nodig.
+  </p>
+    
+</section>
