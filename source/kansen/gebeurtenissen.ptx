@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Uitkomsten en gebeurtenissen</title>
+    <assemblage>
+      <title>Uitkomsten en gebeurtenissen</title>
+      <p>
+        <ul>
+          <li>
+            <p>
+              De verzameling van alle mogelijke uitkomsten <m>u_1</m>, <m>u_2</m>,..., <m>u_n</m> van een kansexperiment noemen we de uitkomstenverzameling <m>U</m>: <m>U=\lbrace u_1,u_2,\ldots u_n \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              De deelverzamelingen van <m>U</m> noemen we gebeurtenissen en stellen we voor met hoofdletters. De kans <m>P(A)</m> dat gebeurtenis <m>A</m> zich voordoet is gelijk aan het aantal elementen in de verzameling <m>A</m> gedeeld door het totale aantal uitkomsten:
+              <me>P(A)=\dfrac{\#A}{\#U}</me>
+              Er geldt steeds dat <m>0 \le P(A) \le 1</m> en <m>P(U)=1</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
+  
+    <example>
+      <title>Gooien met een dobbelsteen</title>
+      <p>
+        De uitkomstenverzameling voor het gooien van een dobbelsteen is <m>U=\lbrace 1,2,3,4,5,6 \rbrace</m>. Deze verzameling bevat zes elementen, dus <m>\#U=6</m>. We beschouwen de volgende gebeurtenissen
+        <ol>
+          <li>
+            <p>
+               Het gooien van een even aantal ogen: <m>A= \lbrace 2,4,6 \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+               Het gooien van een oneven aantal ogen: <m>B=\lbrace 1,3,5 \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+               Het aantal gegooide ogen is een volkomen kwadraat:  <m>C=\lbrace 1, 4 \rbrace</m>
+            </p>
+          </li>
+        </ol>
+        De bijhorende kansen zijn <m>P(A)=P(B)=\dfrac{1}{2}</m>, <m>P(C)=\dfrac{1}{3}</m>
+      </p>
+      <image source="venndiagram-dobbelsteen.png" width="70%"/>
+    </example>
+  
+    <assemblage xml:id="assemblage-gebeurtenissen">
+      <title>Bijzondere gebeurtenissen</title>
+  
+  
+      <p>
+        Enkele bijzondere gebeurtenissen zijn:
+        <dl width="narrow">
+          <li>
+            <title>complement</title>
+            <p>
+              Het complement van de gebeurtenis <m>A</m> bevat alle uitkomsten van <m>U</m> die niet in <m>A</m> zitten.
+              <me>
+                \overline{A} = \lbrace u \in U | u \notin A \rbrace
+              </me>
+            </p>
+            <image source="complement.png" width="80%"/>
+          </li>
+          <li>
+            <title>doorsnede</title>
+            <p>
+              De doorsnede van twee gebeurtenissen <m>A</m> en <m>B</m> bestaat uit alle uitkomsten die zowel in <m>A</m> als in <m>B</m> zitten.
+              <me>
+                A \cap B = \lbrace u \in U | u \in A \text{ en } u \in B \rbrace
+              </me>
+            </p>
+            <image source="doorsnede.png" width="100%"/>
+          </li>
+          <li>
+            <title>unie</title>
+            <p>
+              De unie van twee gebeurtenissen bestaat uit alle uitkomsten die in <m>A</m> of <m>B</m> zitten.
+              <me>
+                A \cup B = \lbrace u \in U | u \in A \text{ of } u \in B \rbrace
+              </me>
+            </p>
+            <image source="unie.png" width="100%"/>
+          </li>
+          <li>
+            <title>disjunct</title>
+            <p>
+              Twee gebeurtenissen zijn disjunct als ze geen enkele uitkomst gemeenschappelijk hebben en dus nooit tegelijkertijd kunnen optreden.
+              <me>
+                A \text{ en } B \text{ zijn disjunct } \Leftrightarrow A \cap B = \emptyset
+              </me>
+            </p>
+            <image source="disjunct.png" width="100%"/>
+          </li>
+        </dl>
+        De uitkomsten zelf zijn natuurlijk ook gebeurtenissen. We noemen deze gebeurtenissen elementair:
+        <me>
+          E_i=\lbrace u_i \rbrace \quad (i=1,2,\ldots, n)
+        </me>
+      </p>
+    </assemblage>
+  
+    <example>
+      <title>Gooien met een dobbelsteen (vervolg)</title>
+      <p>
+        We gaan verder met het vorige voorbeeld en bepalen enkele andere gebeurtenissen op basis van <m>A</m>, <m>B</m> en <m>C</m>.
+        <ul>
+          <li>
+            <p>
+              <m>\overline{C}=\lbrace 2,3,5,6 \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cap B = \emptyset \Leftrightarrow </m> <m>A</m> en <m>B</m> zijn disjuncte gebeurtenissen.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cap C = \lbrace 4 \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cup B = U</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cup C = \lbrace 1,2,4,6 \rbrace</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </example>
+  </section>

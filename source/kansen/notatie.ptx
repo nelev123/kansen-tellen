@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Herhaling: enkele belangrijke notaties</title>
+    <p>
+      <dl>
+        <li>
+          <title><m>\lbrace , (;) \rbrace </m></title>
+          <p>
+            wordt gebruikt om verzamelingen te noteren; de volgorde van opsomming speelt daarbij geen rol. Zo kan je de <term>verzameling</term> van alle natuurlijke getallen kleiner dan vijf schrijven als <m>\lbrace 0, 1, 2, 3, 4 \rbrace</m>, maar ook als <m> \lbrace 3, 0, 2, 4, 1 \rbrace</m>. In plaats van een komma, wordt soms ook <m>;</m> gebruikt om de <term>elementen</term> van elkaar te scheiden.
+           <notation>
+             <usage>
+               <m>\lbrace \rbrace</m>
+             </usage>
+             <description>
+               definitie van een verzameling
+             </description>
+           </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\in</m></title>
+          <p>
+            betekent <sq>is een element van</sq> of <sq>behoort tot </sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan <m>2 \in V</m>.
+            <notation>
+              <usage>
+                <m>\in </m>
+              </usage>
+              <description>
+                is een element van
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\notin</m></title>
+          <p>
+            betekent <sq>is geen element van</sq> of <sq>behoort niet tot </sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan <m>6 \notin V</m>.
+            <notation>
+              <usage>
+                <m>\notin </m>
+              </usage>
+              <description>
+                is geen element van
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\subset</m></title>
+          <p>
+            betekent <sq>is een deelverzameling van</sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W=\lbrace 1, 4 \rbrace </m>, dan <m>W \subset V</m>.
+            <notation>
+              <usage>
+                <m>\subset </m>
+              </usage>
+              <description>
+                is een deelverzameling van
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\not \subset</m></title>
+          <p>
+            betekent <sq>is geen deelverzameling van</sq>. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace -1, 10 \rbrace</m> dan <m>W \not \subset V</m>.
+            <notation>
+              <usage>
+                <m>\not \subset </m>
+              </usage>
+              <description>
+                is geen deelverzameling van
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\cup </m></title>
+          <p>
+            betekent <sq>de unie</sq> of <sq>de vereniging</sq> van twee verzamelingen, d.w.z. de verzameling die bestaat uit de elementen van de eerste en de tweede verzameling samengenomen. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \cup W =\lbrace 0,1,2,3,4,6,8,10 \rbrace</m>.
+            <notation>
+              <usage>
+                <m>\cup </m>
+              </usage>
+              <description>
+                 unie van twee verzamelingen
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\cap </m></title>
+          <p>
+            betekent <sq>de doorsnede</sq> van twee verzamelingen, d.w.z. de verzameling bestaande uit de gemeenschappelijke elementen van beide verzamelingen. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \cap W =\lbrace 0, 2,4 \rbrace</m>.
+            <notation>
+              <usage>
+                <m>\cap </m>
+              </usage>
+              <description>
+                 doosnede van twee verzamelingen
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\setminus </m></title>
+          <p>
+            betekent <sq>het verschil</sq> van twee verzamelingen, d.w.z. de verzameling bestaande uit de elementen die behoren tot de eerste verzameling, maar niet tot de tweede verzameling. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m> en <m>W = \lbrace 0, 2, 4, 6, 8, 10 \rbrace</m> dan is <m>V \setminus W =\lbrace 1, 3 \rbrace</m>.
+            <notation>
+              <usage>
+                <m>\setminus </m>
+              </usage>
+              <description>
+                 verschil van twee verzamelingen
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\emptyset </m></title>
+          <p>
+            is het symbool voor de <sq>lege verzameling</sq>: <m>\emptyset=\lbrace \rbrace</m>
+            <notation>
+              <usage>
+                <m>\emptyset </m>
+              </usage>
+              <description>
+                 de lege verzameling
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>\#</m></title>
+          <p>
+            is het symbool voor het <sq>aantal elementen</sq> van een verzameling. Als <m>V = \lbrace 0, 1, 2, 3, 4 \rbrace </m>, dan is <m>\#V = 5</m>
+            <notation>
+              <usage>
+                <m>\#</m>
+              </usage>
+              <description>
+                 aantal elementen van een verzameling
+              </description>
+            </notation>
+          </p>
+        </li>
+        <li>
+          <title><m>|</m></title>
+          <p>
+            betekent <sq>waarvoor geldt dat</sq> als het gebruikt wordt om een verzameling te beschrijven. De verzameling <m>V = \lbrace 0, 1, 2, 3, 4, \ldots, 98, 99, 100 \rbrace </m> kan bijvoorbeeld ook geschreven worden als <m>V= \lbrace n \in \mathbb{N}| n \le 100 \rbrace </m>.
+           <notation>
+             <usage>
+               <m>| </m>
+             </usage>
+             <description>
+               waarvoor geldt dat (bij definitie van verzameling)
+             </description>
+           </notation>
+          </p>
+        </li>
+      </dl>
+    </p>
+  </section>

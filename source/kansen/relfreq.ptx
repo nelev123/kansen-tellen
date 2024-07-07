@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Kans als relatieve frequentie</title>
+    <p>
+      Als je gooit met een normale, eerlijke dobbelsteen kan je op voorhand niet voorspellen wat de uitkomst zal zijn. Als je echter een groot aantal keer na elkaar gooit en het aantal keer dat je een zes gooide deelt door het totale aantal worpen, dan zal je merken dat deze relatieve frequentie naar <m>\dfrac{1}{6}</m> convergeert. Als we het aantal worpen voorstellen door <m>n</m> en het aantal keer dat een zes wordt gegooid door <m>n_6</m>, dan is de theoretische kans op het gooien van een zes
+      <me>
+        \lim_{n \to \infty}\dfrac{n_6}{n}=\dfrac{1}{6}.
+      </me>
+    </p>
+    <figure>
+      <caption>
+        <url href="https://www.mathematik.tu-clausthal.de/en/mathematics-interactive/simulation/dice-roll-simulator/">Evolutie van de relatieve frequentie van het gooien van een zes.</url>
+      </caption>
+      <image width="60%" source="relfreq.png"/>
+    </figure>
+    <p>
+      Bij een <term>kansexperiment</term> worden de <term>uitkomsten</term> door het toeval beheerst. De uitkomst van één experiment valt niet te voorspellen, maar als je het experiment een groot aantal keer herhaalt, krijg je wel steeds dezelfde relatieve frequentieverdeling voor de mogelijke uitkomsten. Dit noemen we de <term>experimentele wet van de grote aantallen</term>.
+    </p>
+    <p>
+      Een kans geef je steeds weer met een getal tussen 0 en 1 of met procenten.
+    </p>
+  </section>

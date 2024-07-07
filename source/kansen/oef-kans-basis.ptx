@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subexercises>
+    <exercise>
+        <statement>
+          <p>
+            Je trekt lukraak een kaart uit een spel van 52 kaarten. Wat is de kans dat je een aas trekt?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\dfrac{4}{52}=\dfrac{1}{13}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Je gooit met twee zuivere dobbelstenen. Bereken de kans dat de som van het aantal ogen groter dan of gelijk is aan 10.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Er zijn 36 mogelijke uitkomsten en bij 6 ervan is het aantal ogen groter dan of gelijk aan 10:
+            <md>
+              <mrow> \amp (6,6) \amp (6,5) \amp \amp (6,4)</mrow>
+              <mrow> \amp (5,6) \amp (5,5) \amp </mrow>
+              <mrow> \amp (4,6) </mrow>
+            </md>
+            De kans is dus <m>\dfrac{6}{36} = \dfrac{1}{6}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Geef de uitkomstenverzameling van het experiment <q>opgooien van drie muntstukken</q>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bepaal vervolgens de volgende gebeurtenissen en bereken ook telkens de kans: (A) ten hoogste tweemaal kop gooien; (B) driemaal hetzelfde resultaat gooien
+                </p>
+              </li>
+              <li>
+                <p>
+                  Beschouw de volgende gebeurtenissen: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A}</m>. Bereken telkens de kans.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           Stel <m>K= </m> kop en <m>M= </m> munt: <md>
+            <mrow> U= \lbrace  \amp (K,K,K) ; (K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  </mrow>
+            <mrow> \amp (M,K,M); (M,M,K); (M,M,M) \rbrace</mrow>
+           </md>
+           <md>
+            <mrow>  A = \amp \lbrace K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  (M,K,M); </mrow>
+            <mrow> \amp (M,M,K); (M,M,M) \rbrace </mrow>
+            <mrow> B= \amp \lbrace (K,K,K); (M,M,M) \rbrace </mrow>
+           </md>
+           De gevraagde kansen zijn: <m>P(A)=\dfrac{7}{8}</m>, <m>P(B)=\dfrac{1}{4}</m>, <m>P(A \cup B) =1 </m>, <m>P(A \cap B )=\dfrac{1}{8}</m> en <m>P(\overline{A})=\dfrac{1}{8}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            We trekken een kaart uit een spel van 52 kaarten. Beschouw de gebeurtenissen: (A) trekken van een hartenkaart; (B) trekken van een aas
+            <ol>
+              <li>
+                <p>
+                  Beschrijf de volgende gebeurtenissen in woorden: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A} \cap \overline{B}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bereken de kans van elke gebeurtenis.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>A \cup B</m>: trekken van een hartenkaart of een aas; <m>A \cap B</m>: trekken van een hartenaas; <m>\overline{A} \cap \overline{B}</m>: trekken van geen hartenkaart en geen aas. De gevraagde kansen zijn <m>P(A \cup B)=\dfrac{16}{52}</m>; <m>P(A \cap B)=\dfrac{1}{52}</m>; <m>P(\overline{A} \cap \overline{B})=\dfrac{36}{52}</m> 
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Een koppel dat vier kinderen wil heeft 37,5% kans om twee jongens en twee meisjes te krijgen. Verklaar!
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Het gaat hier over de uitkomsten:
+            <md>
+              <mrow> \amp (J,J,M,M) \amp  (M,M,J,J) \amp \amp (J,M,J,M)</mrow>
+              <mrow> \amp (M,J,M,J) \amp (J,M,M,J) \amp \amp (M,J,J,M)</mrow>
+            </md>
+            en er zijn 16 uitkomsten in totaal. De kans is bijgevolg <m>\dfrac{6}{16}=0,375</m>.
+          </p>
+        </solution>
+      </exercise>
+</subexercises>
