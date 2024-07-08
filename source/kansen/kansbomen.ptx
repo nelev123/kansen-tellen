@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Kansbomen</title>
+    <p>
+      Tot nog toe hebben we kansen berekend door gewoon telkens expliciet de elementen van de gebeurtenissen op te sommen. Dat is niet echt een efficiënte manier en werkt ook alleen maar voor eenvoudige kansberekeningen. Stel bijvoorbeeld dat je onderstaande vraag wil beantwoorden.
+    </p>
+    <blockquote>
+      <p>
+        Je trekt 6 kaarten uit een kaartspel. Wat is de kans op het trekken van twee azen, twee heren en twee andere kaarten?
+      </p>
+    </blockquote>
+    <p>
+      Dit lukt enkel als je het aantal manieren kan tellen waarop je twee azen, twee heren en twee andere kaarten kan trekken. In het volgende hoofdstuk krijg je dan ook een inleiding op de kunst van het tellen.
+    </p>
+    <p>
+      In het vervolg van dit hoofdstuk focussen we op het leren rekenen met kansen. In principe kan elke oefening met behulp van wat gezond verstand en door het tekenen van <term>kansbomen</term> opgelost worden, maar we zullen ook enkele regels en wetten afleiden ter ondersteuning <mdash/> en om het rekenwerk vaak wat sneller te doen verlopen.
+    </p>
+    <blockquote>
+      <p>
+        <q>La théorie des probabilités n’est, au fond, que le bon sens réduit au calcul.</q>
+      </p>
+      <attribution>
+        Piere Simon Laplace (1749 - 1827)
+      </attribution>
+    </blockquote>
+    <example>
+      <title>Kans op regen</title>
+      <p>
+        Morgen is er 50% kans op regen en overmorgen 60%. Wat is dan de kans op regen de komende twee dagen? Dit kansexperiment heeft vier mogelijke uitkomsten en kan visueel met behulp van een kansboom voorgesteld worden (<m>R</m> betekent regen en <m>D</m> betekent droog) en bij elke tak staat de corresponderende kans.
+      </p>
+      <image source="kansboom.png" width="100%"/>
+      <p>
+        Als je de kans wil berekenen dat het morgen <alert>en</alert> overmorgen regent, vermenigvuldig je de kansen van elke tak:
+        <me>
+          P(RR)=0,50 \cdot 0,60 = 0,30
+        </me>
+        De andere drie kansen bereken je op dezelfde manier. De kans dat het de komende twee dagen regent is gelijk aan de kans dat het morgen en overmorgen regent, <alert>of</alert>  morgen regent en overmorgen droog is <alert>of</alert> morgen droog is en overmorgen regent, d.w.z.
+        <me>
+          P(RR)+P(RD)+P(DR) = 0,30 + 0,20 + 0,30 = 0,80 
+        </me>
+        Je kan dit natuurlijk ook sneller berekenen via de complementaire gebeurtenis<fn>Zie de volgende paragraaf.</fn>:
+        <me>
+          1-P(DD) = 1 - 0,20 = 0,80
+        </me>
+      </p>
+    </example>
+  
+    <assemblage>
+      <title>Kansbomen</title>
+      <p>
+        Kansbomen zijn een handig hulpmiddel om kansverdelingen op te stellen.
+        <ul>
+          <li>
+            <p>
+              Als je langs een tak verder gaat, vermenigvuldig je de kansen van de deeltakken (productregel). Bij het in woorden formuleren van de kansen, gebruik je dan <sq> en </sq>.
+            </p>
+          </li>
+          <li>
+            <p>
+              De kansen van verschillende takken tel je steeds op (somregel). Bij het in woorden formuleren van de kansen, gebruik je dan <sq> of </sq>.
+            </p>
+          </li>
+  
+          <li>
+            <p>
+              De som van alle kansen is natuurlijk altijd gelijk aan 1. Dit is een handig controlemiddel.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
+
+    <p>
+      Probeer onderstaande problemen op te lossen.
+    </p>
+
+    <exploration>
+      <statement>
+        <p>
+          Je doet mee met een spelprogramma en maakt kans om een auto te winnen. De auto bevindt zich achter één van drie deuren en achter de andere twee staat een geit. Stel dat je de eerste deur kiest, maar voordat deze wordt geopend, helpt de presentator door een andere deur te openen en de geit erachter te tonen. Blijf je bij je oorspronkelijke keuze of wissel je van deur?
+        </p>
+      </statement>
+    </exploration>
+
+    <exploration>
+      <statement>
+        <p>
+          Tijdens de corona epidemie stond er in een krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
+            <p>
+              Men moet dan ook consequent zijn: wie positief test, komt er niet in. Maar ook dan ben je niet safe, want de gevoeligheid van die sneltests is 80%. Eén op de vijf bezoekers met een negatief resultaat kan toch positief zijn.
+            </p>
+          </blockquote>
+          Dat klopt natuurlijk niet. Het aantal bezoekers dat mogelijk besmet is, zal veel kleiner zijn dan 20%. Verklaar!
+        </p>
+      </statement>
+    </exploration>
+  </section>

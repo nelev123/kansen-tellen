@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Rekenen met kansen</title>
+    <p>
+      Een kans voldoet aan de volgende rekenregels (<m>A</m> en <m>B</m> zijn twee willekeurige gebeurtenissen):
+    </p>
+    <assemblage>
+      <title>Complementregel</title>
+      <p>
+        <me>
+          P(\overline{A}) = 1- P(A)
+        </me>
+      </p>
+    </assemblage>
+    <example>
+      <p>
+        Je gooit met twee zuivere dobbelstenen. Wat is de kans dat de som van het aantal ogen ten minste vier is? De kans op ten minste vier ogen is gelijk aan de kans op vier ogen <m>+</m> de kans op vijf ogen <m>+</m> de kans op zes ogen <m>+ \ldots</m> de kans op twaalf ogen. Via de complementregel kan deze kans sneller berekend worden. Het complement van de gebeurtenis <q>ten minste vier ogen rollen</q> is de gebeurtenis <q>hoogstens drie ogen rollen</q> en deze gebeurtenis is gelijk aan <m>\lbrace (1,1), (1,2), (2,1) \rbrace</m> met kans <m>\dfrac{3}{36}=\dfrac{1}{12}</m>. De kans op tenminste vier ogen is bijgevolg <m>\dfrac{11}{12}</m>.
+      </p>
+
+    </example>
+    <assemblage>
+      <title>Somregel</title>
+      <p>
+        <me>
+          P(A \cup B) = P(A) + P(B) - P(A \cap B)
+        </me>
+        Als <m>A</m> en <m>B</m> disjunct zijn, herleid dit zich tot
+        <me>
+           P(A \cup B)=P(A)+P(B)
+        </me>
+      </p>
+    </assemblage>
+
+    <remark>
+        <p>
+            Als je bij een kansboom de kansen van verschillende takken optelt, pas je eigenlijk de somregel toe met disjuncte gebeurtenissen.
+        </p>   
+    </remark>
+
+    <example>
+      <p>
+        Kies een willekeurig natuurlijk getal vanaf 1 t.e.m. 100. Wat is de kans dat het getal deelbaar is door 10 of door 25? We hebben hier te maken met twee gebeurtenissen waarvan de doorsnede niet leeg is.
+        <ul>
+          <li>
+            <p>
+              Gebeurtenis <m>A</m>: <q>het getal is deelbaar door 10</q> met kans <m>P(A)=\dfrac{10}{100}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Gebeurtenis <m>B</m>: <q>het getal is deelbaar door 25</q> met kans <m>P(B)=\dfrac{4}{100}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              De kans op de unie is dus gelijk aan <m>P(A \cup B)=\dfrac{10}{100}+\dfrac{4}{100}-\dfrac{2}{100}=\dfrac{12}{100}=\dfrac{3}{25}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </example>
+    <activity>
+      <statement>
+        <p>
+          Voor drie willekeurige gebeurtenissen <m>A</m>, <m>B</m> en <m>C</m> geldt
+          <md>
+            <mrow>  P(A \cup B \cup C) = \amp \;  P(A) + P(B) + P (C) - P(A \cap B) - P(B \cap C)</mrow>
+            <mrow> \amp - P(A \cap C) + P(A \cap B \cap C)</mrow>
+          </md>
+          Ga voor jezelf na dat je deze formule begrijpt.
+        </p>
+      </statement>
+    </activity>
+    <p>
+      De verschilregel heb je niet zo vaak nodig in berekeningen, maar geven we voor de volledigheid:
+      <me>
+        P(A \setminus B) = P(A) - P(A \cap B)
+      </me>
+    </p>
+    <p>
+      Om de productregel te kunnen afleiden, moeten we eerst het idee van een voorwaardelijke kans introduceren.
+    </p>
+    <example>
+      <p>
+        Beschouw het kansexperiment <q>gooien met een eerlijke dobbelsteen</q> en de twee gebeurtenissen
+        <dl>
+          <li>
+            <title><m>A</m></title>
+            <p>
+               <q>minder dan vier ogen gooien</q>
+            </p>
+          </li>
+          <li>
+            <title><m>B</m></title>
+            <p>
+              <q>een even aantal ogen gooien</q>
+            </p>
+          </li>
+        </dl>
+        Wat is de kans dat er minder dan vier ogen gegooid worden op voorwaarde dat het aantal gegooide ogen even is? Een dergelijke kans noemen we een voorwaardelijke kans en we noteren <m>P(A|B)</m>. Deze kans kan gemakkelijk rechtstreeks berekend worden. Er zijn drie even ogen en enkel twee is kleiner dan vier, dus <m>P(A|B)=\dfrac{1}{3}</m>.
+      </p>
+    </example>
+
+    <remark>
+        <p>
+            In een kansboom staat vanaf de tweede vertakking eigenlijk altijd een voorwaardelijke kans. 
+        </p>       
+    </remark>
+
+    <p>
+      We gaan nu op zoek naar een algemene formule die het verband uitdrukt tussen <m>P(A|B)</m> en <m>P(A \cap B)</m> voor twee willekeurige gebeurtenissen <m>A</m> en <m>B</m>:
+      <ol>
+        <li>
+          <p>
+            De doorsnede <m>A \cap B</m> bevat de uitkomsten die we nodig hebben.
+          </p>
+        </li>
+        <li>
+          <p>
+            De kans <m>P(A|B)</m> kan berekend worden door het aantal elementen in de doorsnede te delen door het aantal elementen in de verzameling <m>B</m>. Door gebeurtenis <m>B</m> als voorwaarde op te leggen, beperken we immers de mogelijke uitkomsten. De voorwaardelijke kans kan dus berekend worden als
+            <me>
+              P(A|B)=\dfrac{\#(A \cap B)}{\#B}=\dfrac{\dfrac{\#(A \cap B)}{\#U}}{\dfrac{\#B}{\#U}}=\dfrac{P(A \cap B)}{P(B)}
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <image source="voorwaardelijke-kans.png" width="80%"/>
+    <p>
+      Als de voorwaardelijke kans gegeven is, of gemakkelijk kan bepaald worden, dan levert bovenstaande formule een manier om de kans op <m>A</m> en <m>B</m> te berekenen:
+      <me>
+        \boxed{P(A \cap B) = P(A|B) \cdot P(B)}
+      </me>
+      Dit is de productregel voor het berekenen van kansen. Als gebeurtenis <m>A</m> niet afhangt van gebeurtenis <m>B</m>, dan is <m>P(A|B)=P(A)</m> en herleid de productregel zich tot
+      <me>
+        P(A \cap B) = P(A) \cdot P(B)
+      </me>
+      
+    </p>
+    <assemblage>
+      <title>Afhankelijke en onafhankelijke gebeurtenissen</title>
+      <p>
+        Twee gebeurtenissen zijn onafhankelijk als
+        <md>
+          <mrow>\amp P(A)=P(A|B)</mrow>
+          <mrow>\text{ of }\; \amp P(A \cap B)= P(A) \cdot P(B)</mrow>
+        </md>
+      </p>
+    </assemblage>
+    <example>
+      <p>
+         Stel dat je uit een bak met drie witte, vier zwarte en drie rode knikkers lukraak twee knikkers trekt zonder terugleggen. De kans dat beide knikkers wit zijn is
+        <me>
+          P(W_1 \cap W_2)=P(W_1) P(W_2|W_1)=\dfrac{3}{10} \cdot \dfrac{2}{9}=\dfrac{1}{15}
+        </me>
+        Als we twee knikkers trekken met terugleggen dan is de kans dat beide knikkers wit zijn
+        <me>
+          P(W_1 \cap W_2)=P(W_1)P(W_2)=\dfrac{3}{10} \cdot \dfrac{3}{10}=\dfrac{9}{100}
+        </me>
+        omdat in dit geval de kans dat de tweede knikker wit is onafhankelijk is van het resultaat van de eerste trekking.
+      </p>
+    </example>
+  
+     <assemblage>
+       <title>Voorwaardelijke kans en productregel</title>
+       <p>
+         De kans op <m>A</m> op voorwaarde dat <m>B</m> zich heeft voorgedaan is
+         <me>
+             P(A|B)=\dfrac{P(A \cap B)}{P(B)}
+         </me>
+         De kans op <m>A</m> en <m>B</m> bereken je met de productregel
+         <me>
+           P(A \cap B) = \begin{cases} P(A) \cdot P(B) \text{ (onafhankelijke gebeurtenissen)} \\ P(A) \cdot P(B|A) \text{ (afhankelijke gebeurtenissen)} \end{cases}
+         </me>
+       </p>
+     </assemblage>
+  </section>

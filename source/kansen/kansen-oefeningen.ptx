@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises>
+
+    <exercise>
+        <statement>
+          <p>
+            Je trekt lukraak een kaart uit een spel van 52 kaarten. Wat is de kans dat je een aas trekt?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\dfrac{4}{52}=\dfrac{1}{13}</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            Je gooit met twee zuivere dobbelstenen. Bereken de kans dat de som van het aantal ogen groter dan of gelijk is aan 10.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Er zijn 36 mogelijke uitkomsten en bij 6 ervan is het aantal ogen groter dan of gelijk aan 10:
+            <md>
+              <mrow> \amp (6,6) \amp (6,5) \amp \amp (6,4)</mrow>
+              <mrow> \amp (5,6) \amp (5,5) \amp </mrow>
+              <mrow> \amp (4,6) </mrow>
+            </md>
+            De kans is dus <m>\dfrac{6}{36} = \dfrac{1}{6}</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Geef de uitkomstenverzameling van het experiment <q>opgooien van drie muntstukken</q>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bepaal vervolgens de volgende gebeurtenissen en bereken ook telkens de kans: (A) ten hoogste tweemaal kop gooien; (B) driemaal hetzelfde resultaat gooien
+                </p>
+              </li>
+              <li>
+                <p>
+                  Beschouw de volgende gebeurtenissen: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A}</m>. Bereken telkens de kans.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           Stel <m>K= </m> kop en <m>M= </m> munt: <md>
+            <mrow> U= \lbrace  \amp (K,K,K) ; (K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  </mrow>
+            <mrow> \amp (M,K,M); (M,M,K); (M,M,M) \rbrace</mrow>
+           </md>
+           <md>
+            <mrow>  A = \amp \lbrace K,K,M); (K,M,K) ; (M,K,K); (K,M,M);  (M,K,M); </mrow>
+            <mrow> \amp (M,M,K); (M,M,M) \rbrace </mrow>
+            <mrow> B= \amp \lbrace (K,K,K); (M,M,M) \rbrace </mrow>
+           </md>
+           De gevraagde kansen zijn: <m>P(A)=\dfrac{7}{8}</m>, <m>P(B)=\dfrac{1}{4}</m>, <m>P(A \cup B) =1 </m>, <m>P(A \cap B )=\dfrac{1}{8}</m> en <m>P(\overline{A})=\dfrac{1}{8}</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            We trekken een kaart uit een spel van 52 kaarten. Beschouw de gebeurtenissen: (A) trekken van een hartenkaart; (B) trekken van een aas
+            <ol>
+              <li>
+                <p>
+                  Beschrijf de volgende gebeurtenissen in woorden: <m>A \cup B</m>, <m>A \cap B</m> en <m>\overline{A} \cap \overline{B}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bereken de kans van elke gebeurtenis.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>A \cup B</m>: trekken van een hartenkaart of een aas; <m>A \cap B</m>: trekken van een hartenaas; <m>\overline{A} \cap \overline{B}</m>: trekken van geen hartenkaart en geen aas. De gevraagde kansen zijn <m>P(A \cup B)=\dfrac{16}{52}</m>; <m>P(A \cap B)=\dfrac{1}{52}</m>; <m>P(\overline{A} \cap \overline{B})=\dfrac{36}{52}</m> 
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            Een koppel dat vier kinderen wil heeft 37,5% kans om twee jongens en twee meisjes te krijgen. Verklaar!
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Het gaat hier over de uitkomsten:
+            <md>
+              <mrow> \amp (J,J,M,M) \amp  (M,M,J,J) \amp \amp (J,M,J,M)</mrow>
+              <mrow> \amp (M,J,M,J) \amp (J,M,M,J) \amp \amp (M,J,J,M)</mrow>
+            </md>
+            en er zijn 16 uitkomsten in totaal. De kans is bijgevolg <m>\dfrac{6}{16}=0,375</m>.
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            In een vaas zitten 4 gele en 2 rode knikkers. We trekken drie knikkers met terugleggen. Wat is de kans op precies 1 rode knikker?
+          </p>
+        </statement>
+        <solution>
+          <p>
+             <m>\dfrac{4}{9}</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            In een vaas zitten 4 gele en 2 rode knikkers. We trekken drie knikkers zonder terugleggen. Wat is de kans op precies 1 rode knikker?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\dfrac{3}{5}</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            In tennis wordt vaak <q>best of three</q> gespeeld: wie het eerst twee sets wint, heeft gewonnen. Tot nu toe heeft Annelies 60% van de sets die ze tegen Bea heeft gespeeld gewonnen. Bereken de kans dat Bea de partij wint.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Als je de kansboom uitschrijft, zie je dat er drie takken zijn waar Bea wint. De kans is <m>0,6 \cdot (0,4)^2 + (0,4)^2 \cdot 0,6 + (0,4)^2 = 0,352</m>.
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            Met een verbogen geldstuk is de kans om kop te gooien gelijk aan 0,3. Met een tweede verbogen geldstuk is de kans om munt te gooien gelijk aan 0,25. Bereken de kans om tweemaal hetzelfde resultaat te krijgen als elk geldstuk eenmaal opgegooid wordt.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <!--Stel de kansboom op. De kans op twee keer kop is <m>0,3 \cdot 0,75</m> en de kans op twee keer munt is <m>0,7 \cdot 0,25</m>. De gezochte kans is de som van deze twee takken en gelijk aan <m>0,4</m>.--><m>0,4</m>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Een voorwerp heeft de vorm van een regelmatig achtvlak met zijvlakken <m>a_1</m>, <m>a_2</m>, ..., <m>a_8</m>. Aan de gebeurtenis <m>\lbrace a_1 \rbrace</m>, zijvlak <m>a_1</m> blijft boven liggen bij het gooien, wordt 0,16 als kans toegekend. Alle andere gebeurtenissen <m>\lbrace a_i \rbrace</m> hebben dezelfde kans. Bepaal die kans.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0,12</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Toon aan dat voor twee willekeurige gebeurtenissen <m>A</m> en <m>B</m> geldt
+          <ol>
+            <li>
+              <p>
+                <m>P(\overline{A} \cup \overline{B})=1-P(A \cap B)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>P(\overline{A} \cap \overline{B})=1-P(A \cup B)</m>
+              </p>
+            </li>
+          </ol>
+          (Hint: teken de situaties met venndiagrammen.)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>A</m> en <m>B</m> zijn twee gebeurtenissen met <m>P(A \cup B)=\dfrac{5}{9}</m>, <m>P(A \cap B)=\dfrac{1}{9}</m> en <m>P(\overline{A})=\dfrac{5}{9}</m>. Bereken <m>P(A)</m>, <m>P(B)</m> en <m>P(\overline{A} \cup \overline{B})</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>P(A)=\dfrac{4}{9}</m>; <m>P(B)=\dfrac{2}{9}</m>; <m>P(\overline{A} \cup \overline{B})=1-P(A \cap B)=\dfrac{8}{9}</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Uit voorgaande jaren is gebleken dat de kans op slagen voor het examen Engels 80% is, de kans op slagen voor geschiedenis 85% en de kans op slagen voor allebei 75%. Bereken de kans dat iemand niet geslaagd is voor Engels en geschiedenis.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          10%
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          We trekken willekeurig twee kaarten uit een spel van 52 kaarten zonder terugleggen. Bereken de kans dat de tweede getrokken kaart een aas is.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\dfrac{1}{13}</m>
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise>
+      <statement>
+        <p>
+          In een lenzenfabriek zijn er drie productieketens. Deze ketens nemen elk respectievelijk <m>35\%</m>, <m>25\%</m> en <m>40\%</m> van de totale productie op zich. De productie verloopt niet foutloos en de ketens leveren respectievelijk <m>3\%</m>, <m>4\%</m> en <m>2\%</m> defecte lenzen.
+          <ol>
+            <li>
+              <p>
+                We nemen lukraak een geproduceerde lens. Wat is de kans dat de lens defect is?
+              </p>
+            </li>
+            <li>
+              <p>
+                We nemen lukraak een lens en stellen vast dat ze defect is. Wat is de kans dat ze afkomstig is van de tweede productieketen?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0,0285</m> en <m>0,3509</m>
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise>
+      <statement>
+        <p>
+          Je trekt met terugleggen twee keer na elkaar een kaartje uit een doos met 3 witte kaartjes en 1 zwart kaartje. Noem gebeurtenis <m>A</m> <q>beide kaartjes hebben dezelfde kleur</q> en gebeurtenis <m>B</m>: <q>het eerste kaartje is wit</q>.
+          <ol>
+            <li>
+              <p>
+                Bereken <m>P(A)</m> en <m>P(B)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Bereken <m>P(A \cup B)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Bereken <m>P(A \cap B)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Ga na of de gebeurtenissen <m>A</m> en <m>B</m> onafhankelijk zijn.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>P(A)=\dfrac{10}{16}=\dfrac{5}{8}</m>, <m>P(B)=\dfrac{12}{16}=\dfrac{3}{4}</m>, <m>P(A \cup B)=\dfrac{10}{16}+\dfrac{12}{16}-\dfrac{9}{16}=\dfrac{13}{16}</m>, <m>P(A \cap B)=\dfrac{9}{16}</m> en de gebeurtenissen zijn afhankelijk want <m>P(A \cap B) \neq P(A) \cdot P(B)</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Stel dat de bevolking van een bepaald land bestaat uit 40% mannen en 60% vrouwen. Bij de mannen rookt er 35% en bij de vrouwen is dit 30%.
+          <ol>
+            <li>
+              <p>
+                Men trekt lukraak een persoon uit deze bevolking. Wat is de kans dat deze persoon rookt?
+              </p>
+            </li>
+            <li>
+              <p>
+                Als men lukraak een roker uit de verzameling van de rokers kiest, wat is dan de kans dat het een man is?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          a. 0,32 en b. 0,44
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Veronderstel dat bij het vervaardigen van lampen <m>3\%</m> van de productie een fout vertoont. We controleren 3 lampen. Bereken de kans
+          <ol>
+            <li>
+              <p>
+                dat precies één lamp een fout heeft;
+              </p>
+            </li>
+            <li>
+              <p>
+                dat niet alle lampen in orde zijn.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <!--<m>3\cdot0,3\cdot(0,97)^2=0,0845</m> en <m>1-(0,97)^3=0,0873</m>-->
+          a. <m>0,0845</m> en b. <m>0,0873</m>
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise>
+      <statement>
+        <p>
+          Een toets bestaat uit drie meerkeuzevragen met elk 5 mogelijke antwoorden waarvan er maar één juist is. Stel dat je op elke vraag gewoon gokt en beschouw de gebeurtenissen <m>A</m> <q>minstens twee vragen juist</q> en <m>B</m> <q>antwoord op de eerste vraag juist</q>.
+          <ol>
+            <li>
+              <p>
+                Bereken <m>P(A)</m> en <m>P(B)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>P(A|B)</m>
+              </p>
+            </li>
+            <li>
+              <m>P(B|A)</m>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+          <p>
+            <m>P(A)=0,104</m>, <m>P(B)=0,2</m>, <m>P(A|B)=\dfrac{0,072}{0,2}=0,36</m> en <m>P(B|A)=\dfrac{0,072}{0,104}=0,692</m>.
+          </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+           Bij een meerkeuzetoets hebben de leerlingen vier mogelijke antwoorden voor elke vraag ter beschikking. Het antwoord op de eerste vraag is gekend door <m>60\%</m> van de leerlingen, terwijl de overige <m>40\%</m> gokt op één van de vier mogelijjkheden. We kiezen een willekeurig leerling.
+           <ol>
+             <li>
+               <p>
+                 Wat is de kans dat de eerste vraag goed beantwoord wordt?
+               </p>
+             </li>
+             <li>
+               <p>
+                 Stel dat de leerling de vraag goed beantwoord heeft. Wat is dan de kans dat die leerling het antwoord inderdaad kende?
+               </p>
+             </li>
+           </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0,70</m> en <m>0,857</m>
+        </p>
+      </solution>
+    </exercise>
+  
+    <exercise>
+      <statement>
+        <p>
+          Voor het inblikken van erwten gebruikt men in de fabriek machines <m>M_1</m>, <m>M_2</m> en <m>M_3</m> die respectievelijk <m>55\%</m>, <m>35\%</m> en <m>10\%</m> van de productie bewerken. De percentages inblikfouten voor de machines zijn respectievelijk <m>4\%</m>, <m>3\%</m> en <m>8\%</m>.
+          <ol>
+            <li>
+              <p>
+                  Bepaal de kans dat een blik erwten, lukraak genomen uit de voorraad, fout bewerkt is.
+              </p>
+            </li>
+            <li>
+              <p>
+                  Bereken de kans dat dit niet door machine <m>M_1</m> is veroorzaakt.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0,0405</m> en <m>0,4568</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          De buren hebben nogal een oud alarmtoestel dat niet altijd even goed werkt. Wanneer er ingebroken wordt, is er <m>95\%</m> kans dat het alarm in werking treedt. Tijdens de laatste 8 weken heeft het echter al zeven keer, telkens zonder aanleiding, alarm geslagen. Uit politierapporten weet je dat de kans op inbraak gelijk is aan <m>0,0005</m>. Als het alarmtoestel morgen in werking treedt, wat is dan de kans dat er werkelijk ingebroken wordt?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0,004</m>
+        </p>
+      </solution>
+    </exercise>
+
+</exercises>

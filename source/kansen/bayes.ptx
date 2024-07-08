@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>De wet van de totale kans en regel van Bayes</title>
+    <p>
+      Een tijdje geleden stond er in de krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
+        <p>
+          Men moet dan ook consequent zijn: wie positief test, komt er niet in. Maar ook dan ben je niet safe, want de gevoeligheid van die sneltests is 80%. Eén op de vijf bezoekers met een negatief resultaat kan toch positief zijn.
+        </p>
+      </blockquote>
+      Dat klopt natuurlijk niet. Het aantal bezoekers dat mogelijk besmet is, zal veel kleiner zijn dan 20%. De redenering verloopt als volgt
+      <ol>
+        <li>
+          <p>
+            De gebeurtenissen waar het hier over gaat zijn: <m>B</m> <q>een persoon is besmet</q>; <m>G</m> <q>een persoon is gezond</q>; <m>P</m> <q>de sneltest is positief</q> en <m>N</m> <q>de sneltest is negatief</q>
+          </p>
+        </li>
+        <li>
+          <p>
+            De gevoeligheid of sensitiviteit van de test is de kans dat je positief test als je besmet bent. Hier geldt <m>P(P|B)=0,80</m>. Hieruit volgt wel dat <m>P(N|B)=0,20</m>, maar niet dat <m>P(B|N)=0,20</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Passen we de definitie van voorwaardelijke kans twee keer toe, dan geldt dat
+            <me>
+              P(B|N)=\frac{P(B \cap N)}{P(N)}=\frac{P(N|B)P(B)}{P(N)}
+            </me>
+            met <m>P(N|B)=0,20</m> en bijvoorbeeld <m>P(B)=0,003</m>. 
+          </p>
+          <image source="bayes.png" width="80%"/>
+          <p>
+            De kans dat iemand negatief test is
+            <me>
+              P(N)=P(N|B)P(B)+P(N|G)P(G)
+            </me>
+            met <m>P(G)=0,997</m> en bijvoorbeeld <m>P(N|G)=0,95</m>. De kans <m>P(N|G)</m> wordt de specificiteit van de test genoemd.
+          </p>
+        </li>
+        <li>
+          <p>
+            Invullen en uitrekenen
+            <me>
+              P(B|N)=\frac{0,20 \cdot 0,003}{0,20 \cdot 0,003+0,95 \cdot 0,997} = 6,33 \cdot 10^{-4}
+            </me>
+            De kans dat iemand besmet is na afleggen van een negatieve test is dus ongeveer 0,06%
+          </p>
+        </li>
+      </ol>
+      Een kansboom werkt verhelderend om bovenstaande redenering te begrijpen.
+    </p>
+    <image source="kansboom-bayes.png" width="80%"/>
+    <p>
+      In dit voorbeeld hebben we de regel van Bayes en de wet van de totale kans toegepast.
+    </p>
+    <assemblage>
+      <title>Wet van de totale kans</title>
+      <p>
+        Als de uitkomstenverzameling kan verdeeld worden in een aantal disjuncte gebeurtenissen <m>A_1</m>, <m>A_2</m>, ..., <m>A_n</m>, dan kan de kans op een gebeurtenis <m>B</m> berekend worden als
+        <me>
+          P(B)= P(B|A_1)P(A_1) + P(B|A_2) P(A_2) + \ldots P(B|A_n) P(A_n)
+        </me>
+        Dit noemen we de wet van de totale kans. Deze wet geldt als een gebeurtenis <m>B</m> kan optreden op verschillende manieren die elkaar uitsluiten.
+      </p>
+    </assemblage>
+    <assemblage>
+      <title>Regel van Bayes</title>
+      <p>
+        We gaan opnieuw uit van een aantal disjuncte gebeurtenissen <m>A_1</m>, ..., <m>A_n</m> waarvan de unie de uitkomstenverzameling is. De regel van Bayes laat toe om de voorwaardelijke kans <m>P(A_i|B)</m> te berekenen als de kansen <m>P(A_i)</m>, <m>P(B|A_i)</m> en <m>P(B)</m> gekend zijn:
+        <me>
+          P(A_i|B)=\frac{P(B|A_i) P(A_i)}{P(B)}
+        </me>
+      </p>
+    </assemblage>
+    <!-- <activity>
+      <statement>
+        <p>
+          Formuleer het drie-deuren-probleem (Verkennende opdracht 3.5.2) eveneens als een toepassing van de regel van Bayes.
+        </p>
+      </statement>
+    </activity> -->
+  </section>
