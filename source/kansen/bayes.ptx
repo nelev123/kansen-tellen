@@ -3,7 +3,7 @@
 <section>
     <title>De wet van de totale kans en regel van Bayes</title>
     <p>
-      Een tijdje geleden stond er in de krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
+      Tijdens de corona epidemie stond er in de krant over het organiseren van evenementen m.b.v. sneltests: <blockquote>
         <p>
           Men moet dan ook consequent zijn: wie positief test, komt er niet in. Maar ook dan ben je niet safe, want de gevoeligheid van die sneltests is 80%. Eén op de vijf bezoekers met een negatief resultaat kan toch positief zijn.
         </p>
@@ -47,7 +47,7 @@
           </p>
         </li>
       </ol>
-      Een kansboom werkt verhelderend om bovenstaande redenering te begrijpen.
+      Een kansboom werkt ook verhelderend om bovenstaande redenering te begrijpen.
     </p>
     <image source="kansboom-bayes.png" width="80%"/>
     <p>
@@ -72,11 +72,4 @@
         </me>
       </p>
     </assemblage>
-    <!-- <activity>
-      <statement>
-        <p>
-          Formuleer het drie-deuren-probleem (Verkennende opdracht 3.5.2) eveneens als een toepassing van de regel van Bayes.
-        </p>
-      </statement>
-    </activity> -->
   </section>

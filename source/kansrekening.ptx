@@ -20,6 +20,7 @@
 <xi:include href="./kansen/gebeurtenissen.ptx" />
 <xi:include href="./kansen/kansbomen.ptx" />
 <xi:include href="./kansen/kansen-rekenregels.ptx" />
+<xi:include href="./kansen/bayes.ptx" />
 <xi:include href="./kansen/kansen-oefeningen.ptx" />
 
 </chapter>
