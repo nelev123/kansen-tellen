@@ -102,8 +102,8 @@
     </frontmatter>
 
     <xi:include href="./kansrekening.ptx"/>
-    <!-- <xi:include href="./telproblemen.ptx"/> -->
-    <xi:include href="./combinatoriek/binomium.ptx"/>
+    <xi:include href="./telproblemen.ptx"/>
+    <xi:include href="./tellen/binomium.ptx"/>
     <xi:include href="./kansverdelingen-discreet.ptx"/>
     <xi:include href="./kansverdelingen-continu.ptx"/>
     

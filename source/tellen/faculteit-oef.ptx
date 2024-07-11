@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subexercises>
+    <title><m>n</m>-faculteit</title>
+
+    <exercise>
+      <statement>
+        <p>
+          Bereken
+          <ol>
+            <li>
+              <p>
+                <m>\dfrac{22!}{18!}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{5!3!}{8!}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{6!4!}{(2!)^2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Toon aan dat
+          <ol>
+            <li>
+              <p>
+                <m>(n+2)!-2n \cdot n! = 2 \cdot n! + n(n+1)!</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\dfrac{(n+1)!}{(n-1)!}-\dfrac{n!}{(n-2)!}=2n</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Als <m>C^p_n = \dfrac{n!}{(n-p)!p!}</m> voor <m>p \le n</m>, toon dan aan dat
+          <ol>
+            <li>
+              <p>
+                <m>pC^p_n=nC^{p-1}_{n-1}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>C^{p+1}_{n}=C^{p}_{n} \cdot \frac{n-p}{p+1}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Bepaal <m>n \in \mathbb{N}</m> als
+          <me>
+            3C^{n-1}_{2n}-2C^{n+2}_{2n+1}=0
+          </me>
+        </p>
+      </statement>
+    </exercise>
+
+</subexercises>

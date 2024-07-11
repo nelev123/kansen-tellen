@@ -50,15 +50,7 @@
     <image source="boomdiagram.png" width="%"/>
   </sidebyside>
 
-  <!--hofstede.nl: machtsboom, faculteitsboom-->
-
-    <aside>
-        <title>Cartesisch product</title>
-        <p>
-          Het cartesisch product van een verzameling met zichzelf noteren we met behulp van een exponentiële notatie, zoals bijvoorbeeld <m>\mathbb{R} \times \mathbb{R}=\mathbb{R}^2</m>. Een wiskundige functie <m>f: \mathbb{R} \to \mathbb{R}: x \to y=f(x)</m> beschrijft dus eigenlijk een deelverzameling van het cartesisch product <m>\mathbb{R} \times \mathbb{R}</m>.  
-        </p>
-    </aside>
-    <remark>
+  <remark>
     <title>Productregel en de productverzameling</title>
     <p>
         We beschouwen nu de verzameling <m>A_1</m> van de schilderijen,
@@ -70,6 +62,13 @@
         <me>
            \#(A_1 \times A_2 \times \ldots \times A_k) = \#A_1 \cdot \#A_2 \cdot \ldots \cdot \#A_k 
         </me>
+    </p>
+  </remark>
+
+  <remark>
+    <title>Cartesisch product en functies</title>
+    <p>
+      Het cartesisch product van een verzameling met zichzelf noteren we met behulp van een exponentiële notatie, zoals bijvoorbeeld <m>\mathbb{R} \times \mathbb{R}=\mathbb{R}^2</m>. Een wiskundige functie <m>f: \mathbb{R} \to \mathbb{R}: x \to y=f(x)</m> beschrijft dus eigenlijk een deelverzameling van het cartesisch product <m>\mathbb{R} \times \mathbb{R}</m>.  
     </p>
   </remark>
 
