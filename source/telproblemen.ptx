@@ -15,12 +15,13 @@
     <xi:include href="./tellen/inleiding-tellen.ptx"/>
     <xi:include href="./tellen/faculteit.ptx"/>
     <xi:include href="./tellen/keuzes.ptx"/>
-    <!-- <xi:include href="./tellen/basistypes.ptx"/> -->
-    <xi:include href="./tellen/oefeningen-basistypes.ptx"/>
-    <xi:include href="./tellen/oefeningen-samengesteld.ptx"/>
+    <xi:include href="./tellen/basistypes.ptx"/>
+    <xi:include href="./tellen/samengesteld.ptx"/>
     
     <exercises xml:id="exercises-tellen">
       <xi:include href="./tellen/faculteit-oef.ptx" />
+      <xi:include href="./tellen/basistypes-oef.ptx" />
+      <xi:include href="./tellen/samengesteld-oef.ptx" />
     </exercises>
 
 </chapter>

@@ -1,91 +1,12 @@
-<section xml:id="sec-tellen-oef-samengesteld">
-    <title>Samengestelde telproblemen oplossen</title>
-    <subsection>
-        <title>Samengestelde telproblemen analyseren</title>
+<?xml version="1.0" encoding="UTF-8"?>
 
-        <p>
-            Met behulp van de som- en de productregel kan je een samengesteld telprobleem opsplitsen in basistypes. We illustreren dit m.b.v. onderstaand voorbeeld.
-        </p>
+<subexercises>
+    <title>Samengestelde telproblemen</title>
 
-        <blockquote>
-        <p>
-            Een examen bestaat uit tien vragen. Elke vraag wordt als juist (1 punt) of als fout (0 punten) beoordeeld. Op hoeveel manieren kan je acht punten halen, wanneer je minstens drie van de eerste vier vragen juist hebt beantwoord?
-        </p>
-        </blockquote>
-
-        <p>
-             We splitsen het probleem op om tot de oplossing te komen:
-            <ol>
-                <li>
-                <p>
-                    We tellen het aantal manieren waarop er 8/10 kan gehaald worden, maar met de restrictie dat er minstens 3 van de 4 eerste vragen juist zijn. Dit betekent dat we beginnen met 3 <alert>of</alert> 4 juiste vragen en dus de somregel moeten toepassen:
-                    <md>
-                    <mrow>\# \text{ mogelijkheden }= \# \text{ mogelijkheden die beginnen met } 3/4 </mrow>
-                    <mrow>  + \quad \# \text{ mogelijkheden die beginnen met } 4/4</mrow>
-                    </md>
-                </p>
-                </li>
-                <li>
-                <p>
-                    We berekenen eerst het aantal mogelijkheden die beginnen met een score van 3/4. Als we alle vragen in één verzameling stoppen en er daar acht uit kiezen, dan tellen we ook mogelijkheden die niet beginnen met 3/4. We hebben dus twee verzamelingen nodig: de verzameling van de eerste vier vragen en de verzameling van de laatste zes vragen. Uit de eerste verzameling kiezen we er drie <alert>en</alert> uit de tweede verzameling kiezen we er vijf (productregel). Als we vragen uit een verzameling kiezen speelt de volgorde geen rol. Vraag 1, 3 en 4 juist beantwoorden is natuurlijk hetzelfde als vraag 3, 1 en 4 juist beantwoorden. Er zijn dus <m>C^3_4</m> mogelijkheden om drie van de vier eerste vragen juist te beantwoorden <alert>en</alert> <m>C^5_6</m> mogelijkheden om vijf van de zes laatste vragen juist te beantwoorden. Het totale aantal mogelijkheden dat begint met 3/4 is dus <m>C^3_4 \cdot C^5_6 = 4 \cdot 6=24</m>.
-                </p>
-                </li>
-                <li>
-                <p>
-                    Het berekenen van het aantal mogelijkheden die beginnen met een score van 4/4 verloopt analoog en is gelijk aan <m>C^4_4 \cdot C^4_6=15</m>.
-                </p>
-                </li>
-                <li>
-                <p>
-                    Het antwoord op het telprobleem is bijgevolg dat er <m>24+15=39</m> manieren zijn om 8/10 te halen als je minstens drie van de vier eerste vragen juist hebt.
-                </p>
-                </li>
-            </ol>
-        </p>
-    </subsection>
-
-  <subsection>
-    <title>Herhalingspermutaties</title>
-    <p>
-      Dit samengestelde telprobleem komt vaak voor en krijgt een eigen naam. We leiden ook een algemene formule ervoor af. Dit type kwamen we al tegen bij het probleem van de kamelen:
-    </p>
-
-    <blockquote>
-        <p>
-        Een sultan heeft veertien verschillende kamelen en wenst die te verdelen onder zijn vier zonen. De oudste krijgt er vijf, de tweede krijgt er vier, de op een na jongste krijgt er drie en de jongste de overige twee. Op hoeveel manieren kan hij zijn kamelen verdelen?
-        </p>
-    </blockquote>
-
-    <p>
-        We kiezen de vijf kamelen voor de oudste zoon <alert>en</alert> vier kamelen voor de tweede <alert>en</alert> <ellipsis/> We vertrekken van de verzameling met alle kamelen en kiezen er daaruit vijf voor de oudste zoon. De volgorde waarop dit gebeurt is niet belangrijk en herhaling is natuurlijk niet mogelijk. We kunnen dus op <m>C^5_{14}</m> manieren de kamelen kiezen voor de oudste zoon. Voor de andere zonen krijgen we respectievelijk <m>C^4_{9}</m>, <m>C^3_5</m> en <m>C_2^2</m>. Om het totale aantal manieren te berekenen, passen we vervolgens de productregel toe:
-        <me>
-        C^5_{14} \cdot C^4_9 \cdot C^3_5
-        </me>
-        Als we dit volledig uitschrijven en vereenvoudigen, krijgen we
-        <me>
-        \frac{14!}{9! 5!} \cdot \frac{9!}{5! 4!} \cdot \frac{5!}{3! 2!}=\frac{14!}{5!4!3!2!}
-        </me>
-        Als we deze redenering veralgemenen, komen we tot de algemene formule voor een herhalingspermutatie.
-    </p>
-
-    <assemblage>
-        <title>Herhalingspermutaties</title>
-        <p>
-        Een herhalingspermutatie is een geordend <m>n</m>-tal met <m>\alpha</m> elementen van de eerste soort, <m>\beta</m> elementen van de tweede soort, <ellipsis/>
-        <me>
-            \overline{P^{\alpha,\beta,\ldots,\delta}_n}=\dfrac{n!}{\alpha!
-        \, \beta! \, \ldots \delta!} \quad (\alpha+\beta+\ldots+\delta=n)
-        </me>
-        </p>
-    </assemblage>
-
-  </subsection>
-
-  <exercises>
     <exercise>
         <statement>
         <p>
-        In een klas zitten 10 meisjes en 15 jongens. Op hoeveel manieren kan men een panel voor een klasdebat samenstellen bestaande uit drie jongens en twee meisjes?
+          In een klas zitten 10 meisjes en 15 jongens. Op hoeveel manieren kan men een panel voor een klasdebat samenstellen bestaande uit drie jongens en twee meisjes?
         </p>
         </statement>
         <answer>
@@ -94,6 +15,7 @@
         </p>
         </answer>
     </exercise>
+
     <exercise>
         <statement>
         <p>
@@ -134,6 +56,7 @@
         </p>
         </answer>
     </exercise>
+
     <exercise>
         <statement>
         <p>
@@ -146,6 +69,7 @@
         </p>
         </answer>
     </exercise>
+
     <exercise>
         <statement>
         <p>
@@ -158,6 +82,7 @@
         </p>
         </solution>
     </exercise>
+
     <exercise>
         <statement>
         <p>
@@ -170,6 +95,7 @@
         </p>
         </solution>
     </exercise>
+
     <exercise>
         <statement>
         <p>
@@ -182,6 +108,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -195,6 +122,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -292,6 +220,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -338,6 +267,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -383,6 +313,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -419,6 +350,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -431,6 +363,7 @@
         </p>
         </solution>
     </exercise>
+   
     <exercise>
         <statement>
         <p>
@@ -474,6 +407,5 @@
         </p>
         </solution>
     </exercise>
-    </exercises>
-   
-</section>
+
+</subexercises>

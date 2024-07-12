@@ -65,7 +65,7 @@
       <me>
         8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 =\frac{8!}{3!}=\frac{8!}{(8-5)!}
       </me>
-      verschillende rijen. Deze redenering kunnen we zonder problemen veralgemenen wat leidt tot de onderstaande definitie.
+      verschillende rijen. Deze redenering kunnen we zonder problemen veralgemenen tot onderstaande formule.
     </p>
 
     <assemblage>
@@ -178,13 +178,12 @@
     </p>
 
     <p>
-      We hercoderen het probleem m.b.v. de volgende schematische voorstelling : de bakjes onderscheiden we van elkaar met een streepje en de ballen stellen we voor met bolletjes.
+      Het telprobleem kan ook als volgt gecodeerd worden: de bakjes onderscheiden we van elkaar met een streepje en de ballen stellen we voor met bolletjes.
     </p>
 
     <sidebyside widths="80%" margins="auto" valign="middle">
     <image xml:id="fig-bakjes1">
         <latex-image>
-            <![CDATA[
             \begin{tikzpicture}
               \draw[fill=black] (0.6,0) circle (0.05cm);
               \draw[fill=black] (0.8,0) circle (0.05cm);
@@ -200,7 +199,7 @@
               \draw[fill=black] (6,0) circle (0.05cm);
               \draw (6.2,-0.5) -- (6.2,0.5);
               \draw[fill=black] (6.4,0) circle (0.05cm);
-              \end{tikzpicture}]]>
+              \end{tikzpicture}
           </latex-image>
         </image>
       </sidebyside>

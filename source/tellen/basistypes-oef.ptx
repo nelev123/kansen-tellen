@@ -1,53 +1,54 @@
-<section xml:id="sec-tellen-oef-basis">
-    <title>Oefeningen: basistypes</title>    
-    
-    <p>
-      Een basistype herkennen in de formulering van een bepaald telprobleem vormt soms een struikelblok. Onderstaande vragenlijst kan je daarbij helpen. We passen, als voorbeeld, de vragenlijst meteen toe op het onderstaande telprobleem.
-    </p>
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <blockquote>
-      <p>
-          Op hoeveel manieren kan je drie gelijke rode balletjes in vijf verschillende bakjes plaatsen?
-      </p>
-    </blockquote>
-
-    <p>
-      <ol>
-        <li>
-          <p>
-            Wat tel je? <em>Antwoord: Het aantal manieren om drie rode ballen in vijf verschillende bakjes te plaatsen.</em>
-          </p>
-        </li>
-        <li>
-          <p>
-            Over welke elementen gaat het in de telling? Het antwoord op deze vraag bepaalt de verzameling waaruit je elementen gaat kiezen. Deze stap is vaak cruciaal voor het correct oplossen van een telprobleem. Het schematisch tekenen/uitschrijven van een aantal mogelijkheden werkt vaak verhelderend. <em>Antwoord: de bakjes</em>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Hoeveel elementen bevat de verzameling? Stel dit aantal voor door <m>n</m>. <em>Antwoord: <m>n=5</m>.</em>
-          </p>
-        </li>
-        <li>
-          <p>
-            Hoeveel keer moet je één van deze elementen kiezen? Stel dit aantal voor door <m>p</m>. <em>Antwoord: <m>p=3</m>.</em>
-          </p>
-        </li>
-        <li>
-          <p>
-            Hebben de geselecteerde elementen een bepaalde rol? Geeft een andere volgorde een andere mogelijkheid? <em>Antwoord: Neen, de bakjes hebben geen specifieke rol. Een andere volgorde leidt niet tot een andere mogelijkheid. Het gaat hier dus over een combinatie.</em>
-          </p>
-        </li>
-        <li>
-          <p>
-            Kan je een element meerdere keren kiezen? <em>Antwoord: Ja, alle ballen kunnen bijvoorbeeld in één bakje zitten, dus het antwoord is <m>\overline{C^3_5}</m>.</em>
-          </p>
-        </li>
-      </ol>
-    </p>
-    
-      <exercises>
+<subexercises>
+  <title>Telproblemen: basistypes</title>
+  
+  
     <introduction>
+      <p>
+        Een basistype herkennen in de formulering van een bepaald telprobleem vormt soms een struikelblok. Onderstaande vragenlijst kan je daarbij helpen. We passen, als voorbeeld, de vragenlijst meteen toe op het onderstaande telprobleem.
+      </p>
+  
+      <blockquote>
+        <p>
+            Op hoeveel manieren kan je drie gelijke rode balletjes in vijf verschillende bakjes plaatsen?
+        </p>
+      </blockquote>
+  
+      <p>
+        <ol>
+          <li>
+            <p>
+              Wat tel je? <em>Antwoord: Het aantal manieren om drie rode ballen in vijf verschillende bakjes te plaatsen.</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Over welke elementen gaat het in de telling? Het antwoord op deze vraag bepaalt de verzameling waaruit je elementen gaat kiezen. Deze stap is vaak cruciaal voor het correct oplossen van een telprobleem. Het schematisch tekenen/uitschrijven van een aantal mogelijkheden werkt vaak verhelderend. <em>Antwoord: de bakjes</em>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Hoeveel elementen bevat de verzameling? Stel dit aantal voor door <m>n</m>. <em>Antwoord: <m>n=5</m>.</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Hoeveel keer moet je één van deze elementen kiezen? Stel dit aantal voor door <m>p</m>. <em>Antwoord: <m>p=3</m>.</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Hebben de geselecteerde elementen een bepaalde rol? Geeft een andere volgorde een andere mogelijkheid? <em>Antwoord: Neen, de bakjes hebben geen specifieke rol. Een andere volgorde leidt niet tot een andere mogelijkheid. Het gaat hier dus over een combinatie.</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Kan je een element meerdere keren kiezen? <em>Antwoord: Ja, alle ballen kunnen bijvoorbeeld in één bakje zitten, dus het antwoord is <m>\overline{C^3_5}</m>.</em>
+            </p>
+          </li>
+        </ol>
+      </p>
       <p>
         Antwoord steeds met de juiste notatie voor één van de basistypes (<m>V^p_n,P_n,C^p_n,\overline{V^p_n},\overline{C^p_n}</m>), ook al heb je het probleem misschien anders opgelost.
       </p>
@@ -255,5 +256,4 @@
         </p>
       </answer>
     </exercise>
-  </exercises>
-</section>
+</subexercises>

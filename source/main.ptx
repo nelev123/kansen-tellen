@@ -20,14 +20,13 @@
       \usetikzlibrary{positioning,arrows,matrix}
       \usetikzlibrary{backgrounds}
       \usetikzlibrary{intersections}
-      \usetikzlibrary{snakes}
       \usetikzlibrary{decorations.markings}
       \usetikzlibrary{decorations.pathmorphing,patterns}
       \usetikzlibrary{calc}
       \usepackage{pgfplots}
-      \pgfplotsset{compat=1.18}
+      \pgfplotsset{compat=1.17}
       \usepackage{tkz-tab}
-      \usepackage{tikzit}
+      <!-- \usepackage{tikzit} -->
       \tikzstyle{functie klein}=[fill=none, draw=black, shape=rectangle, thick, minimum width=2 cm, minimum height=0.9 cm]
       \tikzstyle{pijl}=[fill=none, draw=black, {->-},thick]
       \tikzstyle{invpijl}=[fill=none, draw=black, {-&lt;-},thick]
