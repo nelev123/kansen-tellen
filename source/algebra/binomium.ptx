@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Het binomium van Newton</title>
+    <p>
+      We onderzoeken de structuur van <m>(a+b)^3</m> door te kijken hoe de verschillende termen ontstaan uit de vermenigvuldiging <m>(a+b)(a+b)(a+b)</m>. De term in <m>a^2b</m> bijvoorbeeld ontstaat uit <m>a \cdot a \cdot b + a \cdot b \cdot a+ b \cdot a \cdot a</m>. Dit kan je als een telprobleem herformuleren: <q>Op hoeveel manieren kan je een rijtje maken met 2 a's en 1 b?</q> Er zijn drie posities in de rij: <m>p_1, p_2</m> en <m>p_3</m> en daaruit kiezen we er één om een <m>b</m> te plaatsen <mdash/> of twee om een <m>a</m> te plaatsen <mdash/> dus er zijn <m>C^1_3</m> mogelijke manieren en de coëfficiënt van de term in <m>a^2b</m> is gelijk aan 3. Voor de andere termen kunnen we op dezelfde manier redeneren: geen enkele positie kiezen voor <m>b</m>, één positie kiezen voor <m>b</m>, twee posities kiezen voor <m>b</m>, drie posities kiezen voor <m>b</m>
+      <me>
+         (a+b)^3 = C^0_3 a^3+C^1_3 a^2 b + C^2_3 a b^2 + C^3_3 b^3
+      </me>
+      Veralgemenen we bovenstaande formule voor willekeurige exponent dan krijgen we het binomium van Newton:
+    </p>
+     <assemblage>
+       <title>Binomium van Newton</title>
+       <p>
+         <md>
+          <mrow>(a+b)^n = \amp C^0_n a^n + C^1_n a^{n-1}b + C^2_n a^{n-2} b^2 + \ldots + C^{n-1}_n a b^{n-1}+C^n_n b^n </mrow>
+          <mrow>= \amp \sum_{i=0}^n C^i_n a^{n-i} b^i</mrow>
+         </md>
+         met <m>C^i_n=\dfrac{n!}{(n-i)! i!}</m>. Het rechterlid noemt men de binomiaalontwikkeling en de combinaties <m>C^i_n</m> worden ook de binomiaalcoëfficiënten genoemd.
+       </p>
+       <p>
+         Merk op dat <m>C^i_n</m> de coëfficiënt van de term in <m>a^{n-i} b^i</m> is, maar dat dit de <m>i+1</m>-ste term is in de ontwikkeling van <m>(a+b)^n</m>.
+        </p>
+     </assemblage>
+  
+
+  </section>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="binomium" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<title>Het binomium van Newton en de driehoek van Pascal</title>
+
+<xi:include href="./algebra/sigma-notatie.ptx" />
+<xi:include href="./algebra/binomium.ptx" />
+<xi:include href="./tellen/pascal.ptx" />
+
+<exercises xml:id="exercises-binomium-pascal">
+    <xi:include href="./algebra/sigma-oef.ptx" />
+    <xi:include href="./algebra/binomium-oef.ptx" />
+</exercises>
+
+</chapter>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subexercises>
+    <title>Symbolische sommaties</title>
+    <exercise>
+        <statement>
+          <p>
+            Schrijf de volgende sommen voluit
+            <ol>
+              <li>
+                <p>
+                  <m>\displaystyle \sum_{i=2}^n (2i-1)=</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\displaystyle \sum_{k=0}^n 2^{k+1} x^k=</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>\displaystyle \sum_{i=2}^n (2i-1)=3+5+\ldots+2n-1</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\displaystyle \sum_{k=0}^n 2^{k+1} x^k=2+4x+8x^2+\ldots+2^{n+1}x^n</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Schrijf onderstaande uitdrukkingen in sigma-notatie:
+            <ol>
+              <li>
+                <p>
+                  <m>3-5+7-9+11-13+15 =</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\displaystyle \frac{1}{2}+\frac{1}{5}+\frac{1}{8}+\frac{1}{11}+\frac{1}{14}+\frac{1}{17} =</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>3x+7x^2+11x^3+15x^4+19x^5+23x^6=</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>3-5+7-9+11-13+15 = \sum_{i=1}^7 (-1)^{i+1}(2i+1)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\displaystyle \frac{1}{2}+\frac{1}{5}+\frac{1}{8}+\frac{1}{11}+\frac{1}{14}+\frac{1}{17} = \sum_{i=0}^5 \frac{1}{3i+2}</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>3x+7x^2+11x^3+15x^4+19x^5+23x^6= \sum_{i=0}^5 (4i+3)x^{i+1}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Gebruik symbolische sommaties om te bewijzen dat de som van de eerste <m>n</m> termen van een rekenkundige rij gelijk is aan 
+            <me>s_n=n \frac{u_1+u_n}{2}</me>
+          </p>
+        </statement>
+      </exercise>
+    
+</subexercises>    

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subexercises>
+    <title>Het binomium van Newton</title>
+    <exercise>
+      <statement>
+        <p>
+          Werk <m>(2x-1)^7</m> uit.
+        </p>
+        <sage>
+          <input>
+            expand(((2*x-1)^7)).show()
+          </input>
+        </sage>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Bereken de 6de-term van <m>\left (1-\dfrac{1}{b} \right)^9</m> en de 21ste-term van <m>\left (x^2-\dfrac{a}{x} \right)^{24}</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-126}{b^5}</m> en <m>\dfrac{10626a^{20}}{x^{12}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Bereken de term in <m>x^4</m> in de ontwikkeling van <m>(-2x-1)^8</m> en de term in <m>x^2</m> in de ontwikkeling van <m>\left (x-\dfrac{2}{x}\right)^{10}</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1120 x^4</m> en <m>3360x^2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Bepaal de volgende sommen zonder ze voluit te schrijven
+          <ol>
+            <li>
+              <p>
+                <m>\displaystyle \sum_{k=0}^{50} C_{50}^k 2^k</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle \sum_{k=0}^{n} C_{n}^k</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle \sum_{k=0}^{15} C_{15}^k (0,04)^{15-k} (0,06)^k</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+             a) <m>3^{50}</m>, b) <m>2^n</m>, c) <m>10^{-15}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+     <statement>
+       <p>
+         (U) Bewijs met behulp van de binomiaalontwikkeling dat <m>D(x^n)=nx^{n-1}</m>. <!--historisch stukje over Newton toevoegen-->
+       </p>
+     </statement>
+    </exercise>
+  </subexercises>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sigma-notatie">
+    <title>Symbolische sommaties </title>
+    <p>
+      De Griekse hoofdletter <q>sigma</q> (<m>\sum</m>) wordt gebruikt om sommen kort en overzichtelijk te noteren. Bijvoorbeeld:
+      <md>
+        <mrow>\amp \sum_{i=1}^{10} i  = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 +10</mrow>
+        <mrow>\amp \sum_{i=2}^6 i^2 = 2^2 + 3^2 + 4^2 + 5^2 + 6^2 </mrow>
+        <mrow>\amp \sum_{i=1}^{38} [41+7(i-1)] = 41+48+\ldots+293+300 </mrow>
+      </md>
+      Algemeen:
+      <me>
+        \sum_{i=1}^n a_i
+      </me>
+      <m>\sum</m> noemen we het <term>sommatieteken</term> en <m>i</m> de <term>sommatie-index</term>. De index neemt alle waarden tussen de eerste en de laatste indexwaarde aan en de bijhorende termen <m>a_i</m> worden allemaal opgeteld.
+    </p>
+    <p>
+      De index <m>i</m> is een dummy index. Er geldt dus dat
+      <me>
+        \sum_{i=1}^{10} i = \sum_{n=1}^{10} n =  \sum_{a=1}^{10} a
+      </me>
+    </p>
+    <assemblage xml:id="assemblage-sigmarekenen">
+      <title>Rekenen met symbolische sommaties</title>
+      <p>
+        Hieronder staan enkele eigenschappen over het rekenen met symbolische sommaties. Ze zijn eenvoudig te bewijzen door de sommaties expliciet uit te schrijven.
+        <md>
+          <mrow> \amp \sum_{i=1}^n a_i \pm \sum_{i=1}^n b_i = \sum_{i=1}^n (a_i \pm b_i)</mrow>
+          <mrow> \amp \sum_{i=1}^n a_i =  \sum_{i=1}^m a_i + \sum_{i=m+1}^n a_i \qquad (m \lt n)</mrow>
+          <mrow> \amp \sum_{i=1}^n c a_i = c \sum_{i=1}^n a_i \qquad (c \in \mathbb{R})</mrow>
+          <mrow> \amp \sum_{i=1}^n c  = n c  \qquad (c \in \mathbb{R})</mrow>
+        </md>
+        Een handig trucje bij het rekenen met symbolische sommaties is het aanpassen van de index. Bijvoorbeeld
+      <me>
+        \sum_{i=1}^{20} a_i = \sum_{i=0}^{19} a_{i+1} = \sum_{i=2}^{21} a_{i-1}
+      </me>
+      </p>
+    </assemblage>
+  
+    <example>
+      We hernemen even het bewijs voor de eerste <m>n</m> termen van een meetkundige rij met reden <m>q</m>. Door gebruik te maken van het sommatieteken kan dit veel korter en overzichtelijker opgeschreven worden. We willen <m>s_n=\sum_{i=1}^n u_1 q^{i-1}</m> bepalen. Er geldt dat 
+      <md>
+        <mrow>s_n - q s_n \amp =   \sum_{i=1}^n u_1 q^{i-1} - q \sum_{i=1}^n u_1 q^{i-1}</mrow>
+        <mrow> \amp =   \sum_{i=0}^{n-1} u_1 q^i - \sum_{i=1}^n u_1 q^i</mrow>
+        <mrow> \amp =   u_1 + \sum_{i=1}^{n-1} u_1 q^i - \sum_{i=1}^{n-1} (u_1 q^i) - u_1 q^n</mrow>
+        <mrow> \amp =   u_1  - u_1 q^n</mrow>
+        <mrow>\Rightarrow s_n \amp = u_1 \frac{1-q^n}{1-q}  </mrow>
+      </md>
+    </example>
+  </section>
