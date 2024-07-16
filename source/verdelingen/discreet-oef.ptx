@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises>
+    <exercise>
+      <statement>
+        <p>
+          Op het einde van een spelprogramma mag de winnaar een lade van een kast openen. Er zijn 16 laden en in 5 laden zit 1000 euro, in 4 laden zit 2000 euro, in 3 laden zit 4000 euro, in 2 laden zit 8000 euro, in 1 lade zit 16000 euro en in 1 lade zit er niets. Bepaal het bedrag dat gemiddeld moet uitbetaald worden.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3562,5</m> euro
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Een verzekeringsmaatschappij verkoopt aan verzekerden met een bepaald profiel een levensverzekering van 10 000 euro met een looptijd van één jaar, voor een jaarpremie van 290 euro. Dit betekent dat de kosprijs van de polis 290 euro is en dat de nabestaanden 10 000 euro ontvangen als de verzekerde binnen een jaar sterft. Uit onderzoek blijkt dat de kans dat een persoon met dit profiel binnen een jaar sterft gelijk is aan <m>0,1\%</m>. Bereken de verwachte winst van de verzekeringsmaatschappij.
+        </p>
+      </statement>
+      <answer>
+        <m>280</m> euro
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          In een casino wordt een gokspel met een dobbelsteen gespeeld. Is het aantal ogen oneven, dan krijg je 2 euro; is het aantal ogen 2 of 4, dan krijg je 3,5 euro; is het aantal ogen 6, dan ontvang je 5 euro. Deelnemen kost je 3 euro. Neem als stochast <m>X</m> de winst of het verlies die je maakt bij het spel.
+          <ol>
+            <li>
+              <p>
+                Bepaal de kansverdelingsfunctie <m>p_X</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Is dit een eerlijk spel? Verklaar met een berekening.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Het spel is eerlijk want de verwachte winst is gelijk aan nul.
+        </p>
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          In een vaas zitten 16 knikkers: 10 rode en 6 blauwe. Je neemt willekeurig vier knikkers uit de vaas. Kies als stochast het aantal getrokken blauwe knikkers en bepaal de verwachtingswaarde en de standaardafwijking. Je kan eventueel Desmos (<url href="https://www.desmos.com/calculator/uc2py3idwk">
+          een voorbeeld</url>) gebruiken voor het rekenwerk. Voor <m>C^p_n</m> gebruik je het commando <c>nCr(n,p)</c>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\mu_X=1.5</m> en <m>\sigma_X=\sqrt{\dfrac{3}{4}}</m>. Uitwerking in Desmos <url href="https://www.desmos.com/calculator/a6n7odrmju">hier</url>.
+        </p>
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          Op een dobbelsteen is de som van het aantal ogen op twee tegenoverliggende zijden gelijk aan 7. Het aantal ogen dat na een worp zichtbaar is, bepaalt een stochast <m>X</m> en het aantal ogen op de tegenoverliggende zijde is de stochast <m>Y</m>. Bereken <m>\mu_X</m>, <m>\mu_Y</m> en <m>\mu_{X+Y}</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\mu_X = \mu_Y =3,5 </m> en <m>\mu_{X+Y}=7</m>.
+        </p>
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          Mo en Louis bepalen elk een willekeurig getal van 2 t.e.m. 12. Mo gooit met twee dobbelstenen en Louis heeft een zak met kaartjes, genummerd van 2 t.e.m. 12 en trekt er willekeurig eentje uit. Wie heeft de grootste standaarddeviatie? Controleer met een berekening.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          2,42 en 3,16
+        </p>
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          Een peer weegt gemiddeld 210 gram met een standaardafwijking van 16 gram. Men verpakt deze peren per zes stuks. Wat is de gemiddelde massa en de standaardafwijking van een dergelijk pak (verwaarloos de massa van de verpakking)?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\mu_X=1260</m> g en <m>\sigma_X=39,2</m> g
+        </p>
+      </answer>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          Een zak nootjes weegt gemiddeld 300 gram en heeft een standaardafwijking van 10 gram. Men verpakt deze nootjes per 25 in een kartonnen doos. De stochast <m>G</m> is de gemiddelde massa van één zakje nootjes uit een pak van 25. Bereken de verwachtingswaarde en de variantie.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\mu_G=300</m> g en <m>\sigma_G=2</m> g
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise>
+        <statement>
+          <p>
+            Van de penalty's bij voetballen in de eredivisie wordt er in 70% van de gevallen gescoord. Wat is de kans dat van de eerstvolgende 10 penalty's er precies 3 gemist worden?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/trd13imhr7"/>
+          </p>
+        </solution>
+    </exercise>
+    
+    <exercise>
+        <statement>
+          <p>
+            We werpen 10 keer met een dobbelsteen. Hoe groot is de kans dat er minstens drie zessen bij zijn?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/trd13imhr7"/>
+          </p>
+        </solution>
+    </exercise>
+    
+    <exercise>
+        <statement>
+          <p>
+            Een fabrikant van chips steekt in 7 op de 8 pakjes een dierenfiguurtje en in 1 op de 8 pakjes een Tarzanpoppetje. Voor een verjaardagsfeestje koop je 40 pakjes chips. Hoeveel Tarzanpoppetjes kan je verwachten en hoe groot is de standaardafwijking?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/trd13imhr7"/>
+          </p>
+        </solution>
+    </exercise>
+    
+    <exercise>
+        <statement>
+          <p>
+          Bij het toedienen van een geneesmiddel is er 15% kans op maagklachten als nevenwerking. Bereken de kans dat bij 10 willekeurige patiënten er minstens 2 met maagklachten zijn.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/trd13imhr7"/>
+          </p>
+        </solution>
+    </exercise>
+    
+    <exercise>
+        <statement>
+          <p>
+            Bij een eerlijke munt zijn de kansen op kop en munt gelijk. Je mag dus verwachten dat in ongeveer 50% van de gevallen er kop zal gegooid worden. Bereken de kans dat het aantal keer kop ten minste 40% en ten hoogste 60% van het aantal worpen is als het aantal worpen
+            gelijk is aan 10, 20, 50 en 100.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/trd13imhr7"/>
+          </p>
+        </solution>
+    </exercise>
+    
+</exercises>

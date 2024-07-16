@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Discrete stochasten</title>
+    <assemblage>
+      <title>Kansveranderlijke of stochast</title>
+      <p>
+        Een kansveranderlijke of een stochast is een functie <m>X</m> die de uitkomsten van een kansexperiment koppelt aan reële getallen (<m>X: U \to \mathbb{R}</m>). De stochast wordt discreet genoemd als het bereik van <m>X</m> een eindige verzameling is.
+  
+        De waarden die de stochast kan aannemen stellen we voor door <m>x_1, x_2, \ldots, x_n</m> en de bijbehorende kansen door <m>p_i=P(X=x_i)</m> met <m>i=1,2,\ldots,n</m>. De functie <m>p_X</m> die aan elke waarde van <m>X</m> de kans koppelt dat <m>X</m> die waarde aanneemt noemen we de kansverdelingsfunctie van de stochast <m>X</m>:
+        <me>p_X: \lbrace x_1,x_2,\ldots,x_n \rbrace \to [0,1]: x_i \to p_i=p_X(x_i)=P(X=x_i)</me>
+        Er geldt natuurlijk dat <m>\sum_{i=1}^n p_i=1</m>.
+      </p>
+    </assemblage>
+    <p>
+      De verwachtingswaarde van een stochast <m>X</m> is de theoretische tegenhanger van het gemiddelde uit de beschrijvende statistiek. Stel dat je het bovenstaande kansexperiment effectief ook uitvoert, dan heb je na 100 worpen heel wat geld verdiend. Als je dit totale bedrag deelt door 100, krijg je het gemiddelde bedrag per worp. Op basis van de kansverdeling kan je echter ook het theoretische gemiddelde berekenen. Er zijn 36 mogelijke uitkomsten en slechts 1 ervan, <m>(1,1)</m> wordt afgebeeld op <m>x_1=40</m>. Zestig euro verdienen kan echter op 2 manieren: door het gooien van <m>(1,2)</m> of <m>(2,1)</m>. Tachtig euro verdienen kan op 3 manieren, <m>\ldots</m> Het gemiddelde bedrag is dus
+      <md>
+        <mrow>\amp \frac{40+60 \cdot 2+80 \cdot 3 + \ldots +200 \cdot 3+220\cdot 2+240}{36}</mrow>
+        <mrow>=\amp  \; 40\cdot\frac{1}{36}+60\cdot  \frac{2}{36}+80\cdot  \frac{3}{36}+\ldots+200\cdot\frac{3}{36}+220\cdot \frac{2}{36}+240\cdot \frac{1}{36}</mrow>
+        <mrow>  = \amp \; 140</mrow>
+       </md>
+      Het theoretisch gemiddelde berekenen we dus door elke waarde <m>x_i</m> te vermenigvuldigen met zijn kans <m>p_i</m> en vervolgens de som te bepalen van deze producten. Dit theoretisch gemiddelde wordt de <term>verwachtingswaarde</term> <m>\mu_X</m> van de stochast genoemd.
+      <me>
+        \mu_X = \sum_{i=1}^n x_i p_i
+      </me>
+      Hoe vaker je een kansexperiment uitvoert, hoe dichter het gemiddelde bij de verwachtingswaarde zal liggen.
+    </p>
+  
+    <p>
+      Om de spreiding van de waarden van <m>X</m> t.o.v de verwachtingswaarde uit de drukken, gebruiken we de <term>standaardafwijking</term> <m>\sigma_X</m>:
+      <me>
+        \sigma_X = \sqrt{\sum_{i=1}^n (x_i-\mu_X)^2 p_i}
+      </me>
+    </p>
+  
+    <sidebyside widths="50% 50%">
+      <p>
+         De bovenste grafiek toont de kansverdelingsfunctie <m>p_X</m> voor het voorbeeld van de vorige paragraaf samen met de verwachtingswaarde
+         <me>
+           \mu_X = 140
+         </me>
+         en de standaardafwijking
+         <me>
+           \sigma_X \approx 48,3
+         </me>
+         Stel dat we nu een tweede stochast <m>X'</m> beschouwen die correspondeert met de hercodering <q>de som van het aantal ogen maal honderd</q>. De kansverdelingsfunctie <m>p_{X'}</m> is grafisch weergeven in de onderste grafiek. De verwachtingswaarde is nu
+         <me>
+           \mu_{X'} = 700
+         </me>
+         en de standaardafwijking
+         <me>
+           \sigma_{X'} \approx 242
+         </me>
+         Merk op dat <m>X'=5X</m> en eveneens dat <m>\mu_{X'}=5\mu_X</m> en <m>\sigma_X'=5\sigma_X</m>
+      </p>
+      <stack>
+          <image source="desmos-kansverdeling-1.png"/>
+          <image source="desmos-kansverdeling-2.png"/>
+      </stack>
+    </sidebyside>
+  
+    <assemblage>
+      <title>Verwachtingswaarde, variantie en standaardafwijking</title>
+        <p>
+          De verwachtingswaarde <m>\mu_X</m> van een discrete stochast <m>X</m> is gelijk aan
+          <me>
+            \mu_X = \sum_{i=1}^n x_i p_i
+          </me>
+          Een alternatieve notatie voor de verwachtingswaarde is <m>E(X)</m>.
+        </p>
+        <p>
+            De variantie <m>Var(X)</m> is gelijk aan de verwachte gemiddelde kwadratische afwijking van een stochast t.o.v. zijn verwachtingswaarde:
+            <me>
+              Var(X)= \sum_{i=1}^n (x_i-\mu_X)^2 p_i
+            </me>
+            De standaardafwijking is de wortel uit de variantie:
+            <me>
+              \sigma_X=\sqrt{Var(X)} = \sqrt{\sum_{i=1}^n (x_i-\mu_X)^2 p_i}
+            </me>
+        </p>
+    </assemblage>
+  
+    <assemblage>
+      <title>Rekenregels voor stochasten</title>
+      <p>
+        Als <m>X</m> een stochast is en <m>a</m> een constante dan geldt voor de stochast <m>Y=X+a</m>:
+        <md>
+          <mrow>\mu_Y = \mu_X + a</mrow>
+          <mrow>\sigma_Y = \sigma_X </mrow>
+        </md>
+      </p>
+      <p>
+        Als <m>X</m> een stochast is en <m>a</m> een constante dan geldt voor de stochast <m>Y=aX</m>:
+        <md>
+          <mrow>\mu_Y = a \mu_X </mrow>
+          <mrow>\sigma_Y = |a| \sigma_X </mrow>
+        </md>
+      </p>
+    </assemblage>
+  
+    <activity>
+      <statement>
+        <p>
+          (U) Bewijs bovenstaande rekenregels.
+        </p>
+      </statement>
+    </activity>
+  
+    <activity>
+      <statement>
+        <p>
+          (7u) De variantie van een stochast <m>X</m> kan ook als volgt berekend worden:
+          <me>
+            Var(X) = \sum_{i=1}^n x_i^2 p_i - \mu^2
+          </me>
+          Bewijs deze formule.
+        </p>
+      </statement>
+    </activity>
+  
+    <p>
+      We beschouwen twee kansexperimenten: gooien met een dobbelsteen en gooien met een muntstuk. Neem voor de stochast <m>X</m> het aantal ogen van de dobbelsteen en voor de stochast <m>Y</m> 0 (kop) of 1 (munt). <m>X</m> heeft 6 waarden elk met kans 1/6 en er geldt dat
+      <md>
+        <mrow>\mu_X = 3,5</mrow>
+        <mrow>\sigma_X^2 \approx 2,92</mrow>
+      </md>
+      De stochast <m>Y</m> heeft twee waarden, elk met kans 1/2 en er geldt dat
+      <md>
+        <mrow>\mu_Y = 0,5</mrow>
+        <mrow>\sigma_X^2 = 0,25</mrow>
+      </md>
+      Stel nu dat we beide stochasten optellen d.w.z. dat we bij elke worp van de dobbelsteen 0 of 1 optellen. De stochast <m>Z=X+Y</m> heeft 7 waarden met <m>p_Z(1)=p_Z(7)=1/12</m> en alle andere kansen gelijk aan 1/6. Er geldt dat
+      <md>
+        <mrow>\mu_Z = 4 </mrow>
+        <mrow>\sigma_Z^2 \approx 3,17 </mrow>
+      </md>
+      We merken bijgevolg op dat <m>\mu_Z = \mu_X + \mu_Y </m> en <m>\sigma_Z^2=\sigma_X^2+\sigma_Y^2</m>. Via <url href="https://www.desmos.com/calculator/zcprhukab9">deze link</url> vind je de uitwerking in Desmos.
+    </p>
+  
+    <assemblage>
+      <title>Som van stochasten</title>
+      <p>
+        Als <m>X</m> en <m>Y</m> twee onafhankelijke stochasten zijn, dan geldt voor de stochast <m>Z=X+Y</m>:
+        <md>
+          <mrow>\mu_Z=\mu_X+\mu_Y</mrow>
+          <mrow>\sigma_Z=\sqrt{\sigma_X^2+\sigma_Y^2}</mrow>
+        </md>
+        Dit kunnen we natuurlijk uitbreiden naar de som van <m>n</m> onafhankelijke stochasten <m>X_i</m> (<m>i=1,\ldots,n</m>) met verwachtingswaarden <m>\mu_{X_i}</m> en standaardafwijkingen <m>\sigma_{X_i}</m>:
+        <md>
+          <mrow>\amp Z=\sum_{i=1}^n X_i</mrow>
+          <mrow>\text{met} \; \amp \mu_Z=\sum_{i=1}^n \mu_{X_i} \qquad \text{en} \qquad  \sigma_Z=\sqrt{\sum_{i=1}^n \sigma_{X_i}^2}</mrow>
+        </md>
+      </p>
+    </assemblage>
+  
+    <example>
+      <title><m>n</m> dobbelstenen gooien</title>
+      <p>
+        We passen het bovenstaande toe op het gooien van <m>n</m> dobbelstenen. Neem als stochast <m>X_i</m> (<m>i=1,\ldots,n</m>) het aantal ogen van de <m>i</m>-de dobbelsteen. Dan geldt voor de som <m>Z</m> van de stochasten dat
+        <md>
+          <mrow>\mu_Z= n \cdot 3,5 </mrow>
+          <mrow>\sigma_Z= \sqrt{n} \cdot 1,71</mrow>
+        </md>
+        Neem nu als stochast <m>G</m> het gemiddeld aantal ogen na het gooien van <m>n</m> dobbelstenen, d.w.z. <m>G=\dfrac{Z}{n}</m>. Dan geldt er dat
+        <md>
+          <mrow>\mu_G = 3,5</mrow>
+          <mrow>\sigma_G = \frac{1,71}{\sqrt{n}} </mrow>
+        </md>
+        De verwachtingswaarde blijft natuurlijk gelijk aan <m>3,5</m>, maar de standaarddeviatie wordt kleiner naarmate het aantal worpen groter wordt. Dit wil zeggen dat de spreiding rond de verwachtingswaarde kleiner wordt als het aantal worpen groter wordt of, anders geformuleerd, als je het kansexperiment effectief uitvoert, zal het gemiddeld aantal worpen steeds dichter bij 3,5 liggen. Dit noemen we de wet van de grote aantallen.
+      </p>
+    </example>
+  
+
+  
+  </section>

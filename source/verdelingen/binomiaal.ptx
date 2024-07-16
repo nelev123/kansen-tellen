@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>De binomiale kansverdeling</title>
+    <p>
+      Stel dat we vijf keer gooien met een dobbelsteen met als bedoeling zo vaak mogelijk een zes te gooien. Er zijn dan vijf onafhankelijke deelexperimenten en het gooien van een zes betekent succes. De kans op succes is gelijk aan <m>\dfrac{1}{6}</m> en de kans op mislukking is gelijk aan <m>\dfrac{5}{6}</m>. De stochast <m>X</m> die elke uitkomst van dit kansexperiment afbeeldt op het aantal successen is binomiaal verdeeld en we noteren <m>X \sim B \left (5,\frac{1}{6} \right )</m>.
+    </p>
+    <sidebyside widths="50% 45%" margins="0% 0%" valign="middle">
+      <p>
+        Het berekenen van de kansen is eenvoudig. Er zijn <m>2^5</m> mogelijk uitkomsten en elke uitkomst kan voorgesteld worden door een geordend vijftal dat bestaat uit de letters <m>s</m> (succes) of <m>m</m> (mislukking). Als er bij de eerste en de vierde worp zes ogen gegooid worden is de uitkomst dus <m>(s,m,m,s,m)</m> en de bijbehorende kans is <m>\left (\frac{1}{6} \right)^2 \cdot \left (\frac{5}{6} \right)^3</m>. Dit is natuurlijk niet de enige uitkomst die wordt afgebeeld op 2. We kunnen op <m>C^2_5</m> manieren de positie van de <m>s</m> kiezen, dus de kans <m>P(X=2)=C^2_5 \cdot \left ( \frac{1}{6} \right)^2 \cdot \left ( \frac{5}{6} \right)^3</m>. De andere kansen worden analoog berekend. Hiernaast zie je de grafiek van de kansverdelingsfunctie <m>p_X</m>.
+      </p>
+      <image source="kans-binomiaal.png"/>
+    </sidebyside>
+    <assemblage>
+      <title>De binomiale verdeling</title>
+      <p>
+        Een kansexperiment bestaat uit <m>n</m> onafhankelijke deelexperimenten met elk twee mogelijke uitkomsten: succes met kans <m>p</m> en mislukking met kans <m>q=1-p</m>. De stochast <m>X</m> die elke uitkomst afbeeldt op het aantal successen is binomiaal verdeeld en we noteren <m>X \sim B(n,p)</m>.
+        De kansverdelingsfunctie is <m>p_X: k \to p_k=P(X=k)=C^k_n p^k q^{n-k}</m> met <m>0 \le k \le n.</m> De verwachtingswaarde is <m>\mu_X=np</m> en de standaardafwijking <m>\sigma_X=\sqrt{npq}</m>.
+      </p>
+    </assemblage>
+  
+    <activity>
+      <statement>
+        <p>
+          Leid voor de binomiale verdeling de formules voor de verwachtingswaarde en de standaarddeviatie af. Tip: gebruik de rekenregels voor stochasten uit de vorige paragraaf.
+        </p>
+      </statement>
+    </activity>
+    <p>
+      Voor bovenstaand voorbeeld geldt er dat <m>\mu_X=\sigma_X=\dfrac{5}{6}</m>. De kans op het gooien van hoogstens twee zessen is
+      <me>
+      P(X \le 2)=P(X=0)+P(X=1)+P(X=2)
+      </me>
+      en de kans op het gooien van minstens 3 zessen is
+      <me>
+        P(X \ge 3)=P(X=3)+P(X=4)+P(X=5)=1-P(X \le 2)
+      </me>
+      Om dergelijke kansen vlot te kunnen berekenen, definieert men ook de zogenaamde cumulatieve verdelingsfunctie <m>F_X(x)</m> van een stochast. Dit is de functie die elk reëel getal <m>x</m> afbeeldt op <m>F_X(x)=P(X \le x)</m>. Vroeger bestonden er tabellen van deze functiewaarden en in jullie rekenmachine vind je deze functie onder DISTR <m>\to</m> B:binomcdf. De binomiale kansverdeling zelf staat onder DISTR <m>\to</m> A:binompdf. Met behulp van Desmos kan je echter onmiddellijk de volledige kansverdeling berekenen en visualiseren, alsook de kansen <m>P(x_1 \le X \le x_2)</m>. Volg <url href="https://www.desmos.com/calculator/e95qq8xuvd">deze link</url> en controleer dat
+      <ul>
+        <li>
+          <p>
+            <m>P(X=2)=0,1608</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>P(X \le 2)=F_X(2)=0,9645</m>
+          </p>
+        </li>
+        <li>
+          <p>
+             <m>P(X \ge 3)=1-F_X(2)=0,0355</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>P(2 \le X \le 4)=F_X(4)-F_X(1)=0,1961</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <exercises>
+
+    </exercises>
+    <!-- In een bedrijf worden schroeven gefabriceerd die in doosjes van 50
+    stuks worden verkocht. Volgens de bedrijfsleider is 5\% van de
+    productie niet bruikbaar.   a) Hoe groot is de kans dat een doosje meer dan vier onbruikbare schroeven bevat?  b) Een winkelier heeft 500 doosjes besteld bij de fabriek. Hoeveel doosjes met 50 bruikbare schroeven mag hij verwachten? -->
+  </section>
