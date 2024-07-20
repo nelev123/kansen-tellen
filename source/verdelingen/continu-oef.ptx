@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="exercises-kansverdeling-continu">
+
+    <exercise>
+        <statement>
+          <p>
+            Een klas van 25 leerlingen scoort gemiddeld 6,2 op een toets Frans. Hoeveel leerlingen scoorden een 4,7 of lager? Veronderstel dat de punten normaal verdeeld zijn met een standaardafwijking van 1,5.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/vq3pitzvdp"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            De diameter van een reeks machinaal vervaardigde wrijvingsringen is normaal verdeeld met <m>\mu=16,02</m> mm en <m>\sigma = 0,14</m> mm. De toegelaten speling rond het gemiddelde bedraagt 0,18 mm. Hoeveel procent van de ringen wordt afgekeurd?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/vq3pitzvdp"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Een machine vult pakken met suiker. De massa suiker die door de machine afgeleverd wordt, is normaal verdeeld met <m>\mu = 1015</m> g en <m>\sigma=10</m> g.
+            <ol>
+              <li>
+                <p>
+                  Hoeveel percent van de pakken bevat minder dan 1 kg?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bepaal de grens van de <m>10</m>% zwaarste pakken.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/vq3pitzvdp"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            (met computer) Een fabrikant van hondenvoer controleert de massa van pakken hondenvoer van 500 gram. De resultaten (in gram) staan hieronder opgelijst.
+          </p>
+          <sidbyside>
+            <tabular top="major">
+              <row>
+                <cell>
+                  512
+                </cell>
+                <cell>
+                  511
+                </cell>
+                <cell>
+                  506
+                </cell>
+                <cell>
+                  514
+                </cell>
+                <cell>
+                  498
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  509
+                </cell>
+                <cell>
+                  513
+                </cell>
+                <cell>
+                  511
+                </cell>
+                <cell>
+                  520
+                </cell>
+                <cell>
+                  495
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  504
+                </cell>
+                <cell>
+                  502
+                </cell>
+                <cell>
+                  507
+                </cell>
+                <cell>
+                  520
+                </cell>
+                <cell>
+                  497
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  503
+                </cell>
+                <cell>
+                  493
+                </cell>
+                <cell>
+                  496
+                </cell>
+                <cell>
+                  502
+                </cell>
+                <cell>
+                  526
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  523
+                </cell>
+                <cell>
+                  511
+                </cell>
+                <cell>
+                  522
+                </cell>
+                <cell>
+                  511
+                </cell>
+                <cell>
+                  501
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  501
+                </cell>
+                <cell>
+                  491
+                </cell>
+                <cell>
+                  528
+                </cell>
+                <cell>
+                  504
+                </cell>
+                <cell>
+                  516
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  494
+                </cell>
+                <cell>
+                  505
+                </cell>
+                <cell>
+                  501
+                </cell>
+                <cell>
+                  503
+                </cell>
+                <cell>
+                  514
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  513
+                </cell>
+                <cell>
+                  495
+                </cell>
+                <cell>
+                  525
+                </cell>
+                <cell>
+                  508
+                </cell>
+                <cell>
+                  513
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  504
+                </cell>
+                <cell>
+                  514
+                </cell>
+                <cell>
+                  504
+                </cell>
+                <cell>
+                  499
+                </cell>
+                <cell>
+                  504
+                </cell>
+              </row>
+              <row bottom="major">
+                <cell>
+                  528
+                </cell>
+                <cell>
+                  512
+                </cell>
+                <cell>
+                  516
+                </cell>
+                <cell>
+                  506
+                </cell>
+                <cell>
+                  503
+                </cell>
+              </row>
+            </tabular>
+          </sidbyside>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Maak een histogram en bereken het gemiddelde en de standaardafwijking.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Veronderstel dat de massa van de pakken normaal verdeeld is en plot de kansdichtheidsfunctie over het histogram.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Wat is het percentage pakken dat minder dan 500 g weegt?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/vq3pitzvdp"/>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Een wiskundewedstrijd op 100 punten waarvan de uitslag als normaal verdeeld mag beschouwd worden, heeft als gemiddelde 70 punten en als standaardafwijking 15 punten. Annelore behaalde 58 punten en Bea 91 punten. De <m>z</m>-score van Greet was -1 en die van Daisy 1,6. De uitslag van Evert was zo dat 30% van de deelnemers een betere uitslag behaalden.
+            <ol>
+              <li>
+                <p>
+                  Standaardiseer de scores van Annelore en Bea.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Welk % van de deelnemers behaalde een score tussen die van Annelore en Bea?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Wat was het resultaat van Greet, Daisy en Evert?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Beschouw een stochast <m>Z</m> verdeeld volgens de standaardnormale verdeling: <m>Z \sim N(0,1)</m>. Bereken de volgende kansen: <m>P(-1 \le Z \le 1)</m>, <m>P(-2 \le Z \le 2)</m> en <m>P(-3 \le Z \le 3)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            De slaapduur bij een verdovingsmiddel is normaal verdeeld met <m>\mu=6</m> uur en <m>\sigma=1,5</m> uur. Mag een anesthesist bij toediening van dit middel voor 99% zeker zijn dat de patiënt minstens 3 uur verdoofd is?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Beschouw een stochast <m>Z</m> verdeeld volgens de standaardnormale verdeling: <m>Z \sim N(0,1)</m>. Bereken een symmetrisch interval rond <m>0</m>  waarbinnen zich respectievelijk 90%, 95% en 99% van de waarden van <m>Z</m> bevinden.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In een fabriek worden pakjes thee machinaal gevuld. De massa van deze pakjes is normaal verdeeld met <m>\mu=255</m> gram en <m>\sigma=4</m> gram. Gebruik het resultaat van de voorgaande oefening om een symmetrisch interval rond <m>\mu</m> te berekenen waarbinnen waarbinnen zich 95% van de pakjes bevinden.
+          </p>
+        </statement>
+       <solution>
+          <p>
+            Voor de stochast <m>Z</m> geldt dat <m>P(-1,960 \le Z \le 1,960)</m>. Uit <m>z=\dfrac{x-\mu}{\sigma}</m> volgt dat <m>x=\mu +\sigma z</m>. Het gezochte interval is dus van 247 tot 263 gram. <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Als <m>X \sim N(\mu,\sigma)</m>, dan geldt dat
+            <ol>
+              <li>
+                <p>
+                  <m>P(\mu-\sigma \le X \le \mu+\sigma)=0,683</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>P(\mu-2\sigma \le X \le \mu+2\sigma)=0,955</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>P(\mu-3\sigma \le X \le \mu+3\sigma)=0,977</m>
+                </p>
+              </li>
+            </ol>
+            Reken deze kansen na.
+          </p>
+          <p>
+            De kans dat <m>X</m> een waarde heeft tussen <m>\mu-\sigma</m> en <m>\mu+\sigma</m> is dus ongeveer gelijk aan <m>68,3\%</m>. Deze kans stijgt tot <m>95,5\%</m> en <m>99,7\%</m> als <m>X</m> waarden kan aannemen die respectievelijk <m>2\sigma</m> en <m>3\sigma</m> van <m>\mu</m> afwijken. Deze criteria kan je gebruiken om na te gaan of een reeks waarnemingen normaal verdeeld zijn.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Zet om naar de standaardnormale verdeling en zie oef. 3 voor de berekening van de kansen.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Een robot heeft gemiddeld 80 seconden nodig voor het bevestigen van een bumper. In zo’n 20% van de gevallen is hij al na 77 seconden klaar. Bereken hoe groot de standaardafwijking is.
+          </p>
+        </statement>
+       <solution>
+          <p>
+            Er geldt dat <m>P(Z \le -0,8416)=0,20</m>. We kunnen nu de standaardafwijking berekenen:
+            <me>
+              \sigma=\frac{x-\mu}{z}=\frac{77-80}{-0,8416}=3,56
+            </me>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Een machine vult pakken met suiker. De massa suiker die door de machine afgeleverd wordt, is normaal verdeeld met <m>\mu = 1015</m> g en <m>\sigma=10</m> g. Stel dat het mogelijk is om de afstelling van <m>\mu</m> te veranderen zonder dat <m>\sigma</m> verandert. Hoe moet de afstelling gebeuren zodat slechts <m>1\%</m> van de pakken een volume heeft van minder dan 1 kg?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Als Thomas thuis om 7.50 uur vertrekt naar school, is hij in <m>4\%</m> van de gevallen te laat voor de les die om 8.30 uur begint. Vertrekt hij om 7.45 uur, dan is hij slechts in <m>1\%</m> van de gevallen te laat. In de veronderstelling dat de reistijd van Thomas naar school normaal verdeeld is, hoe laat moet hij dan thuis vertrekken om in niet meer dan <m>0,5\%</m> van de gevallen te laat te komen?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+          </p>
+        </solution>
+      </exercise>
+    
+</exercises>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>De normale verdeling</title>
+    <p>
+      De normale verdeling is één van de meest gebruikte verdelingen in de statistiek. Heel wat grootheden zijn normaal verdeeld: lengte en gewicht van mensen, het IQ, de inhoud van machinaal gevulde verpakkingen, meetfouten, <m>\ldots</m> De normale verdeling wordt vaak ook de Gaussverdeling genoemd (naar de Duitse wiskundige Carl Friedrich Gauss).
+    </p>
+    <sidebyside widths="45% 45%" margins="0% 0%">
+      <p>
+        Hiernaast zie je bijvoorbeeld het frequentiehistogram van de lengtes van 2504 jongens van 18 of 19 jaar oud. De gemiddelde lengte is 181,76 cm en de standaardafwijking 6,85 cm.
+      </p>
+      <image source="lengte.png"/>
+    </sidebyside>
+    <p>
+      De "klokvormige" kromme die door het histogram getrokken is, is de grafiek van de kansdichtheidsfunctie van een normaal verdeelde stochast met verwachtingswaarde 181,8 cm en standaardafwijking 6,9 cm. De kansverdelingsfunctie is een theoretisch model voor de frequentieverdeling van de lengtes van alle jongens van 18 of 19 jaar dat we kunnen gebruiken om voorspellingen te doen.
+    </p>
+    <assemblage>
+      <title>Normale verdeling</title>
+      <p>
+        Een continue stochast <m>X</m> is normaal verdeeld met verwachtingswaarde <m>\mu</m> en standaardafwijking <m>\sigma</m> als de kansdichtheidsfunctie gegeven wordt door:
+        <me>
+            f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-\dfrac{1}{2} \left (\dfrac{x-\mu}{\sigma} \right )^2}
+        </me>
+        We noteren <m>X \sim N(\mu,\sigma)</m>.
+      </p>
+    </assemblage>
+    <p>
+      Op basis van het functievoorschrift leiden we onmiddellijk af dat <m>\mu</m> veranderen de grafiek verschuift volgens de <m>x</m>-as en dat we de grafiek smaller of breder kunnen maken door <m>\sigma</m> te verkleinen of vergroten. De grafiek is duidelijk ook symmetrisch t.o.v. <m>x=\mu</m>: <m>f(\mu-x)=f(\mu+x)</m> en bereikt haar maximum in <m>x=\mu</m>.
+    </p>
+
+    <interactive desmos="g1xtur5lyb" width="100%" aspect="4:3" preview="desmos-grafieknorm.png"/>
+
+    <example>
+      <p>
+        Met behulp van de kansdichtheidsfunctie kunnen we volgende vragen beantwoorden:
+        <ol>
+          <li>
+            <p>
+              Hoeveel jongens hebben een lengte die hoogstens 10 cm van het gemiddelde afwijkt? Dit komt neer op het berekenen van de kans <m>P(171,8 \le X \le 191,8)</m>. We gebruiken <c>normaldist</c><fn>Er bestaat trouwens geen gesloten vorm voor de onbepaalde integraal van de kansdichtheidsfunctie van de normale verdeling. Er geldt wel dat <m>\int_{-\infty}^{+\infty} e^{-x^2} \; dx = \sqrt{\pi}</m>, maar dit resultaat afleiden gaat momenteel wat te ver.</fn> in Desmos om deze kans te berekenen en te visualiseren (<url href="https://www.desmos.com/calculator/1nocff7rk9">Desmos link</url>):
+            </p>
+            <interactive desmos="1nocff7rk9" width="100%" aspect="4:3" preview="normaal.png"/>
+            <p>
+              Op je rekenmachine gebruik je <c>DISTR</c> <m>\to</m> <c>2: normalcdf</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              Hoeveel jongens zijn niet groter dan 170 cm? Deze kans is <m>P(X \le 170) =  0,0436</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Hoeveel jongens hebben een lengte die meer dan twee standaardafwijkingen van het gemiddelde afwijkt? Dit komt neer op het berekenen van de som <m>P(X \lt 168) + P(X \gt 195,6)</m>. Wegens de symmetrie van de kansverdeling is deze som ook gelijk aan <m>2 P(X \lt 168) = 0,0455</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Welke jongens behoren tot de kleinste 2% van het land en welke tot de grootste 2%? Om de grens van de 2% kleinste jongens te bepalen, moeten we de waarde <m>x</m> bepalen waarvoor geldt dat <m>P(X \le x)=0,02</m>. We hebben bijgevolg de inverse functie van de cumulatieve verdelingsfunctie nodig
+              <me>
+                F(x) = 0,02 \Leftrightarrow x = F^{-1}(0,02)
+              </me>
+              In Desmos beschik je over een commando <c>inversecdf</c> waarmee je functiewaarden van een inverse cumulatieve verdelingsfunctie kan berekenen. Op je rekenmachine gebruik je <c>DISTR</c> <m>\to</m> <c>3: invNorm</c>.  Let op! Beide commando's kunnen enkel vergelijkingen van de vorm <m>P(X \le x)=c</m> oplossen.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+      </p>
+    </example>
+
+</section>

@@ -35,7 +35,7 @@
       <me>
         P(X \ge 3)=P(X=3)+P(X=4)+P(X=5)=1-P(X \le 2)
       </me>
-      Om dergelijke kansen vlot te kunnen berekenen, definieert men ook de zogenaamde cumulatieve verdelingsfunctie <m>F_X(x)</m> van een stochast. Dit is de functie die elk reëel getal <m>x</m> afbeeldt op <m>F_X(x)=P(X \le x)</m>. Vroeger bestonden er tabellen van deze functiewaarden en in jullie rekenmachine vind je deze functie onder DISTR <m>\to</m> B:binomcdf. De binomiale kansverdeling zelf staat onder DISTR <m>\to</m> A:binompdf. Met behulp van Desmos kan je echter onmiddellijk de volledige kansverdeling berekenen en visualiseren, alsook de kansen <m>P(x_1 \le X \le x_2)</m>. Volg <url href="https://www.desmos.com/calculator/e95qq8xuvd">deze link</url> en controleer dat
+      Om dergelijke kansen vlot te kunnen berekenen, definieert men ook de zogenaamde <term>cumulatieve verdelingsfunctie</term> <m>F_X(x)</m> van een stochast. Dit is de functie die elk reëel getal <m>x</m> afbeeldt op <m>F_X(x)=P(X \le x)</m>. Met behulp van Desmos kan je echter ook onmiddellijk de volledige kansverdeling berekenen en visualiseren, alsook de kansen <m>P(x_1 \le X \le x_2)</m>. Volg <url href="https://www.desmos.com/calculator/e95qq8xuvd">deze link</url> en controleer dat
       <ul>
         <li>
           <p>
@@ -60,10 +60,4 @@
       </ul>
     </p>
 
-    <exercises>
-
-    </exercises>
-    <!-- In een bedrijf worden schroeven gefabriceerd die in doosjes van 50
-    stuks worden verkocht. Volgens de bedrijfsleider is 5\% van de
-    productie niet bruikbaar.   a) Hoe groot is de kans dat een doosje meer dan vier onbruikbare schroeven bevat?  b) Een winkelier heeft 500 doosjes besteld bij de fabriek. Hoeveel doosjes met 50 bruikbare schroeven mag hij verwachten? -->
-  </section>
+</section>

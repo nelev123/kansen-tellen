@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Continue stochasten</title>
+    <p>
+      Een continue stochast neemt, in tegenstelling tot een discrete stochast, een oneindig aantal waarden aan. In de praktijk bestaan er natuurlijk geen oneindige uitkomstenverzamelingen, maar toch zijn continue stochasten bijzonder nuttig om kansexperimenten met een groot aantal mogelijke uitkomsten te modelleren.
+    </p>
+    <p>
+      We gaan verder met bovenstaande stochast en beschouwen 10 herhalingen: <m>X \sim B\left (10,\frac{1}{6}\right)</m>. We stellen de kansverdeling nu voor met een histogram dat we als volgt construeren: voor elke <m>x_i</m> tekenen we een rechthoek met basis 1 gecentreerd rond <m>x_i</m> en met hoogte <m>p_i</m>. De kans <m>p_i=P(X=x_i)/</m> is nu ook gelijk aan de oppervlakte van de rechthoek horend bij <m>x_i</m> en de som van alle oppervlaktes van alle rechthoeken is bovendien gelijk aan 1.
+    </p>
+    <sidebyside width="50%">
+      <image source="histogram.png"/>
+    </sidebyside>
+    <p>
+      Als we nu een frequentiepolygoon toevoegen aan het histogram en <m>n</m> laten toenemen, dan zien we dat de frequentiepolygoon steeds vloeiender wordt en de som van alle oppervlaktes van de rechthoeken zal bijgevolg steeds beter benaderd worden door de oppervlakte onder deze kromme. Vergelijk bijvoorbeeld het histogram en de frequentiepolygoon voor <m>X \sim B\left (10,\frac{1}{6}\right)</m> en <m>X \sim B\left (50,\frac{1}{6}\right)</m>:
+    </p>
+    <sidebyside widths="45% 45%">
+      <image source="polygoon1.png"/>
+      <image source="polygoon2.png"/>
+    </sidebyside>
+    <sidebyside widths="45% 45%">
+      <p>
+        De kans <m>P(4 \le X \le 6)</m> is gelijk aan de som van de oppervlaktes van de rechthoeken horend bij <m>x=4</m>, <m>x=5</m> en <m>x=6</m> en kan benaderd worden door de oppervlakte te berekenen onder de frequentiepolygoon tussen <m>x=3,5</m> en <m>x=6,5</m>.
+      </p>
+      <image source="continuïteitscorrectie.png"/>
+    </sidebyside>
+    <p>
+      Als <m>n</m> steeds groter wordt, zal de frequentiepolygoon van de binomiale kansverdeling steeds beter de grafiek van de <term>kansdichtheidsfunctie</term> van de normale verdeling benaderen. Voor <m>n=100</m> is de overeenstemming bijvoorbeeld al vrij goed (<url href="https://www.desmos.com/calculator/ua4wtekyba"> link naar Desmos grafiek </url>):
+    </p>
+    <sidebyside width="50%">
+      <image source="binnom2.png"/>
+    </sidebyside>
+    <assemblage>
+      <title>Continue stochast</title>
+      <p>
+        Een continue stochast <m>X</m> kan alle waarden uit een interval <m>[a,b]</m> aannemen en wordt beschreven met een kansdichtheidsfunctie <m>f(x)</m>. De kans dat de stochast een waarde aanneemt in het interval <m>[x_1,x_2]</m> wordt gegeven door
+        <me>
+          P(x_1 \le X \le x_2)= \int_{x_1}^{x_2} f(x) \; dx
+        </me>
+        Dit is de oppervlakte onder de grafiek van <m>f</m> en tussen de verticale rechten <m>x=x_1</m> en <m>x=x_2</m>. Het berekenen van kansen wordt dus herleid tot het berekenen van oppervlaktes.
+      </p>
+      <p>
+        De kansdichtheidsfunctie heeft de volgende eigenschappen:
+        <ul>
+          <li>
+            <p>
+               <m>f(x) \ge 0</m> voor alle <m>x \in \mathbb{R}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              voor alle <m>x_1, x_2 \in \mathbb{R}</m> geldt dat <m>\int_{x_1}^{x_2} f(x) \; dx</m> bestaat
+            </p>
+          </li>
+          <li>
+            <p>
+              de totale oppervlakte onder de grafiek is 1: <m>\int_{a}^{b} f(x) \; dx = 1</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        De verwachtingswaarde, de variantie en de standaardafwijking voor een continue stochast zijn:
+        <md>
+          <mrow>\amp \mu_X=E(X) = \int_{a}^{b} x f(x) \; dx</mrow>
+          <mrow>\amp \sigma_X^2=Var(X) = \int_{a}^{b} (x-E(X))^2 f(x) \; dx </mrow>
+          <mrow>\amp \sigma_X=\sqrt{Var(X)} </mrow>
+        </md>
+      </p>
+      <p>
+        Naast de kansdichtheidsfunctie definieert men vaak ook de cumulatieve verdelingsfunctie <m>F(x)</m> als
+        <me>
+          F(x)=P( X \le x)=\int_a^x f(t) \; dt
+        </me>
+      </p>
+    </assemblage>
+    <p>
+      De kans dat een continue stochast een welbepaalde waarde <m>x_1</m> aanneemt is steeds gelijk aan nul. De oppervlakte onder een punt van de grafiek is immers ook nul:
+      <me>
+        P(X=x_1) = \int_{x_1}^{x_1} f(x) \; dx =0
+      </me>
+       Dit lijkt misschien vreemd, maar bedenk dat dit eigenlijk betekent dat de kans dat een pak van 1 kg suiker een massa heeft van <m>1,14159\ldots=\pi-2</m> kg gelijk is aan nul. Dit klinkt al een pak logischer. Er bestaat immers geen balans met een oneindig grote nauwkeurigheid. Stel dat de balans een nauwkeurigheid heeft van 1 g, dan kunnen we enkel spreken over de kans dat de massa van een pak suiker behoort tot het interval <m>[1,141;1,142]</m> kg en deze kans is wel verschillend van nul. Aangezien de kans dat de stochast een welbepaalde waarde aanneemt gelijk is aan nul geldt er dat
+      <ul>
+        <li>
+          <p>
+            <m>P(X \ge x_1)=P(X \gt x_1)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>P(X \le x_2)=P(X \lt x_2)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>P(x_1 \le X \le x_2)=P(x_1 \lt X \le x_2)=P(x_1 \le X \lt  x_2)=P(x_1 \lt X \lt x_2)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Het interval <m>[a,b]</m> hoeft niet eindig te zijn. Een normaal verdeelde stochast kan bijvoorbeeld elke reële waarde aannemen, dus de kansdichtheidsfunctie <m>f</m> van de normale verdeling voldoet aan <m>\int_{-\infty}^{+\infty} f(x) \; dx = 1</m>. Dit is een voorbeeld van een <term>oneigenlijke integraal </term> van de eerste soort. Een dergelijke integraal bereken je door eerst <m>\int_{-c}^{c} f(x) \; dx</m> te berekenen en van het resultaat vervolgens de limiet te berekenen voor <m>c \to +\infty</m>. Als de limiet bestaat, dan zeggen we dat de oneigenlijke integraal convergent is; bestaat de limiet niet, dan is de oneigenlijke integraal divergent.
+    </p>
+    <p>
+      Vooraleer we dieper ingaan op de normale verdeling, bespreken we een aantal voorbeelden van continue stochasten.
+    </p>
+
+    <example>
+      <title>Een schietschijf raken</title>
+      <p>
+        Je schiet een pijl af naar een schietschijf. De schietschijf is cirekvormig met straal <m>r</m>. Wat is de kans dat de pijl op een afstand tussen <m>r_1</m> en <m>r_2</m> van de roos terechtkomt? Veronderstel dat je de schietschijf altijd raakt en niet mikt op een specifieke plaats.
+      </p>
+      <p>
+        De uitkomstenverzameling is de verzameling van alle koppels <m>(x,y)</m> waarvoor geldt dat <m>x^2+y^2 \le r^2</m>. De stochast <m>X</m> is de afstand van de pijl tot de roos. De kans dat een pijl in een bepaald gebied van de schietschijf terechtkomt is rechtevenredig met de oppervlakte van dat gebied. Er geldt dus dat
+        <me>
+            P(r_1 \le X \le r_2) = \frac{\pi r_2^2- \pi r_1^2}{\pi r^2} = \frac{r_2^2-r_1^2}{r^2}
+        </me>
+      </p>
+      <p>
+        We berekenen nu deze kans nu opnieuw door eerst de kansdichtheidsfunctie af te leiden. De oppervlakte van een cirkel met straal <m>x</m> is <m>S=\pi x^2</m>. De differentiaal <m>dS</m> heeft ons dan de oppervlakte van een ring met straal <m>x</m> en breedte <m>dx</m>: <m>dS=2 \pi x dx</m>. De totale kans om de schietschijf te raken is 1, dus moet er gelden dat <m>c \int_0^r 2 \pi x \; dx=1</m>. Dit leidt tot <m>c \pi r^2=1 \Leftrightarrow c=\dfrac{1}{\pi r^2}</m> en de kansdichtheidsfunctie is  <m>f(x)=\dfrac{2x}{r^2}</m>. De gevraagde kans is
+         <me>
+          P(r_1 \le X \le r_2)=\int_{r_1}^{r_2} \frac{2x}{r^2} \; dx = \frac{2}{r^2} \int_{r_1}^{r_2} x \; dx=\frac{r_2^2-r_1^2}{r^2}
+        </me>
+      </p>
+    </example>
+
+    <example>
+      <title>Wachten op de bus</title>
+        <p>
+          Je wacht op een bus die hoogstens 15 minuten te laat komt. De stochast <m>X</m> is de wachttijd. Bereken de kans dat de bus minder dan 3 minuten te laat is en de wachttijd die je mag verwachten.  Ga ervan uit dat de kansdichtheidsfunctie een dalende rechte is.
+        </p>
+        <p>
+          Als de kansdichtheidsfunctie een dalende rechte is, betekent dit dat de bus eerder vroeger dan later komt. De kansdichtheidsfunctie is van de vorm <m>f(x)=-c(x-15)</m> en als we stellen dat <m>\int_0^{15} f(x) \; dx =1</m> volgt er dat <m>c=\dfrac{2}{15^2}</m>. We berekenen de gevraagde kans
+          <me>
+            P(0 \le X \le 3) =-\frac{2}{15^2} \int_0^{3} (x-15) \; dx=0,36
+          </me>
+          De verwachtingswaarde is
+          <me>
+            \mu = \frac{2}{15^2}\int_0^{15} x(15-x)\; dx=5
+          </me>
+        </p>
+    </example>
+
+    <activity>
+      <statement>
+        <p>
+          Je wacht op een bus die hoogstens 15 minuten te laat komt. De stochast <m>X</m> is de wachttijd. Bereken de verwachtingswaarde als elk tijdstip van aankomst even waarschijnlijk is. Om hierop te antwoorden hoef je eigenlijk niet te rekenen. Voer de berekeningen wel uit om te controleren of je het algemene principe onder de knie hebt.
+        </p>
+      </statement>
+    </activity>
+
+  </section>

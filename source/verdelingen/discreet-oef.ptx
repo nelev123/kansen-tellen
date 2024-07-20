@@ -181,5 +181,42 @@
           </p>
         </solution>
     </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          De kans op een allergische reactie van een patiënt bij behandeling met een bepaald geneesmiddel is in testen vastgesteld op 0,002. In een ziekenhuis worden 750 patiënten behandeld. Bereken de kans dat er meer dan drie allergische reacties voorkomen.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <url href="https://www.desmos.com/calculator/qumkvgj0vo"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In een bepaald gebied zijn er gemiddeld 4 blikseminslagen per jaar. Bereken de kans op meer dan 6 blikseminslagen.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <url href="https://www.desmos.com/calculator/qumkvgj0vo"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Gemiddeld worden 1 op 2000 huizen per jaar door brand vernield. Bereken de kans dat in een gemeente van 6000 huizen er vier of meer door brand vernield worden.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <url href="https://www.desmos.com/calculator/qumkvgj0vo"/>
+        </p>
+      </answer>
+    </exercise>
     
 </exercises>

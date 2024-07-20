@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title> De binomiale verdeling benaderen met een normale verdeling</title>
+    <p>
+      We hebben de normale verdeling in het begin van dit hoofdstuk geïntroduceerd als een benadering van de binomiale verdeling. Daar komen we nu even op terug. Deze benadering was voornamelijk vroeger belangrijk. Een computer rekent vandaag probleemloos een binomiale verdeling uit voor <m>n=100</m> en meer.
+    </p>
+
+    <p>
+      Als <m>X \sim B(n,p)</m> en <m>n</m> voldoende groot<fn>In de praktijk betekent dit <m>n \ge 20</m>, <m>np \ge 5</m> en <m>n(1-p) \ge 5</m>.</fn> is, dan kan je deze verdeling benaderen met een normale verdeling <m>X' \sim N(np,\sqrt{np(1-p)})</m>. Omdat je van een discrete verdeling overgaat naar een continue verdeling moet je wel een continuïteitscorrectie toepassen. Dit betekent eigenlijk gewoon dat je moet opletten dat je het juiste interval <m>[x_1,x_2]</m> neemt om de kansen <m>P(x_1 \le X' \le x_2)</m> te berekenen. Beschouw bijvoorbeeld de binomiale verdeling en de normale benadering ervan in onderstaande figuur. Er geldt dan dat <m>P(X=24)=P(23,5 \le  X' \le 24,5)</m>, <m>P(X \ge 24)=P(X' \ge 23,5)</m> en <m>P(X \gt 24)=P(X' \gt 24,5)</m>. In het eerste en tweede geval moet je ervoor zorgen dat je de hele rechthoek die hoort bij <m>x=24</m> meeneemt en in het derde geval mag je de rechthoek net niet meerekenen. Volgens een analoge redenering geldt er dat <m>P(X \lt 24)=P(X' \lt 23,5)</m> en dat <m>P(X \le 24)=P(X \lt 24,5)</m>.
+    </p>
+
+    <sidebyside width="60%">
+      <image source="continuïteitscorrectie2.png"/>
+    </sidebyside>
+
+    <exercise>
+      <statement>
+        <p>
+          We gooien 100 keer een eerlijk geldstuk omhoog. Bereken onderstaande kansen met de binomiale verdeling en de normale verdeling.
+         <ol>
+            <li>
+              <p>
+                De kans dat er 50 keer munt gegooid wordt.
+              </p>
+            </li>
+            <li>
+              <p>
+                De kans dat er minstens 80 keer munt gegooid wordt.
+              </p>
+            </li>
+            <li>
+              <p>
+                De kans dat het aantal keren munt ten minste 40% en ten hoogste 60% van het aantal worpen bedraagt voor <m>n=100</m>, <m>n=500</m> en <m>n=1000</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
+        </p>
+      </solution>
+    </exercise>
+
+    <p>
+      Het benaderen van een binomiale verdeling met een normale verdeling is een speciaal geval van een algemener principe: de centrale limietstelling.
+    </p>
+    <assemblage>
+      <title>Centrale limietstelling</title>
+      <p>
+        Als <m>n</m> onafhankelijke stochasten <m>X_1, X_2, \ldots, X_n</m> willekeurig verdeeld zijn met een zeker gemiddelde <m>\mu_{X_i}</m> en standaardafwijking <m>\sigma_{X_i}</m>, dan geldt wanneer <m>n</m> voldoende groot is dat <m>G=\dfrac{1}{n}\sum_{i=1}^n X_i</m> normaal verdeeld is met
+        <md>
+          <mrow>\mu_G = \frac{1}{n}\sum \mu_{X_i}</mrow>
+          <mrow>\sigma_G = \frac{1}{\sqrt{n}} \sqrt{\sum_{i=1}^n \sigma^2_{X_i}}</mrow>
+        </md>
+      </p>
+      <p>
+        In het speciale geval dat de stochasten dezelfde verdeling hebben met verwachtingswaarde <m>\mu</m> en standaardafwijking <m>\sigma</m>, is <m>G</m> normaal verdeeld met
+        <md>
+          <mrow>\mu_G = \mu</mrow>
+          <mrow>\sigma_G = \frac{\sigma}{\sqrt{n}} </mrow>
+        </md>
+      </p>
+    </assemblage>
+    <p>
+      Zie <url href="https://www.desmos.com/calculator/rcsfiewi2b"> hier </url> voor twee voorbeelden.
+    </p>
+
+  </section>

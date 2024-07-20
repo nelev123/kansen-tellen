@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>De standaardnormale verdeling</title>
+    <p>
+      De gemiddelde lengte van jongens van 14 jaar oud is 166 cm met een standaardafwijking van 8 cm. Roelof is 178 cm lang en behoort daarmee tot de top <m>6,7</m>% van zijn leeftijdsgroep. De gemiddelde lengte van meisjes van 17 jaar oud is ook 166 cm, maar met een standaardafwijking van 6 cm. Ellen is, net als Roelof, 178 cm lang en behoort daarmee tot de top <m>2,3</m>% van haar leeftijdsgroep.
+    </p>
+    <sidebyside width="50%">
+      <image source="vergelijken.png"/>
+    </sidebyside>
+    <p>
+      Als je enkel wil bepalen wie van de twee relatief gezien de grootste is, volstaat het om te berekenen hoeveel standaardafwijkingen hun lengte boven de verwachtingswaarde ligt. Voor Roelof is dit <m>\dfrac{178-166}{8}=1.5</m> en voor Ellen <m>\dfrac{178-166}{6}=2</m>.
+    </p>
+    <assemblage>
+      <title>z-score</title>
+      <p>
+        De <m>z</m>-score, <m>z=\dfrac{x-\mu}{\sigma}</m>, geeft aan hoeveel standaardafwijkingen <m>x</m> verwijdert is van de verwachtingswaarde. <m>z</m>-scores worden gebruikt om waarden van verschillende normale verdelingen met elkaar te vergelijken.
+      </p>
+    </assemblage>
+    <p>
+      Het berekenen van een <m>z</m>-score komt eigenlijk neer op het transformeren van <m>X \sim N(\mu,\sigma)</m> naar een stochast <m>Z</m> die verdeeld is volgens de standaardnormale verdeling: <m>Z \sim N(0,1)</m>. We schrijven dit even expliciet uit.
+      <me>
+        P(x_1 \le X \le x_2)=\dfrac{1}{\sigma \sqrt{2\pi}}\int_{x_1}^{x_2} e^{-\dfrac{1}{2}\left (\dfrac{x-\mu}{\sigma} \right )^2}\; dx
+      </me>
+      We voeren een substitutie door: <m>z=\dfrac{x-\mu}{\sigma} \Rightarrow dz=\dfrac{dx}{\sigma}</m>
+      <me>
+        \frac{1}{\sigma \sqrt{2\pi}}\int_{x_1}^{x_2} e^{-\dfrac{1}{2}\left (\dfrac{x-\mu}{\sigma} \right )^2}\; dx = \dfrac{1}{\sqrt{2\pi}}\int_{\frac{x_1-\mu}{\sigma}}^{\frac{x_2-\mu}{\sigma}} e^{-\dfrac{z^2}{2}}\; dz
+      </me>
+      Er geldt dus dat <m>P(x_1 \le X \le x_2)=P\left ( \frac{x_1-\mu}{\sigma} \le Z \le \frac{x_2-\mu}{\sigma} \right)</m>.
+      Voor het voorbeeld van Roelof en Ellen worden de kansen na de transformatie: <m>P(X \ge 178)=P(Z \ge 1,5)</m> en  <m>P(X \ge 178)=P(Z \ge 2)</m>. Grafisch:
+     </p>
+     <sidebyside width="50%">
+       <image source="zscore.png"/>
+     </sidebyside>
+     <p>
+       Voor de komst van rekenmachines en computers gebeurde elke kansberekening met een normale verdeling via het herleiden naar de standaardnormale verdeling. Er bestonden dan tabellen waarin de kansen <m>P(Z \le z)</m> moesten opgezocht worden.
+     </p>
+     <exercises>
+
+     </exercises>
+  </section>
