@@ -78,6 +78,35 @@
         P(A \setminus B) = P(A) - P(A \cap B)
       </me>
     </p>
+
+    <remark>
+      <p>
+        Een kans kan gedefinieerd worden als een functie <m>P</m> die aan elke gebeurtenis <m>A \subset U</m> een reeël getal <m>P(A)</m> toekent en voldoet aan de volgende eigenschappen:
+        <ul>
+          <li>
+            <p>
+              <m>P(A) \ge 0 </m> voor elke gebeurtenis <m>A</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(U)=1</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              De kans op de vereniging van <m>n</m> onderling disjuncte gebeurtenissen, is de som van de kansen op elk van die gebeurtenissen afzonderlijk.
+              <md>
+                <mrow> \amp A_i \cap A_j = \emptyset \text{ voor alle } i,j=1,2,\ldots,n \text{ en } i \neq j</mrow>
+                <mrow> \Rightarrow \amp \#(A_1 \cup A_2 \cup \ldots \cup A_n)=\#A_1+\#A_2+\dots+\#A_n   </mrow>
+            </md>
+            </p>
+          </li>
+        </ul>
+        Bovenstaande eigenschappen zijn de axioma's van Kolmogorov en vormen de basis voor een axiomatische behandeling van de kansrekening.
+      </p>
+    </remark>
+
     <p>
       Om de productregel te kunnen afleiden, moeten we eerst het idee van een voorwaardelijke kans introduceren.
     </p>

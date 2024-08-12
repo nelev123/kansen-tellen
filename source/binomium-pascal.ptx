@@ -4,7 +4,7 @@
 
 <title>Het binomium van Newton en de driehoek van Pascal</title>
 
-<xi:include href="./algebra/sigma-notatie.ptx" />
+<xi:include href="./algebra/sigma-notatie.ptx" /> <!--Eventueel verplaatsen naar ander onderdeel van cursus-->
 <xi:include href="./algebra/binomium.ptx" />
 <xi:include href="./tellen/pascal.ptx" />
 
