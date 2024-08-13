@@ -95,6 +95,8 @@
         </md>
       </p>
     </assemblage>
+
+    <!--TODO voorbeeld toevoegen-->
   
     <activity>
       <statement>
@@ -107,33 +109,35 @@
     <activity>
       <statement>
         <p>
-          (7u) De variantie van een stochast <m>X</m> kan ook als volgt berekend worden:
+          (U) De variantie van een stochast <m>X</m> kan ook als volgt berekend worden:
           <me>
-            Var(X) = \sum_{i=1}^n x_i^2 p_i - \mu^2
+            Var(X) = \sum_{i=1}^n x_i^2 p_i - \mu_X^2
           </me>
           Bewijs deze formule.
         </p>
       </statement>
     </activity>
-  
-    <p>
-      We beschouwen twee kansexperimenten: gooien met een dobbelsteen en gooien met een muntstuk. Neem voor de stochast <m>X</m> het aantal ogen van de dobbelsteen en voor de stochast <m>Y</m> 0 (kop) of 1 (munt). <m>X</m> heeft 6 waarden elk met kans 1/6 en er geldt dat
-      <md>
-        <mrow>\mu_X = 3,5</mrow>
-        <mrow>\sigma_X^2 \approx 2,92</mrow>
-      </md>
-      De stochast <m>Y</m> heeft twee waarden, elk met kans 1/2 en er geldt dat
-      <md>
-        <mrow>\mu_Y = 0,5</mrow>
-        <mrow>\sigma_X^2 = 0,25</mrow>
-      </md>
-      Stel nu dat we beide stochasten optellen d.w.z. dat we bij elke worp van de dobbelsteen 0 of 1 optellen. De stochast <m>Z=X+Y</m> heeft 7 waarden met <m>p_Z(1)=p_Z(7)=1/12</m> en alle andere kansen gelijk aan 1/6. Er geldt dat
-      <md>
-        <mrow>\mu_Z = 4 </mrow>
-        <mrow>\sigma_Z^2 \approx 3,17 </mrow>
-      </md>
-      We merken bijgevolg op dat <m>\mu_Z = \mu_X + \mu_Y </m> en <m>\sigma_Z^2=\sigma_X^2+\sigma_Y^2</m>. Via <url href="https://www.desmos.com/calculator/zcprhukab9">deze link</url> vind je de uitwerking in Desmos.
-    </p>
+
+    <example>
+      <p>
+        We beschouwen twee kansexperimenten: gooien met een dobbelsteen en gooien met een muntstuk. Neem voor de stochast <m>X</m> het aantal ogen van de dobbelsteen en voor de stochast <m>Y</m> 0 (kop) of 1 (munt). <m>X</m> heeft 6 waarden elk met kans 1/6 en er geldt dat
+        <md>
+          <mrow>\mu_X = 3,5</mrow>
+          <mrow>\sigma_X^2 \approx 2,92</mrow>
+        </md>
+        De stochast <m>Y</m> heeft twee waarden, elk met kans 1/2 en er geldt dat
+        <md>
+          <mrow>\mu_Y = 0,5</mrow>
+          <mrow>\sigma_X^2 = 0,25</mrow>
+        </md>
+        Stel nu dat we beide stochasten optellen d.w.z. dat we bij elke worp van de dobbelsteen 0 of 1 optellen. De stochast <m>Z=X+Y</m> heeft 7 waarden met <m>p_Z(1)=p_Z(7)=1/12</m> en alle andere kansen gelijk aan 1/6. Er geldt dat
+        <md>
+          <mrow>\mu_Z = 4 </mrow>
+          <mrow>\sigma_Z^2 \approx 3,17 </mrow>
+        </md>
+        We merken bijgevolg op dat <m>\mu_Z = \mu_X + \mu_Y </m> en <m>\sigma_Z^2=\sigma_X^2+\sigma_Y^2</m>. Via <url href="https://www.desmos.com/calculator/zcprhukab9">deze link</url> vind je de uitwerking in Desmos.
+      </p>
+    </example>
   
     <assemblage>
       <title>Som van stochasten</title>
@@ -164,10 +168,7 @@
           <mrow>\mu_G = 3,5</mrow>
           <mrow>\sigma_G = \frac{1,71}{\sqrt{n}} </mrow>
         </md>
-        De verwachtingswaarde blijft natuurlijk gelijk aan <m>3,5</m>, maar de standaarddeviatie wordt kleiner naarmate het aantal worpen groter wordt. Dit wil zeggen dat de spreiding rond de verwachtingswaarde kleiner wordt als het aantal worpen groter wordt of, anders geformuleerd, als je het kansexperiment effectief uitvoert, zal het gemiddeld aantal worpen steeds dichter bij 3,5 liggen. Dit noemen we de wet van de grote aantallen.
+        De verwachtingswaarde blijft natuurlijk gelijk aan <m>3,5</m>, maar de standaardafwijking wordt kleiner naarmate het aantal worpen groter wordt. Dit wil zeggen dat de spreiding rond de verwachtingswaarde kleiner wordt als het aantal worpen groter wordt of, anders geformuleerd, als je het kansexperiment effectief uitvoert, zal het gemiddeld aantal worpen steeds dichter bij 3,5 liggen. Dit noemen we de wet van de grote aantallen.
       </p>
     </example>
-  
-
-  
   </section>

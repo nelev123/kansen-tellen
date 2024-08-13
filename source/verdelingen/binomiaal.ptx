@@ -26,38 +26,51 @@
         </p>
       </statement>
     </activity>
+
     <p>
-      Voor bovenstaand voorbeeld geldt er dat <m>\mu_X=\sigma_X=\dfrac{5}{6}</m>. De kans op het gooien van hoogstens twee zessen is
-      <me>
-      P(X \le 2)=P(X=0)+P(X=1)+P(X=2)
-      </me>
-      en de kans op het gooien van minstens 3 zessen is
-      <me>
-        P(X \ge 3)=P(X=3)+P(X=4)+P(X=5)=1-P(X \le 2)
-      </me>
-      Om dergelijke kansen vlot te kunnen berekenen, definieert men ook de zogenaamde <term>cumulatieve verdelingsfunctie</term> <m>F_X(x)</m> van een stochast. Dit is de functie die elk reëel getal <m>x</m> afbeeldt op <m>F_X(x)=P(X \le x)</m>. Met behulp van Desmos kan je echter ook onmiddellijk de volledige kansverdeling berekenen en visualiseren, alsook de kansen <m>P(x_1 \le X \le x_2)</m>. Volg <url href="https://www.desmos.com/calculator/e95qq8xuvd">deze link</url> en controleer dat
-      <ul>
-        <li>
-          <p>
-            <m>P(X=2)=0,1608</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>P(X \le 2)=F_X(2)=0,9645</m>
-          </p>
-        </li>
-        <li>
-          <p>
-             <m>P(X \ge 3)=1-F_X(2)=0,0355</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>P(2 \le X \le 4)=F_X(4)-F_X(1)=0,1961</m>
-          </p>
-        </li>
-      </ul>
+      Met behulp van Desmos kan je gemakkelijk de kansverdelingsfunctie van een binomiale verdeling visualiseren:
     </p>
+
+    <interactive desmos="wjus01i4qw" width="100%" aspect="4:3" preview="desmos-binomiaal.png"/>
+
+    <p>
+      Door <c>Verdelingsfunctie (CDF) vinden</c> aan te vinken kan je snel een som van kansen berekenen. Invullen van <c>Min: 0</c> en <c>Max: 2</c> zoals hierboven correspondeert met het berekenen van de kans 
+      <me>
+        P(X \le 2)=P(X=0)+P(X=1)+P(X=2)
+      </me>
+    </p>
+
+    <activity>
+      <p>
+        Gebruik Desmos om volgende kansen na te rekenen:
+        <ul>
+          <li>
+            <p>
+              <m>P(X=2)=0,1608</m>
+            </p>
+          </li>
+          <li>
+            <p>
+               <m>P(X \ge 3) =0,0355</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(2 \le X \le 4)=0,1961</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </activity>
+
+    <remark>
+      <p>
+        De <term>cumulatieve verdelingsfunctie</term> <m>F_X(x)</m> van een stochast is de functie die elk reëel getal <m>x</m> afbeeldt op <m>F_X(x)=P(X \le x)</m>. Met wetenschappelijke (of ook met sommige grafische) rekentoestellen moet je deze functie gebruiken om de som van kansen te berekenen, bijvoorbeeld
+        <me>
+          P(2 \le X \le 4)=F_X(4)-F_X(1)
+        </me>
+
+      </p>
+    </remark>
 
 </section>
