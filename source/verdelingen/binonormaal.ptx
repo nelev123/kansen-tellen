@@ -14,7 +14,7 @@
       <image source="continuïteitscorrectie2.png"/>
     </sidebyside>
 
-    <exercise>
+    <activity>
       <statement>
         <p>
           We gooien 100 keer een eerlijk geldstuk omhoog. Bereken onderstaande kansen met de binomiale verdeling en de normale verdeling.
@@ -42,9 +42,9 @@
           <url href="https://www.desmos.com/calculator/otzxhyw6yf"/>
         </p>
       </solution>
-    </exercise>
+    </activity>
 
-    <p>
+    <!-- <p>
       Het benaderen van een binomiale verdeling met een normale verdeling is een speciaal geval van een algemener principe: de centrale limietstelling.
     </p>
     <assemblage>
@@ -63,9 +63,7 @@
           <mrow>\sigma_G = \frac{\sigma}{\sqrt{n}} </mrow>
         </md>
       </p>
-    </assemblage>
-    <p>
-      Zie <url href="https://www.desmos.com/calculator/rcsfiewi2b"> hier </url> voor twee voorbeelden.
-    </p>
+    </assemblage> -->
+    <!--Illustreren m.b.v. gesimuleerde data-->
 
   </section>

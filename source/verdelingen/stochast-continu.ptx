@@ -68,7 +68,7 @@
         </md>
       </p>
       <p>
-        Naast de kansdichtheidsfunctie definieert men vaak ook de cumulatieve verdelingsfunctie <m>F(x)</m> als
+        De cumulatieve verdelingsfunctie <m>F(x)</m> is
         <me>
           F(x)=P( X \le x)=\int_a^x f(t) \; dt
         </me>
@@ -99,7 +99,7 @@
       </ul>
     </p>
     <p>
-      Het interval <m>[a,b]</m> hoeft niet eindig te zijn. Een normaal verdeelde stochast kan bijvoorbeeld elke reële waarde aannemen, dus de kansdichtheidsfunctie <m>f</m> van de normale verdeling voldoet aan <m>\int_{-\infty}^{+\infty} f(x) \; dx = 1</m>. Dit is een voorbeeld van een <term>oneigenlijke integraal </term> van de eerste soort. Een dergelijke integraal bereken je door eerst <m>\int_{-c}^{c} f(x) \; dx</m> te berekenen en van het resultaat vervolgens de limiet te berekenen voor <m>c \to +\infty</m>. Als de limiet bestaat, dan zeggen we dat de oneigenlijke integraal convergent is; bestaat de limiet niet, dan is de oneigenlijke integraal divergent.
+      Het interval <m>[a,b]</m> hoeft niet eindig te zijn. Een normaal verdeelde stochast kan bijvoorbeeld elke reële waarde aannemen en de kansdichtheidsfunctie <m>f</m> van de normale verdeling voldoet aan <m>\int_{-\infty}^{+\infty} f(x) \; dx = 1</m>. Dit is een voorbeeld van een <term>oneigenlijke integraal </term> van de eerste soort. Een dergelijke integraal bereken je door eerst <m>\int_{-c}^{c} f(x) \; dx</m> te berekenen en van het resultaat vervolgens de limiet te berekenen voor <m>c \to +\infty</m>. Als de limiet bestaat, dan zeggen we dat de oneigenlijke integraal convergent is; bestaat de limiet niet, dan is de oneigenlijke integraal divergent.
     </p>
     <p>
       Vooraleer we dieper ingaan op de normale verdeling, bespreken we een aantal voorbeelden van continue stochasten.
@@ -108,7 +108,7 @@
     <example>
       <title>Een schietschijf raken</title>
       <p>
-        Je schiet een pijl af naar een schietschijf. De schietschijf is cirekvormig met straal <m>r</m>. Wat is de kans dat de pijl op een afstand tussen <m>r_1</m> en <m>r_2</m> van de roos terechtkomt? Veronderstel dat je de schietschijf altijd raakt en niet mikt op een specifieke plaats.
+        Je schiet een pijl af naar een schietschijf. De schietschijf is cirkelvormig met straal <m>r</m>. Wat is de kans dat de pijl op een afstand tussen <m>r_1</m> en <m>r_2</m> van de roos terechtkomt? Veronderstel dat je de schietschijf altijd raakt en niet mikt op een specifieke plaats.
       </p>
       <p>
         De uitkomstenverzameling is de verzameling van alle koppels <m>(x,y)</m> waarvoor geldt dat <m>x^2+y^2 \le r^2</m>. De stochast <m>X</m> is de afstand van de pijl tot de roos. De kans dat een pijl in een bepaald gebied van de schietschijf terechtkomt is rechtevenredig met de oppervlakte van dat gebied. Er geldt dus dat
@@ -117,7 +117,7 @@
         </me>
       </p>
       <p>
-        We berekenen nu deze kans nu opnieuw door eerst de kansdichtheidsfunctie af te leiden. De oppervlakte van een cirkel met straal <m>x</m> is <m>S=\pi x^2</m>. De differentiaal <m>dS</m> heeft ons dan de oppervlakte van een ring met straal <m>x</m> en breedte <m>dx</m>: <m>dS=2 \pi x dx</m>. De totale kans om de schietschijf te raken is 1, dus moet er gelden dat <m>c \int_0^r 2 \pi x \; dx=1</m>. Dit leidt tot <m>c \pi r^2=1 \Leftrightarrow c=\dfrac{1}{\pi r^2}</m> en de kansdichtheidsfunctie is  <m>f(x)=\dfrac{2x}{r^2}</m>. De gevraagde kans is
+        We berekenen nu deze kans opnieuw door eerst de kansdichtheidsfunctie af te leiden. De oppervlakte van een cirkel met straal <m>x</m> is <m>S=\pi x^2</m>. De differentiaal <m>dS</m> heeft ons dan de oppervlakte van een ring met straal <m>x</m> en breedte <m>dx</m>: <m>dS=2 \pi x dx</m>. De totale kans om de schietschijf te raken is 1, dus moet er gelden dat <m>c \int_0^r 2 \pi x \; dx=1</m>. Dit leidt tot <m>c \pi r^2=1 \Leftrightarrow c=\dfrac{1}{\pi r^2}</m> en de kansdichtheidsfunctie is  <m>f(x)=\dfrac{2x}{r^2}</m>. De gevraagde kans is
          <me>
           P(r_1 \le X \le r_2)=\int_{r_1}^{r_2} \frac{2x}{r^2} \; dx = \frac{2}{r^2} \int_{r_1}^{r_2} x \; dx=\frac{r_2^2-r_1^2}{r^2}
         </me>

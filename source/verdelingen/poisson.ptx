@@ -17,7 +17,7 @@
     </p>
   
     <p>
-      Hieronder zie je hoe je m.b.v. Desmos Poissonverdeling (<url href="https://www.desmos.com/calculator/vmwnnurzgq">link </url>):
+      Hieronder zie je hoe je m.b.v. Desmos de kansverdelingsfunctie bepaalt:
     </p>
   
     <interactive desmos="vmwnnurzgq" width="100%" aspect="4:3" preview="desmos-poisson.png"/>
