@@ -95,7 +95,7 @@
           </li>
           <li>
             <p>
-              De kans op de vereniging van <m>n</m> onderling disjuncte gebeurtenissen, is de som van de kansen op elk van die gebeurtenissen afzonderlijk.
+              De kans op de vereniging van <m>n</m> onderling disjuncte gebeurtenissen, is de som van de kansen op elk van die gebeurtenissen afzonderlijk <mdash/> de somregel dus.
               <md>
                 <mrow> \amp A_i \cap A_j = \emptyset \text{ voor alle } i,j=1,2,\ldots,n \text{ en } i \neq j</mrow>
                 <mrow> \Rightarrow \amp \#(A_1 \cup A_2 \cup \ldots \cup A_n)=\#A_1+\#A_2+\dots+\#A_n   </mrow>

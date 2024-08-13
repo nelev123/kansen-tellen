@@ -31,33 +31,31 @@
       <me>
         \sigma_X = \sqrt{\sum_{i=1}^n (x_i-\mu_X)^2 p_i}
       </me>
-    </p>
-  
-    <sidebyside widths="50% 50%">
-      <p>
-         De bovenste grafiek toont de kansverdelingsfunctie <m>p_X</m> voor het voorbeeld van de vorige paragraaf samen met de verwachtingswaarde
-         <me>
-           \mu_X = 140
-         </me>
-         en de standaardafwijking
-         <me>
-           \sigma_X \approx 48,3
-         </me>
-         Stel dat we nu een tweede stochast <m>X'</m> beschouwen die correspondeert met de hercodering <q>de som van het aantal ogen maal honderd</q>. De kansverdelingsfunctie <m>p_{X'}</m> is grafisch weergeven in de onderste grafiek. De verwachtingswaarde is nu
-         <me>
-           \mu_{X'} = 700
-         </me>
-         en de standaardafwijking
-         <me>
-           \sigma_{X'} \approx 242
-         </me>
-         Merk op dat <m>X'=5X</m> en eveneens dat <m>\mu_{X'}=5\mu_X</m> en <m>\sigma_X'=5\sigma_X</m>
-      </p>
-      <stack>
-          <image source="desmos-kansverdeling-1.png"/>
-          <image source="desmos-kansverdeling-2.png"/>
-      </stack>
+      De blauwe grafiek hieronder toont de kansverdelingsfunctie <m>p_X</m> voor het voorbeeld van de vorige paragraaf samen met de verwachtingswaarde
+      <me>
+        \mu_X = 140
+      </me>
+      en de standaardafwijking (de breedte van de blauwe rechthoek is <m>2 \sigma_X</m>)
+      <me>
+        \sigma_X \approx 48,3
+      </me>
+   </p>
+
+    <sidebyside>
+      <image source="standaardafwijking.png"/>
     </sidebyside>
+
+    <p>
+      Stel dat we nu een tweede stochast <m>X'</m> beschouwen die correspondeert met de hercodering <q>de som van het aantal ogen maal drie</q>. De kansverdelingsfunctie <m>p_{X'}</m> is grafisch weergeven met de rode grafiek. De verwachtingswaarde is nu
+      <me>
+        \mu_{X'} = 21
+      </me>
+      en de standaardafwijking
+      <me>
+        \sigma_{X'} \approx 7,25
+      </me>
+      Merk op dat <m>X'=\frac{3}{20}X</m> en eveneens dat <m>\mu_{X'}=\frac{3}{20}\mu_X</m> en <m>\sigma_X'=\frac{3}{20}\sigma_X</m>
+    </p>
   
     <assemblage>
       <title>Verwachtingswaarde, variantie en standaardafwijking</title>
